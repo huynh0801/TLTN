@@ -3,12 +3,16 @@
   .logo-text {
     font-family: 'Space Grotesk', 'Work Sans', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     font-weight: 900;
-    font-size: 50px;
-    letter-spacing: 0.12em;
+    font-size: 54px;
     fill: #1c1c1c;
+    text-anchor: middle;
+    dominant-baseline: central;
   }
 </style>
 <g id="Group">
-  <text x="100.968" y="144.767" text-anchor="middle" dominant-baseline="central" class="logo-text">HYUN</text>
+  <text x="100.968" y="58" class="logo-text">H</text>
+  <text x="100.968" y="116" class="logo-text">Y</text>
+  <text x="100.968" y="174" class="logo-text">U</text>
+  <text x="100.968" y="232" class="logo-text">N</text>
 </g>
 </svg>
