@@ -444,7 +444,7 @@ export default function HeroSection() {
             data-node-id="1:95"
           >
             <p className="leading-[32px]">
-              家族の１０年を包め｜リノベーションマンション
+              Gói trọn 10 năm gia đình | Căn hộ cải tạo
             </p>
           </div>
           <div
@@ -477,7 +477,7 @@ export default function HeroSection() {
               className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[20px] justify-center leading-[0] left-[22px] not-italic text-[#222] text-[15px] top-[19.8px] tracking-[0.75px] w-[115.49px]"
               data-node-id="1:103"
             >
-              <p className="leading-[15px]">名古屋市 名東区</p>
+              <p className="leading-[15px]">Q. Meito, Nagoya</p>
             </div>
           </div>
           <div
@@ -499,7 +499,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[114.35px]"
                 data-node-id="1:107"
               >
-                <p className="leading-[14px]">この暮らしに挑戦！</p>
+                <p className="leading-[14px]">Trải nghiệm mới!</p>
               </div>
             </div>
             <div
@@ -511,7 +511,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[113.94px]"
                 data-node-id="1:109"
               >
-                <p className="leading-[14px]">リノベーション好き</p>
+                <p className="leading-[14px]">Mê cải tạo nhà</p>
               </div>
             </div>
             <div
@@ -523,7 +523,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[84.2px]"
                 data-node-id="1:111"
               >
-                <p className="leading-[14px]">古いのが好き</p>
+                <p className="leading-[14px]">Thích hoài cổ</p>
               </div>
             </div>
             <div
@@ -535,7 +535,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[74.95px]"
                 data-node-id="1:113"
               >
-                <p className="leading-[14px]">シティライフ</p>
+                <p className="leading-[14px]">Phố thị</p>
               </div>
             </div>
             <div
@@ -547,7 +547,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[101.13px]"
                 data-node-id="1:115"
               >
-                <p className="leading-[14px]">建物カッコいい!</p>
+                <p className="leading-[14px]">Kiến trúc chất!</p>
               </div>
             </div>
           </div>
@@ -562,7 +562,7 @@ export default function HeroSection() {
             data-node-id="1:117"
           >
             <p className="leading-[32px]">
-              フィンランドに魅せられて│リノベーション賃貸住宅
+              Say đắm chất Bắc Âu | Nhà thuê cải tạo
             </p>
           </div>
           <div
@@ -595,7 +595,7 @@ export default function HeroSection() {
               className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[20px] justify-center leading-[0] left-[22px] not-italic text-[#222] text-[15px] top-[19.8px] tracking-[0.75px] w-[99.74px]"
               data-node-id="1:125"
             >
-              <p className="leading-[15px]">三重県 桑名市</p>
+              <p className="leading-[15px]">TP. Kuwana</p>
             </div>
           </div>
           <div
@@ -617,7 +617,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[69.85px]"
                 data-node-id="1:129"
               >
-                <p className="leading-[14px]">冬でも半袖</p>
+                <p className="leading-[14px]">Ấm áp</p>
               </div>
             </div>
             <div
@@ -629,7 +629,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[71.41px]"
                 data-node-id="1:131"
               >
-                <p className="leading-[14px]">異国情緒を</p>
+                <p className="leading-[14px]">Ngoại ô</p>
               </div>
             </div>
             <div
@@ -641,7 +641,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[93.01px]"
                 data-node-id="1:133"
               >
-                <p className="leading-[14px]">セカンドハウス</p>
+                <p className="leading-[14px]">Nhà thứ hai</p>
               </div>
             </div>
             <div
@@ -653,7 +653,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[108.8px]"
                 data-node-id="1:135"
               >
-                <p className="leading-[14px]">日常にデザインを</p>
+                <p className="leading-[14px]">Nghệ thuật sống</p>
               </div>
             </div>
             <div
@@ -665,7 +665,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[101.12px]"
                 data-node-id="1:137"
               >
-                <p className="leading-[14px]">建物カッコいい!</p>
+                <p className="leading-[14px]">Kiến trúc chất!</p>
               </div>
             </div>
           </div>
@@ -680,7 +680,7 @@ export default function HeroSection() {
             data-node-id="1:139"
           >
             <p className="leading-[32px]">
-              住むほど味わいがでる家｜リノベーションマンション
+              Càng ở càng thêm yêu | Căn hộ cải tạo
             </p>
           </div>
           <div
@@ -713,7 +713,7 @@ export default function HeroSection() {
               className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[20px] justify-center leading-[0] left-[22px] not-italic text-[#222] text-[15px] top-[19.8px] tracking-[0.75px] w-[115.49px]"
               data-node-id="1:147"
             >
-              <p className="leading-[15px]">名古屋市 名東区</p>
+              <p className="leading-[15px]">Q. Meito, Nagoya</p>
             </div>
           </div>
           <div
@@ -735,7 +735,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[114.35px]"
                 data-node-id="1:151"
               >
-                <p className="leading-[14px]">この暮らしに挑戦！</p>
+                <p className="leading-[14px]">Trải nghiệm mới!</p>
               </div>
             </div>
             <div
@@ -747,7 +747,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[113.94px]"
                 data-node-id="1:153"
               >
-                <p className="leading-[14px]">リノベーション好き</p>
+                <p className="leading-[14px]">Mê cải tạo nhà</p>
               </div>
             </div>
             <div
@@ -759,7 +759,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[65.28px]"
                 data-node-id="1:155"
               >
-                <p className="leading-[14px]">楽器演奏！</p>
+                <p className="leading-[14px]">Âm nhạc!</p>
               </div>
             </div>
           </div>
@@ -774,7 +774,7 @@ export default function HeroSection() {
             data-node-id="1:157"
           >
             <p className="leading-[32px]">
-              路地裏のシェアハウス|「キノエノ*farm house」
+              Nhà chung trong ngõ nhỏ |「Kinoeno * farm house」
             </p>
           </div>
           <div
@@ -807,7 +807,7 @@ export default function HeroSection() {
               className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[20px] justify-center leading-[0] left-[22px] not-italic text-[#222] text-[15px] top-[19.8px] tracking-[0.75px] w-[94.7px]"
               data-node-id="1:165"
             >
-              <p className="leading-[15px]">愛知県岡崎市</p>
+              <p className="leading-[15px]">TP. Okazaki</p>
             </div>
           </div>
           <div
@@ -829,7 +829,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[84.2px]"
                 data-node-id="1:169"
               >
-                <p className="leading-[14px]">古いのが好き</p>
+                <p className="leading-[14px]">Thích hoài cổ</p>
               </div>
             </div>
             <div
@@ -841,7 +841,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[123.96px]"
                 data-node-id="1:171"
               >
-                <p className="leading-[14px]">ローカルにかかわる</p>
+                <p className="leading-[14px]">Gắn kết bản địa</p>
               </div>
             </div>
             <div
@@ -853,7 +853,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[90.25px]"
                 data-node-id="1:173"
               >
-                <p className="leading-[14px]">集まって生きる</p>
+                <p className="leading-[14px]">Sống sẻ chia</p>
               </div>
             </div>
             <div
@@ -865,7 +865,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[51.2px]"
                 data-node-id="1:175"
               >
-                <p className="leading-[14px]">街づくり</p>
+                <p className="leading-[14px]">Phố thị</p>
               </div>
             </div>
             <div
@@ -877,7 +877,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[72.36px]"
                 data-node-id="1:177"
               >
-                <p className="leading-[14px]">地域の交流</p>
+                <p className="leading-[14px]">Giao lưu</p>
               </div>
             </div>
             <div
@@ -889,7 +889,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[79.2px]"
                 data-node-id="1:179"
               >
-                <p className="leading-[14px]">シェアハウス</p>
+                <p className="leading-[14px]">Nhà chia sẻ</p>
               </div>
             </div>
           </div>
