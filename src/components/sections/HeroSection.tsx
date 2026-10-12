@@ -444,7 +444,7 @@ export default function HeroSection() {
             data-node-id="1:95"
           >
             <p className="leading-[32px]">
-              Gói trọn 10 năm gia đình | Căn hộ cải tạo
+              Phở Bát Đàn | Tinh hoa phở bò phố cổ trăm năm
             </p>
           </div>
           <div
@@ -477,7 +477,7 @@ export default function HeroSection() {
               className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[20px] justify-center leading-[0] left-[22px] not-italic text-[#222] text-[15px] top-[19.8px] tracking-[0.75px] w-[115.49px]"
               data-node-id="1:103"
             >
-              <p className="leading-[15px]">Q. Meito, Nagoya</p>
+              <p className="leading-[15px]">TP. Hà Nội</p>
             </div>
           </div>
           <div
@@ -499,7 +499,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[114.35px]"
                 data-node-id="1:107"
               >
-                <p className="leading-[14px]">Trải nghiệm mới!</p>
+                <p className="leading-[14px]">Phở bò tái lăn</p>
               </div>
             </div>
             <div
@@ -511,7 +511,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[113.94px]"
                 data-node-id="1:109"
               >
-                <p className="leading-[14px]">Mê cải tạo nhà</p>
+                <p className="leading-[14px]">Nước dùng thanh</p>
               </div>
             </div>
             <div
@@ -523,31 +523,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[84.2px]"
                 data-node-id="1:111"
               >
-                <p className="leading-[14px]">Thích hoài cổ</p>
-              </div>
-            </div>
-            <div
-              className="absolute bg-[#262626] bottom-0 left-0 rounded-[5px] top-[40px] w-[98.75px]"
-              data-node-id="1:112"
-              data-name="Item - li class='c-top-slide__itemContents__tag__item'><a href='https://min-kura.com/archives/archives_tag/..."
-            >
-              <div
-                className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[74.95px]"
-                data-node-id="1:113"
-              >
-                <p className="leading-[14px]">Phố thị</p>
-              </div>
-            </div>
-            <div
-              className="absolute bg-[#262626] bottom-0 left-[106.75px] rounded-[5px] top-[40px] w-[124.93px]"
-              data-node-id="1:114"
-              data-name="Item - li class='c-top-slide__itemContents__tag__item'><a href='https://min-kura.com/archives/archives_tag/..."
-            >
-              <div
-                className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[101.13px]"
-                data-node-id="1:115"
-              >
-                <p className="leading-[14px]">Kiến trúc chất!</p>
+                <p className="leading-[14px]">Phố cổ Hà Nội</p>
               </div>
             </div>
           </div>
@@ -562,7 +538,7 @@ export default function HeroSection() {
             data-node-id="1:117"
           >
             <p className="leading-[32px]">
-              Say đắm chất Bắc Âu | Nhà thuê cải tạo
+              Cơm Tấm Ba Ghiền | Sườn nướng than hồng chuẩn vị Sài Gòn
             </p>
           </div>
           <div
@@ -595,7 +571,7 @@ export default function HeroSection() {
               className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[20px] justify-center leading-[0] left-[22px] not-italic text-[#222] text-[15px] top-[19.8px] tracking-[0.75px] w-[99.74px]"
               data-node-id="1:125"
             >
-              <p className="leading-[15px]">TP. Kuwana</p>
+              <p className="leading-[15px]">TP. Hồ Chí Minh</p>
             </div>
           </div>
           <div
@@ -617,7 +593,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[69.85px]"
                 data-node-id="1:129"
               >
-                <p className="leading-[14px]">Ấm áp</p>
+                <p className="leading-[14px]">Sườn bì chả</p>
               </div>
             </div>
             <div
@@ -629,7 +605,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[71.41px]"
                 data-node-id="1:131"
               >
-                <p className="leading-[14px]">Ngoại ô</p>
+                <p className="leading-[14px]">Ăn đêm Sài Gòn</p>
               </div>
             </div>
             <div
@@ -641,7 +617,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[93.01px]"
                 data-node-id="1:133"
               >
-                <p className="leading-[14px]">Nhà thứ hai</p>
+                <p className="leading-[14px]">Hương vị Nam Bộ</p>
               </div>
             </div>
             <div
@@ -653,7 +629,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[108.8px]"
                 data-node-id="1:135"
               >
-                <p className="leading-[14px]">Nghệ thuật sống</p>
+                <p className="leading-[14px]">Ngon nức tiếng</p>
               </div>
             </div>
             <div
@@ -665,7 +641,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[101.12px]"
                 data-node-id="1:137"
               >
-                <p className="leading-[14px]">Kiến trúc chất!</p>
+                <p className="leading-[14px]">Quán quen phố thị</p>
               </div>
             </div>
           </div>
@@ -680,7 +656,7 @@ export default function HeroSection() {
             data-node-id="1:139"
           >
             <p className="leading-[32px]">
-              Càng ở càng thêm yêu | Căn hộ cải tạo
+              Lẩu Gà Lá É Tao Ngộ | Ấm lòng đêm se lạnh cao nguyên
             </p>
           </div>
           <div
@@ -713,7 +689,7 @@ export default function HeroSection() {
               className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[20px] justify-center leading-[0] left-[22px] not-italic text-[#222] text-[15px] top-[19.8px] tracking-[0.75px] w-[115.49px]"
               data-node-id="1:147"
             >
-              <p className="leading-[15px]">Q. Meito, Nagoya</p>
+              <p className="leading-[15px]">TP. Đà Lạt</p>
             </div>
           </div>
           <div
@@ -735,7 +711,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[114.35px]"
                 data-node-id="1:151"
               >
-                <p className="leading-[14px]">Trải nghiệm mới!</p>
+                <p className="leading-[14px]">Lẩu gà lá é</p>
               </div>
             </div>
             <div
@@ -747,7 +723,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[113.94px]"
                 data-node-id="1:153"
               >
-                <p className="leading-[14px]">Mê cải tạo nhà</p>
+                <p className="leading-[14px]">Đêm lạnh Đà Lạt</p>
               </div>
             </div>
             <div
@@ -759,7 +735,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[65.28px]"
                 data-node-id="1:155"
               >
-                <p className="leading-[14px]">Âm nhạc!</p>
+                <p className="leading-[14px]">Tụ tập bạn bè</p>
               </div>
             </div>
           </div>
@@ -774,7 +750,7 @@ export default function HeroSection() {
             data-node-id="1:157"
           >
             <p className="leading-[32px]">
-              Nhà chung trong ngõ nhỏ |「Kinoeno * farm house」
+              Bánh Xèo & Nem Lụi Bà Dưỡng | Nước chấm gia truyền đậm đà
             </p>
           </div>
           <div
@@ -807,7 +783,7 @@ export default function HeroSection() {
               className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[20px] justify-center leading-[0] left-[22px] not-italic text-[#222] text-[15px] top-[19.8px] tracking-[0.75px] w-[94.7px]"
               data-node-id="1:165"
             >
-              <p className="leading-[15px]">TP. Okazaki</p>
+              <p className="leading-[15px]">TP. Đà Nẵng</p>
             </div>
           </div>
           <div
@@ -829,7 +805,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[84.2px]"
                 data-node-id="1:169"
               >
-                <p className="leading-[14px]">Thích hoài cổ</p>
+                <p className="leading-[14px]">Bánh xèo giòn rụm</p>
               </div>
             </div>
             <div
@@ -841,7 +817,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[123.96px]"
                 data-node-id="1:171"
               >
-                <p className="leading-[14px]">Gắn kết bản địa</p>
+                <p className="leading-[14px]">Nem lụi nướng</p>
               </div>
             </div>
             <div
@@ -853,7 +829,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[90.25px]"
                 data-node-id="1:173"
               >
-                <p className="leading-[14px]">Sống sẻ chia</p>
+                <p className="leading-[14px]">Đặc sản phố biển</p>
               </div>
             </div>
             <div
@@ -865,7 +841,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[51.2px]"
                 data-node-id="1:175"
               >
-                <p className="leading-[14px]">Phố thị</p>
+                <p className="leading-[14px]">Gắn kết bạn bè</p>
               </div>
             </div>
             <div
@@ -877,7 +853,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[72.36px]"
                 data-node-id="1:177"
               >
-                <p className="leading-[14px]">Giao lưu</p>
+                <p className="leading-[14px]">Ăn vặt & lai rai</p>
               </div>
             </div>
             <div
@@ -889,7 +865,7 @@ export default function HeroSection() {
                 className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[79.2px]"
                 data-node-id="1:179"
               >
-                <p className="leading-[14px]">Nhà chia sẻ</p>
+                <p className="leading-[14px]">Đậm đà miền Trung</p>
               </div>
             </div>
           </div>
