@@ -116,7 +116,7 @@ export default function ArchivesSection() {
         </div>
       </div>
       <div
-        className="absolute h-[695.79px] left-0 right-[1013.87px] top-[79.34px]"
+        className="absolute group cursor-pointer h-[695.79px] left-0 right-[1013.87px] top-[79.34px]"
         data-node-id="1:226"
         data-name="Link"
       >
@@ -229,7 +229,7 @@ export default function ArchivesSection() {
           </div>
         </div>
         <div
-          className="absolute aspect-[366.92999267578125/244.61000061035156] left-[70px] overflow-clip right-[70px] rounded-[10px] top-[93.22px]"
+          className="absolute aspect-[366.92999267578125/244.61000061035156] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
           data-node-id="1:249"
           data-name="Container"
         >
@@ -255,7 +255,7 @@ export default function ArchivesSection() {
         </div>
       </div>
       <div
-        className="absolute h-[695.79px] left-[506.93px] right-[506.93px] top-[79.34px]"
+        className="absolute group cursor-pointer h-[695.79px] left-[506.93px] right-[506.93px] top-[79.34px]"
         data-node-id="1:253"
         data-name="Link"
       >
@@ -350,7 +350,7 @@ export default function ArchivesSection() {
           </div>
         </div>
         <div
-          className="absolute aspect-[366.94000244140625/244.6300048828125] left-[69.99px] overflow-clip right-[70.01px] rounded-[10px] top-[93.22px]"
+          className="absolute aspect-[366.94000244140625/244.6300048828125] left-[69.99px] overflow-hidden right-[70.01px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
           data-node-id="1:270"
           data-name="Container"
         >
@@ -376,7 +376,7 @@ export default function ArchivesSection() {
         </div>
       </div>
       <div
-        className="absolute h-[695.79px] left-[1013.86px] right-0 top-[79.34px]"
+        className="absolute group cursor-pointer h-[695.79px] left-[1013.86px] right-0 top-[79.34px]"
         data-node-id="1:274"
         data-name="Link"
       >
@@ -466,7 +466,7 @@ export default function ArchivesSection() {
           </div>
         </div>
         <div
-          className="absolute aspect-[366.94000244140625/244.6300048828125] left-[70px] overflow-clip right-[70px] rounded-[10px] top-[93.22px]"
+          className="absolute aspect-[366.94000244140625/244.6300048828125] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
           data-node-id="1:290"
           data-name="Container"
         >
@@ -492,7 +492,7 @@ export default function ArchivesSection() {
         </div>
       </div>
       <div
-        className="absolute h-[653.79px] left-0 right-[1013.87px] top-[775.13px]"
+        className="absolute group cursor-pointer h-[653.79px] left-0 right-[1013.87px] top-[775.13px]"
         data-node-id="1:294"
         data-name="Link"
       >
@@ -596,7 +596,7 @@ export default function ArchivesSection() {
           </div>
         </div>
         <div
-          className="absolute aspect-[366.92999267578125/244.61000061035156] left-[70px] overflow-clip right-[70px] rounded-[10px] top-[93.22px]"
+          className="absolute aspect-[366.92999267578125/244.61000061035156] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
           data-node-id="1:315"
           data-name="Container"
         >
@@ -622,7 +622,7 @@ export default function ArchivesSection() {
         </div>
       </div>
       <div
-        className="absolute h-[653.79px] left-[506.93px] right-[506.93px] top-[775.13px]"
+        className="absolute group cursor-pointer h-[653.79px] left-[506.93px] right-[506.93px] top-[775.13px]"
         data-node-id="1:319"
         data-name="Link"
       >
@@ -717,7 +717,7 @@ export default function ArchivesSection() {
           </div>
         </div>
         <div
-          className="absolute aspect-[366.94000244140625/244.6300048828125] left-[69.99px] overflow-clip right-[70.01px] rounded-[10px] top-[93.22px]"
+          className="absolute aspect-[366.94000244140625/244.6300048828125] left-[69.99px] overflow-hidden right-[70.01px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
           data-node-id="1:336"
           data-name="Container"
         >
@@ -743,7 +743,7 @@ export default function ArchivesSection() {
         </div>
       </div>
       <div
-        className="absolute h-[653.79px] left-[1013.86px] right-0 top-[775.13px]"
+        className="absolute group cursor-pointer h-[653.79px] left-[1013.86px] right-0 top-[775.13px]"
         data-node-id="1:340"
         data-name="Link"
       >
@@ -833,7 +833,7 @@ export default function ArchivesSection() {
           </div>
         </div>
         <div
-          className="absolute aspect-[366.94000244140625/244.6300048828125] left-[70px] overflow-clip right-[70px] rounded-[10px] top-[93.22px]"
+          className="absolute aspect-[366.94000244140625/244.6300048828125] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
           data-node-id="1:360"
           data-name="Container"
         >
@@ -859,7 +859,7 @@ export default function ArchivesSection() {
         </div>
       </div>
       <div
-        className="absolute h-[695.79px] left-0 right-[1013.87px] top-[1428.91px]"
+        className="absolute group cursor-pointer h-[695.79px] left-0 right-[1013.87px] top-[1428.91px]"
         data-node-id="1:364"
         data-name="Link"
       >
@@ -980,7 +980,7 @@ export default function ArchivesSection() {
         </div>
       </div>
       <div
-        className="absolute h-[695.79px] left-[506.93px] right-[506.93px] top-[1428.91px]"
+        className="absolute group cursor-pointer h-[695.79px] left-[506.93px] right-[506.93px] top-[1428.91px]"
         data-node-id="1:387"
         data-name="Link"
       >
@@ -1101,7 +1101,7 @@ export default function ArchivesSection() {
         </div>
       </div>
       <div
-        className="absolute h-[695.79px] left-[1013.86px] right-0 top-[1428.91px]"
+        className="absolute group cursor-pointer h-[695.79px] left-[1013.86px] right-0 top-[1428.91px]"
         data-node-id="1:412"
         data-name="Link"
       >
@@ -1217,7 +1217,7 @@ export default function ArchivesSection() {
         </div>
       </div>
       <div
-        className="absolute h-[695.79px] left-0 right-[1013.87px] top-[2124.7px]"
+        className="absolute group cursor-pointer h-[695.79px] left-0 right-[1013.87px] top-[2124.7px]"
         data-node-id="1:436"
         data-name="Link"
       >
@@ -1312,7 +1312,7 @@ export default function ArchivesSection() {
           </div>
         </div>
         <div
-          className="absolute aspect-[366.92999267578125/244.61000061035156] left-[70px] overflow-clip right-[70px] rounded-[10px] top-[93.22px]"
+          className="absolute aspect-[366.92999267578125/244.61000061035156] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
           data-node-id="1:461"
           data-name="Container"
         >
@@ -1338,7 +1338,7 @@ export default function ArchivesSection() {
         </div>
       </div>
       <div
-        className="absolute h-[695.79px] left-[506.93px] right-[506.93px] top-[2124.7px]"
+        className="absolute group cursor-pointer h-[695.79px] left-[506.93px] right-[506.93px] top-[2124.7px]"
         data-node-id="1:465"
         data-name="Link"
       >
@@ -1433,7 +1433,7 @@ export default function ArchivesSection() {
           </div>
         </div>
         <div
-          className="absolute aspect-[366.94000244140625/244.6300048828125] left-[69.99px] overflow-clip right-[70.01px] rounded-[10px] top-[93.22px]"
+          className="absolute aspect-[366.94000244140625/244.6300048828125] left-[69.99px] overflow-hidden right-[70.01px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
           data-node-id="1:488"
           data-name="Container"
         >
@@ -1459,7 +1459,7 @@ export default function ArchivesSection() {
         </div>
       </div>
       <div
-        className="absolute h-[695.79px] left-[1013.86px] right-0 top-[2124.7px]"
+        className="absolute group cursor-pointer h-[695.79px] left-[1013.86px] right-0 top-[2124.7px]"
         data-node-id="1:492"
         data-name="Link"
       >
@@ -1549,7 +1549,7 @@ export default function ArchivesSection() {
           </div>
         </div>
         <div
-          className="absolute aspect-[366.94000244140625/244.6300048828125] left-[70px] overflow-clip right-[70px] rounded-[10px] top-[93.22px]"
+          className="absolute aspect-[366.94000244140625/244.6300048828125] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
           data-node-id="1:507"
           data-name="Container"
         >
