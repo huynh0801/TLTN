@@ -173,6 +173,14 @@ export default function HeroSection() {
             data-name="Background"
           />
           <div
+            className="-translate-x-1/2 -translate-y-1/2 absolute bg-white flex items-center justify-center left-1/2 px-6 top-0 z-10 whitespace-nowrap"
+            data-name="Hero Slogan"
+          >
+            <h2 className="font-['Inter:Bold','Inter',system-ui,-apple-system,sans-serif] font-bold text-[26px] text-[#1c1c1c] tracking-[0.08em] leading-none">
+              Điểm hẹn chuẩn gu, yêu không cần nghĩ
+            </h2>
+          </div>
+          <div
             className="absolute bg-[#222] left-[-88.84px] overflow-clip rounded-[28px] size-[56px] top-[235.6px]"
             data-node-id="1:46"
             data-name="Background"
