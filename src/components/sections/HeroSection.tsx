@@ -21,7 +21,7 @@ export default function HeroSection() {
       data-name="Section"
     >
       <div
-        className="absolute h-[289.54px] left-[-7.68px] overflow-clip top-0 w-[201.99px]"
+        className="absolute z-10 h-[289.54px] left-[-7.68px] overflow-clip top-0 w-[201.99px]"
         data-node-id="1:4"
         data-name="img_top_tilte01.svg"
       >
@@ -44,7 +44,7 @@ export default function HeroSection() {
         </div>
       </div>
       <div
-        className="absolute bottom-[65.82px] h-[211.78px] overflow-clip right-[-8.77px] w-[196.99px]"
+        className="absolute z-10 bottom-[65.82px] h-[211.78px] overflow-clip right-[-8.77px] w-[196.99px]"
         data-node-id="1:14"
         data-name="img_top_tilte02.svg"
       >
