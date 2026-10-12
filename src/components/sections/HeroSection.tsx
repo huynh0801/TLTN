@@ -486,45 +486,36 @@ export default function HeroSection() {
             data-name="Background"
           />
           <div
-            className="absolute h-[72px] left-[19.6px] top-[60.6px] w-[482.29px]"
+            className="absolute flex flex-wrap gap-[8px] left-[19.6px] top-[60.6px] w-[482.29px]"
             data-node-id="1:105"
             data-name="List"
           >
             <div
-              className="absolute bg-[#262626] bottom-[40px] left-0 rounded-[5px] top-0 w-[138.15px]"
+              className="inline-flex items-center justify-center bg-[#262626] h-[32px] px-[12px] rounded-[5px]"
               data-node-id="1:106"
-              data-name="Item - li class='c-top-slide__itemContents__tag__item'><a href='https://min-kura.com/archives/archives_tag/..."
+              data-name="Item"
             >
-              <div
-                className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[114.35px]"
-                data-node-id="1:107"
-              >
-                <p className="leading-[14px]">Phở bò tái lăn</p>
-              </div>
+              <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.48px]">
+                Phở bò tái lăn
+              </span>
             </div>
             <div
-              className="absolute bg-[#262626] bottom-[40px] left-[146.15px] rounded-[5px] top-0 w-[137.74px]"
+              className="inline-flex items-center justify-center bg-[#262626] h-[32px] px-[12px] rounded-[5px]"
               data-node-id="1:108"
-              data-name="Item - li class='c-top-slide__itemContents__tag__item'><a href='https://min-kura.com/archives/archives_tag/..."
+              data-name="Item"
             >
-              <div
-                className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[113.94px]"
-                data-node-id="1:109"
-              >
-                <p className="leading-[14px]">Nước dùng thanh</p>
-              </div>
+              <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.48px]">
+                Nước dùng thanh
+              </span>
             </div>
             <div
-              className="absolute bg-[#262626] bottom-[40px] left-[291.89px] rounded-[5px] top-0 w-[108px]"
+              className="inline-flex items-center justify-center bg-[#262626] h-[32px] px-[12px] rounded-[5px]"
               data-node-id="1:110"
-              data-name="Item - li class='c-top-slide__itemContents__tag__item'><a href='https://min-kura.com/archives/archives_tag/..."
+              data-name="Item"
             >
-              <div
-                className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[84.2px]"
-                data-node-id="1:111"
-              >
-                <p className="leading-[14px]">Phố cổ Hà Nội</p>
-              </div>
+              <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.48px]">
+                Phố cổ Hà Nội
+              </span>
             </div>
           </div>
         </div>
@@ -580,69 +571,54 @@ export default function HeroSection() {
             data-name="Background"
           />
           <div
-            className="absolute h-[72px] left-[19.6px] top-[60.6px] w-[482.29px]"
+            className="absolute flex flex-wrap gap-[8px] left-[19.6px] top-[60.6px] w-[482.29px]"
             data-node-id="1:127"
             data-name="List"
           >
             <div
-              className="absolute bg-[#262626] bottom-[40px] left-0 rounded-[5px] top-0 w-[93.65px]"
+              className="inline-flex items-center justify-center bg-[#262626] h-[32px] px-[12px] rounded-[5px]"
               data-node-id="1:128"
-              data-name="Item - li class='c-top-slide__itemContents__tag__item'><a href='https://min-kura.com/archives/archives_tag/..."
+              data-name="Item"
             >
-              <div
-                className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[69.85px]"
-                data-node-id="1:129"
-              >
-                <p className="leading-[14px]">Sườn bì chả</p>
-              </div>
+              <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.48px]">
+                Sườn bì chả
+              </span>
             </div>
             <div
-              className="absolute bg-[#262626] bottom-[40px] left-[101.65px] rounded-[5px] top-0 w-[95.21px]"
+              className="inline-flex items-center justify-center bg-[#262626] h-[32px] px-[12px] rounded-[5px]"
               data-node-id="1:130"
-              data-name="Item - li class='c-top-slide__itemContents__tag__item'><a href='https://min-kura.com/archives/archives_tag/..."
+              data-name="Item"
             >
-              <div
-                className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[71.41px]"
-                data-node-id="1:131"
-              >
-                <p className="leading-[14px]">Ăn đêm Sài Gòn</p>
-              </div>
+              <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.48px]">
+                Ăn đêm Sài Gòn
+              </span>
             </div>
             <div
-              className="absolute bg-[#262626] bottom-[40px] left-[204.86px] rounded-[5px] top-0 w-[116.81px]"
+              className="inline-flex items-center justify-center bg-[#262626] h-[32px] px-[12px] rounded-[5px]"
               data-node-id="1:132"
-              data-name="Item - li class='c-top-slide__itemContents__tag__item'><a href='https://min-kura.com/archives/archives_tag/..."
+              data-name="Item"
             >
-              <div
-                className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[93.01px]"
-                data-node-id="1:133"
-              >
-                <p className="leading-[14px]">Hương vị Nam Bộ</p>
-              </div>
+              <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.48px]">
+                Hương vị Nam Bộ
+              </span>
             </div>
             <div
-              className="absolute bg-[#262626] bottom-[40px] left-[329.67px] rounded-[5px] top-0 w-[132.6px]"
+              className="inline-flex items-center justify-center bg-[#262626] h-[32px] px-[12px] rounded-[5px]"
               data-node-id="1:134"
-              data-name="Item - li class='c-top-slide__itemContents__tag__item'><a href='https://min-kura.com/archives/archives_tag/..."
+              data-name="Item"
             >
-              <div
-                className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[108.8px]"
-                data-node-id="1:135"
-              >
-                <p className="leading-[14px]">Ngon nức tiếng</p>
-              </div>
+              <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.48px]">
+                Ngon nức tiếng
+              </span>
             </div>
             <div
-              className="absolute bg-[#262626] bottom-0 left-0 rounded-[5px] top-[40px] w-[124.93px]"
+              className="inline-flex items-center justify-center bg-[#262626] h-[32px] px-[12px] rounded-[5px]"
               data-node-id="1:136"
-              data-name="Item - li class='c-top-slide__itemContents__tag__item'><a href='https://min-kura.com/archives/archives_tag/..."
+              data-name="Item"
             >
-              <div
-                className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[101.12px]"
-                data-node-id="1:137"
-              >
-                <p className="leading-[14px]">Quán quen phố thị</p>
-              </div>
+              <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.48px]">
+                Quán quen phố thị
+              </span>
             </div>
           </div>
         </div>
@@ -698,45 +674,36 @@ export default function HeroSection() {
             data-name="Background"
           />
           <div
-            className="absolute h-[32px] left-[19.6px] top-[60.6px] w-[446.19px]"
+            className="absolute flex flex-wrap gap-[8px] left-[19.6px] top-[60.6px] w-[446.19px]"
             data-node-id="1:149"
             data-name="List"
           >
             <div
-              className="absolute bg-[#262626] bottom-0 left-0 rounded-[5px] top-0 w-[138.15px]"
+              className="inline-flex items-center justify-center bg-[#262626] h-[32px] px-[12px] rounded-[5px]"
               data-node-id="1:150"
-              data-name="Item - li class='c-top-slide__itemContents__tag__item'><a href='https://min-kura.com/archives/archives_tag/..."
+              data-name="Item"
             >
-              <div
-                className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[114.35px]"
-                data-node-id="1:151"
-              >
-                <p className="leading-[14px]">Lẩu gà lá é</p>
-              </div>
+              <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.48px]">
+                Lẩu gà lá é
+              </span>
             </div>
             <div
-              className="absolute bg-[#262626] bottom-0 left-[146.15px] rounded-[5px] top-0 w-[137.74px]"
+              className="inline-flex items-center justify-center bg-[#262626] h-[32px] px-[12px] rounded-[5px]"
               data-node-id="1:152"
-              data-name="Item - li class='c-top-slide__itemContents__tag__item'><a href='https://min-kura.com/archives/archives_tag/..."
+              data-name="Item"
             >
-              <div
-                className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[113.94px]"
-                data-node-id="1:153"
-              >
-                <p className="leading-[14px]">Đêm lạnh Đà Lạt</p>
-              </div>
+              <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.48px]">
+                Đêm lạnh Đà Lạt
+              </span>
             </div>
             <div
-              className="absolute bg-[#262626] bottom-0 left-[291.89px] rounded-[5px] top-0 w-[89.08px]"
+              className="inline-flex items-center justify-center bg-[#262626] h-[32px] px-[12px] rounded-[5px]"
               data-node-id="1:154"
-              data-name="Item - li class='c-top-slide__itemContents__tag__item'><a href='https://min-kura.com/archives/archives_tag/..."
+              data-name="Item"
             >
-              <div
-                className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[65.28px]"
-                data-node-id="1:155"
-              >
-                <p className="leading-[14px]">Tụ tập bạn bè</p>
-              </div>
+              <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.48px]">
+                Tụ tập bạn bè
+              </span>
             </div>
           </div>
         </div>
@@ -792,81 +759,63 @@ export default function HeroSection() {
             data-name="Background"
           />
           <div
-            className="absolute h-[72px] left-[19.6px] top-[60.6px] w-[482.29px]"
+            className="absolute flex flex-wrap gap-[8px] left-[19.6px] top-[60.6px] w-[482.29px]"
             data-node-id="1:167"
             data-name="List"
           >
             <div
-              className="absolute bg-[#262626] bottom-[40px] left-0 rounded-[5px] top-0 w-[108px]"
+              className="inline-flex items-center justify-center bg-[#262626] h-[32px] px-[12px] rounded-[5px]"
               data-node-id="1:168"
-              data-name="Item - li class='c-top-slide__itemContents__tag__item'><a href='https://min-kura.com/archives/archives_tag/..."
+              data-name="Item"
             >
-              <div
-                className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[84.2px]"
-                data-node-id="1:169"
-              >
-                <p className="leading-[14px]">Bánh xèo giòn rụm</p>
-              </div>
+              <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.48px]">
+                Bánh xèo giòn rụm
+              </span>
             </div>
             <div
-              className="absolute bg-[#262626] bottom-[40px] left-[116px] rounded-[5px] top-0 w-[147.76px]"
+              className="inline-flex items-center justify-center bg-[#262626] h-[32px] px-[12px] rounded-[5px]"
               data-node-id="1:170"
-              data-name="Item - li class='c-top-slide__itemContents__tag__item'><a href='https://min-kura.com/archives/archives_tag/..."
+              data-name="Item"
             >
-              <div
-                className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[123.96px]"
-                data-node-id="1:171"
-              >
-                <p className="leading-[14px]">Nem lụi nướng</p>
-              </div>
+              <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.48px]">
+                Nem lụi nướng
+              </span>
             </div>
             <div
-              className="absolute bg-[#262626] bottom-[40px] left-[271.76px] rounded-[5px] top-0 w-[114.05px]"
+              className="inline-flex items-center justify-center bg-[#262626] h-[32px] px-[12px] rounded-[5px]"
               data-node-id="1:172"
-              data-name="Item - li class='c-top-slide__itemContents__tag__item'><a href='https://min-kura.com/archives/archives_tag/..."
+              data-name="Item"
             >
-              <div
-                className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[90.25px]"
-                data-node-id="1:173"
-              >
-                <p className="leading-[14px]">Đặc sản phố biển</p>
-              </div>
+              <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.48px]">
+                Đặc sản phố biển
+              </span>
             </div>
             <div
-              className="absolute bg-[#262626] bottom-[40px] left-[393.81px] rounded-[5px] top-0 w-[75px]"
+              className="inline-flex items-center justify-center bg-[#262626] h-[32px] px-[12px] rounded-[5px]"
               data-node-id="1:174"
-              data-name="Item - li class='c-top-slide__itemContents__tag__item'><a href='https://min-kura.com/archives/archives_tag/..."
+              data-name="Item"
             >
-              <div
-                className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[51.2px]"
-                data-node-id="1:175"
-              >
-                <p className="leading-[14px]">Gắn kết bạn bè</p>
-              </div>
+              <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.48px]">
+                Gắn kết bạn bè
+              </span>
             </div>
             <div
-              className="absolute bg-[#262626] bottom-0 left-0 rounded-[5px] top-[40px] w-[96.16px]"
+              className="inline-flex items-center justify-center bg-[#262626] h-[32px] px-[12px] rounded-[5px]"
               data-node-id="1:176"
-              data-name="Item - li class='c-top-slide__itemContents__tag__item'><a href='https://min-kura.com/archives/archives_tag/..."
+              data-name="Item"
             >
-              <div
-                className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[72.36px]"
-                data-node-id="1:177"
-              >
-                <p className="leading-[14px]">Ăn vặt & lai rai</p>
-              </div>
+              <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.48px]">
+                Ăn vặt & lai rai
+              </span>
             </div>
             <div
-              className="absolute bg-[#262626] bottom-0 left-[104.16px] rounded-[5px] top-[40px] w-[103px]"
+              className="inline-flex items-center justify-center bg-[#262626] h-[32px] px-[12px] rounded-[5px]"
               data-node-id="1:178"
-              data-name="Item - li class='c-top-slide__itemContents__tag__item'><a href='https://min-kura.com/archives/archives_tag/..."
+              data-name="Item"
             >
-              <div
-                className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[12px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.48px] w-[79.2px]"
-                data-node-id="1:179"
-              >
-                <p className="leading-[14px]">Đậm đà miền Trung</p>
-              </div>
+              <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.48px]">
+                Đậm đà miền Trung
+              </span>
             </div>
           </div>
         </div>

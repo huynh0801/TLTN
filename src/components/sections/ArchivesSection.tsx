@@ -167,69 +167,54 @@ export default function ArchivesSection() {
           </p>
         </div>
         <div
-          className="absolute h-[118px] left-0 right-0 top-[449.91px]"
+          className="absolute flex flex-wrap gap-[8px] left-[70px] right-[70px] top-[449.91px]"
           data-node-id="1:235"
           data-name="List"
         >
           <div
-            className="absolute bg-[#262626] h-[34px] left-[70px] rounded-[5px] top-0 w-[104.71px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:236"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[84.91px]"
-              data-node-id="1:237"
-            >
-              <p className="leading-[14px]">Chả nướng than</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Chả nướng than
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[182.71px] rounded-[5px] top-0 w-[144.84px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:238"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[125.04px]"
-              data-node-id="1:239"
-            >
-              <p className="leading-[14px]">Nước chấm đậm đà</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Nước chấm đậm đà
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[70px] rounded-[5px] top-[42px] w-[110.89px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:240"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[91.09px]"
-              data-node-id="1:241"
-            >
-              <p className="leading-[14px]">Nem cua bể</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Nem cua bể
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[188.89px] rounded-[5px] top-[42px] w-[71.47px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:242"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[51.68px]"
-              data-node-id="1:243"
-            >
-              <p className="leading-[14px]">Hà Nội xưa</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Hà Nội xưa
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[268.36px] rounded-[5px] top-[42px] w-[92.76px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:244"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[72.96px]"
-              data-node-id="1:245"
-            >
-              <p className="leading-[14px]">Quán quen phố thị</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Quán quen phố thị
+            </span>
           </div>
         </div>
         <div
@@ -321,45 +306,36 @@ export default function ArchivesSection() {
           </p>
         </div>
         <div
-          className="absolute h-[34px] left-0 right-0 top-[449.91px]"
+          className="absolute flex flex-wrap gap-[8px] left-[70px] right-[70px] top-[449.91px]"
           data-node-id="1:262"
           data-name="List"
         >
           <div
-            className="absolute bg-[#262626] h-[34px] left-[69.99px] rounded-[5px] top-0 w-[117.49px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:263"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[97.69px]"
-              data-node-id="1:264"
-            >
-              <p className="leading-[14px]">Sườn nướng mật ong</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Sườn nướng mật ong
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[195.48px] rounded-[5px] top-0 w-[90.25px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:265"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[70.45px]"
-              data-node-id="1:266"
-            >
-              <p className="leading-[14px]">Canh rong biển</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Canh rong biển
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[293.73px] rounded-[5px] top-0 w-[129.56px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:267"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[109.76px]"
-              data-node-id="1:268"
-            >
-              <p className="leading-[14px]">Ăn trưa & tối</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Ăn trưa & tối
+            </span>
           </div>
         </div>
         <div
@@ -446,45 +422,36 @@ export default function ArchivesSection() {
           </p>
         </div>
         <div
-          className="absolute h-[34px] left-0 right-0 top-[449.91px]"
+          className="absolute flex flex-wrap gap-[8px] left-[70px] right-[70px] top-[449.91px]"
           data-node-id="1:282"
           data-name="List"
         >
           <div
-            className="absolute bg-[#262626] h-[34px] left-[70px] rounded-[5px] top-0 w-[117.49px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:283"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[97.69px]"
-              data-node-id="1:284"
-            >
-              <p className="leading-[14px]">Thịt bò mềm ngọt</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Thịt bò mềm ngọt
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[195.49px] rounded-[5px] top-0 w-[91.81px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:285"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[72.01px]"
-              data-node-id="1:286"
-            >
-              <p className="leading-[14px]">Nước dùng sánh đậm</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Nước dùng sánh đậm
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[295.3px] rounded-[5px] top-0 w-[129.56px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:287"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[109.76px]"
-              data-node-id="1:288"
-            >
-              <p className="leading-[14px]">Ấm lòng đêm lạnh</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Ấm lòng đêm lạnh
+            </span>
           </div>
         </div>
         <div
@@ -576,57 +543,45 @@ export default function ArchivesSection() {
           </p>
         </div>
         <div
-          className="absolute h-[76px] left-0 right-0 top-[449.91px]"
+          className="absolute flex flex-wrap gap-[8px] left-[70px] right-[70px] top-[449.91px]"
           data-node-id="1:303"
           data-name="List"
         >
           <div
-            className="absolute bg-[#262626] h-[34px] left-[70px] rounded-[5px] top-0 w-[135.23px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:304"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[115.43px]"
-              data-node-id="1:305"
-            >
-              <p className="leading-[14px]">Mì quảng ếch</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Mì quảng ếch
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[213.23px] rounded-[5px] top-0 w-[134.82px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:306"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[115.03px]"
-              data-node-id="1:307"
-            >
-              <p className="leading-[14px]">Rau sống xanh tươi</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Rau sống xanh tươi
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[70px] rounded-[5px] top-[42px] w-[104.71px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:308"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[84.91px]"
-              data-node-id="1:309"
-            >
-              <p className="leading-[14px]">Đậm đà vị biển</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Đậm đà vị biển
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[182.71px] rounded-[5px] top-[42px] w-[95.47px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:310"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[75.67px]"
-              data-node-id="1:311"
-            >
-              <p className="leading-[14px]">Đặc sản Đà Nẵng</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Đặc sản Đà Nẵng
+            </span>
           </div>
         </div>
         <div
@@ -718,45 +673,36 @@ export default function ArchivesSection() {
           </p>
         </div>
         <div
-          className="absolute h-[76px] left-0 right-0 top-[449.91px]"
+          className="absolute flex flex-wrap gap-[8px] left-[69.99px] right-[69.99px] top-[449.91px]"
           data-node-id="1:328"
           data-name="List"
         >
           <div
-            className="absolute bg-[#262626] h-[34px] left-[69.99px] rounded-[5px] top-0 w-[135.23px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:329"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[115.43px]"
-              data-node-id="1:330"
-            >
-              <p className="leading-[14px]">Mắm tôm thơm dậy</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Mắm tôm thơm dậy
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[213.22px] rounded-[5px] top-0 w-[134.82px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:331"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[115.03px]"
-              data-node-id="1:332"
-            >
-              <p className="leading-[14px]">Chả cốm giòn tan</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Chả cốm giòn tan
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[69.99px] rounded-[5px] top-[42px] w-[85.68px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:333"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[65.88px]"
-              data-node-id="1:334"
-            >
-              <p className="leading-[14px]">Phố cổ Hoàn Kiếm</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Phố cổ Hoàn Kiếm
+            </span>
           </div>
         </div>
         <div
@@ -843,45 +789,36 @@ export default function ArchivesSection() {
           </p>
         </div>
         <div
-          className="absolute h-[76px] left-0 right-0 top-[449.91px]"
+          className="absolute flex flex-wrap gap-[8px] left-[70px] right-[70px] top-[449.91px]"
           data-node-id="1:348"
           data-name="List"
         >
           <div
-            className="absolute bg-[#262626] h-[34px] left-[70px] rounded-[5px] top-0 w-[117.49px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:349"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[97.69px]"
-              data-node-id="1:350"
-            >
-              <p className="leading-[14px]">Pate béo ngậy</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Pate béo ngậy
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[195.49px] rounded-[5px] top-0 w-[135.23px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:351"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[115.43px]"
-              data-node-id="1:352"
-            >
-              <p className="leading-[14px]">Đầy ắp nhân thịt</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Đầy ắp nhân thịt
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[70px] rounded-[5px] top-[42px] w-[134.82px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:353"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[115.02px]"
-              data-node-id="1:354"
-            >
-              <p className="leading-[14px]">Ăn vặt Sài Gòn</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Ăn vặt Sài Gòn
+            </span>
           </div>
         </div>
         <div
@@ -973,45 +910,36 @@ export default function ArchivesSection() {
           </p>
         </div>
         <div
-          className="absolute h-[76px] left-0 right-0 top-[449.92px]"
+          className="absolute flex flex-wrap gap-[8px] left-[70px] right-[70px] top-[449.92px]"
           data-node-id="1:373"
           data-name="List"
         >
           <div
-            className="absolute bg-[#262626] h-[34px] left-[70px] rounded-[5px] top-0 w-[135.23px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:374"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.61px)] tracking-[0.6px] w-[115.43px]"
-              data-node-id="1:375"
-            >
-              <p className="leading-[14px]">Bún bò chuẩn Huế</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Bún bò chuẩn Huế
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[213.23px] rounded-[5px] top-0 w-[134.82px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:376"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.61px)] tracking-[0.6px] w-[115.03px]"
-              data-node-id="1:377"
-            >
-              <p className="leading-[14px]">Thịt bắp hoa mềm</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Thịt bắp hoa mềm
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[70px] rounded-[5px] top-[42px] w-[129.56px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:378"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.61px)] tracking-[0.6px] w-[109.76px]"
-              data-node-id="1:379"
-            >
-              <p className="leading-[14px]">Hương vị cố đô</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Hương vị cố đô
+            </span>
           </div>
         </div>
         <div
@@ -1103,45 +1031,36 @@ export default function ArchivesSection() {
           </p>
         </div>
         <div
-          className="absolute h-[118px] left-0 right-0 top-[449.92px]"
+          className="absolute flex flex-wrap gap-[8px] left-[70px] right-[70px] top-[449.92px]"
           data-node-id="1:396"
           data-name="List"
         >
           <div
-            className="absolute bg-[#262626] h-[34px] left-[69.99px] rounded-[5px] top-0 w-[130.28px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:397"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.61px)] tracking-[0.6px] w-[110.48px]"
-              data-node-id="1:398"
-            >
-              <p className="leading-[14px]">Cua bể tươi ngon</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Cua bể tươi ngon
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[208.27px] rounded-[5px] top-0 w-[104.71px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:399"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.61px)] tracking-[0.6px] w-[84.91px]"
-              data-node-id="1:400"
-            >
-              <p className="leading-[14px]">Bánh đa đỏ sợi dai</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Bánh đa đỏ sợi dai
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[69.99px] rounded-[5px] top-[42px] w-[144.84px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:401"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.61px)] tracking-[0.6px] w-[125.04px]"
-              data-node-id="1:402"
-            >
-              <p className="leading-[14px]">Đậm đà vị biển</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Đậm đà vị biển
+            </span>
           </div>
         </div>
         <div
@@ -1228,45 +1147,36 @@ export default function ArchivesSection() {
           </p>
         </div>
         <div
-          className="absolute h-[76px] left-0 right-0 top-[449.92px]"
+          className="absolute flex flex-wrap gap-[8px] left-[70px] right-[70px] top-[449.92px]"
           data-node-id="1:420"
           data-name="List"
         >
           <div
-            className="absolute bg-[#262626] h-[34px] left-[70px] rounded-[5px] top-0 w-[104.71px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:421"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.61px)] tracking-[0.6px] w-[84.91px]"
-              data-node-id="1:422"
-            >
-              <p className="leading-[14px]">Nước mắm xíu mại</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Nước mắm xíu mại
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[182.72px] rounded-[5px] top-0 w-[144.84px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:423"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.61px)] tracking-[0.6px] w-[125.04px]"
-              data-node-id="1:424"
-            >
-              <p className="leading-[14px]">Ăn sáng Đà Lạt</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Ăn sáng Đà Lạt
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[70px] rounded-[5px] top-[42px] w-[92.76px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:427"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.61px)] tracking-[0.6px] w-[72.96px]"
-              data-node-id="1:428"
-            >
-              <p className="leading-[14px]">Món ngon sương mù</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Món ngon sương mù
+            </span>
           </div>
         </div>
         <div
@@ -1358,45 +1268,36 @@ export default function ArchivesSection() {
           </p>
         </div>
         <div
-          className="absolute h-[118px] left-0 right-0 top-[449.91px]"
+          className="absolute flex flex-wrap gap-[8px] left-[70px] right-[70px] top-[449.91px]"
           data-node-id="1:445"
           data-name="List"
         >
           <div
-            className="absolute bg-[#262626] h-[34px] left-[70px] rounded-[5px] top-0 w-[104.71px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:446"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[84.91px]"
-              data-node-id="1:447"
-            >
-              <p className="leading-[14px]">Cá bông lau tươi</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Cá bông lau tươi
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[182.71px] rounded-[5px] top-0 w-[137.75px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:448"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[117.95px]"
-              data-node-id="1:449"
-            >
-              <p className="leading-[14px]">Rau đồng đa dạng</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Rau đồng đa dạng
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[70px] rounded-[5px] top-[42px] w-[91.81px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:452"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[72.01px]"
-              data-node-id="1:453"
-            >
-              <p className="leading-[14px]">Đậm đà Miền Tây</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Đậm đà Miền Tây
+            </span>
           </div>
         </div>
         <div
@@ -1488,45 +1389,36 @@ export default function ArchivesSection() {
           </p>
         </div>
         <div
-          className="absolute h-[118px] left-0 right-0 top-[449.91px]"
+          className="absolute flex flex-wrap gap-[8px] left-[70px] right-[70px] top-[449.91px]"
           data-node-id="1:474"
           data-name="List"
         >
           <div
-            className="absolute bg-[#262626] h-[34px] left-[69.99px] rounded-[5px] top-0 w-[104.71px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:475"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[84.91px]"
-              data-node-id="1:476"
-            >
-              <p className="leading-[14px]">Hải sản tươi sống</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Hải sản tươi sống
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[182.71px] rounded-[5px] top-0 w-[144.84px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:477"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[125.04px]"
-              data-node-id="1:478"
-            >
-              <p className="leading-[14px]">Muối ớt chanh</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Muối ớt chanh
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[69.99px] rounded-[5px] top-[42px] w-[110.89px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:479"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[91.09px]"
-              data-node-id="1:480"
-            >
-              <p className="leading-[14px]">Nhậu đêm phố biển</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Nhậu đêm phố biển
+            </span>
           </div>
         </div>
         <div
@@ -1613,45 +1505,36 @@ export default function ArchivesSection() {
           </p>
         </div>
         <div
-          className="absolute h-[34px] left-0 right-0 top-[416.91px]"
+          className="absolute flex flex-wrap gap-[8px] left-[70px] right-[70px] top-[416.91px]"
           data-node-id="1:497"
           data-name="List"
         >
           <div
-            className="absolute bg-[#262626] h-[34px] left-[70px] rounded-[5px] top-0 w-[71.47px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:498"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[51.67px]"
-              data-node-id="1:499"
-            >
-              <p className="leading-[14px]">Không gian xưa</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Không gian xưa
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[149.48px] rounded-[5px] top-0 w-[101.39px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:500"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[81.59px]"
-              data-node-id="1:501"
-            >
-              <p className="leading-[14px]">Cà phê bơ sữa</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Cà phê bơ sữa
+            </span>
           </div>
           <div
-            className="absolute bg-[#262626] h-[34px] left-[258.86px] rounded-[5px] top-0 w-[92.76px]"
+            className="inline-flex items-center justify-center bg-[#262626] h-[34px] px-[12px] rounded-[5px]"
             data-node-id="1:502"
             data-name="Item"
           >
-            <div
-              className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[17.6px] justify-center leading-[0] left-[10px] not-italic text-[14px] text-white top-[calc(50%-0.6px)] tracking-[0.6px] w-[72.96px]"
-              data-node-id="1:503"
-            >
-              <p className="leading-[14px]">Hẹn hò cuối tuần</p>
-            </div>
+            <span className="font-['Inter:Bold'] font-bold text-[14px] text-white whitespace-nowrap tracking-[0.6px]">
+              Hẹn hò cuối tuần
+            </span>
           </div>
         </div>
         <div
