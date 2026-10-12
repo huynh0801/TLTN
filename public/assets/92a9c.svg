@@ -1,9 +1,16 @@
 <svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="201.936" height="289.535" viewBox="0 0 201.936 289.535" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+  .logo-text {
+    font-family: 'Space Grotesk', 'Work Sans', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-weight: 900;
+    font-size: 96px;
+    letter-spacing: 0.05em;
+    fill: #000000;
+    text-anchor: middle;
+    dominant-baseline: central;
+  }
+</style>
 <g id="Group">
-<path id="Vector" d="M0 29.3624C0 14.7466 10.4438 0 33.7758 0H78.0156C99.0892 0 113.248 15.7582 113.248 39.2181V41.4911H163.34C173.814 41.4911 177.236 34.5625 177.236 32.1752V5.31537H198.279V32.1752C198.279 46.7745 184.92 62.5346 163.34 62.5346H113.248V125.971H92.2052V62.5346H66.5294C51.1103 62.5346 38.596 61.5347 28.2734 59.4787C10.3071 55.8976 0 44.9229 0 29.3624ZM92.2052 39.2181C92.2052 32.43 90.3642 21.0425 78.0156 21.0425H33.7758C25.328 21.0425 21.0493 23.8426 21.0493 29.3624C21.0493 31.8816 21.0493 36.5807 32.3854 38.8402C41.3371 40.621 52.5065 41.4901 66.5303 41.4901H92.2061L92.2052 39.2181Z" fill="black"/>
-<path id="Vector_2" d="M2.07972 96.6794L8.831 76.7511C24.437 82.0384 40.5692 87.5059 67.1354 87.5059H149.227V108.548H67.1393C37.1034 108.548 18.5006 102.244 2.0836 96.6755" fill="black"/>
-<path id="Vector_3" d="M5.5711 161.057L0.646247 181.514L197.011 228.787L201.936 208.33L5.5711 161.057Z" fill="black"/>
-<path id="Vector_4" d="M0 254.462C0 239.311 11.9824 227.886 27.8684 227.886H77.4857C85.1991 227.886 90.7974 223.944 90.7974 218.514V197.222H111.841V218.513C111.841 235.857 97.0719 248.928 77.4857 248.928H27.8684C24.7234 248.928 21.0493 250.381 21.0493 254.461C21.0493 264.146 26.0614 276.235 27.9924 280.075L9.19581 289.534C8.25695 287.665 0 270.79 0 254.462Z" fill="black"/>
-<text x="100.968" y="152" text-anchor="middle" dominant-baseline="central" fill="black" font-family="'Space Grotesk', 'Work Sans', 'Inter', monospace, sans-serif" font-weight="700" font-size="18" letter-spacing="0.2em">HYUN</text>
+  <text x="100.968" y="144.767" transform="rotate(90, 100.968, 144.767)" class="logo-text">HYUN</text>
 </g>
 </svg>
