@@ -136,13 +136,13 @@ export default function ArchivesSection() {
           data-name="Vertical Divider"
         />
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[25px] not-italic right-[388.13px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.13"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[25px] not-italic right-[388.13px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] top-[44px] tracking-[0.6px]"
           data-node-id="1:230"
         >
           <p className="leading-[32px]">TP. Hà Nội</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.73px] right-[26.5px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.5"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.73px] right-[26.5px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.33px] tracking-[0.65px] uppercase"
           data-node-id="1:231"
         >
           <p className="leading-[27.73px]">PHỞ & BÚN</p>
@@ -159,7 +159,7 @@ export default function ArchivesSection() {
           />
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.61px] justify-center leading-[0] left-[70px] not-italic right-[92.03px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.61px] justify-center leading-[0] left-[70px] not-italic right-[92.03px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[17.5px] top-[392.29px] tracking-[0.6px]"
           data-node-id="1:234"
         >
           <p className="leading-[33px]">
@@ -245,7 +245,7 @@ export default function ArchivesSection() {
           data-name="Container"
         >
           <div
-            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-white transition-colors duration-500 text-[16px] text-right top-[16.81px] tracking-[0.16px] w-[86.333px]"
+            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[16px] text-right top-[16.81px] tracking-[0.16px] w-[86.333px]"
             data-node-id="1:252"
           >
             <p className="leading-[34.13px]">Read more</p>
@@ -273,13 +273,13 @@ export default function ArchivesSection() {
           data-name="Vertical Divider"
         />
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[24.99px] not-italic right-[388.15px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.15"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[24.99px] not-italic right-[388.15px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] top-[44px] tracking-[0.6px]"
           data-node-id="1:257"
         >
           <p className="leading-[32px]">TP. Hồ Chí Minh</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.73px] right-[26.51px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.51"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.73px] right-[26.51px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.33px] tracking-[0.65px] uppercase"
           data-node-id="1:258"
         >
           <p className="leading-[27.73px]">CƠM TẤM</p>
@@ -296,7 +296,7 @@ export default function ArchivesSection() {
           />
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.61px] justify-center leading-[0] left-[69.99px] not-italic right-[73.79px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.99"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.61px] justify-center leading-[0] left-[69.99px] not-italic right-[73.79px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[20px] top-[392.29px] tracking-[0.6px]"
           data-node-id="1:261"
         >
           <p className="leading-[33px]">
@@ -364,7 +364,7 @@ export default function ArchivesSection() {
           data-name="Container"
         >
           <div
-            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-white transition-colors duration-500 text-[16px] text-right top-[16.81px] tracking-[0.16px] w-[86.333px]"
+            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[16px] text-right top-[16.81px] tracking-[0.16px] w-[86.333px]"
             data-node-id="1:273"
           >
             <p className="leading-[34.13px]">Read more</p>
@@ -387,13 +387,13 @@ export default function ArchivesSection() {
           data-name="Link paints"
         />
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[25px] not-italic right-[388.14px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.14"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[25px] not-italic right-[388.14px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] top-[44px] tracking-[0.6px]"
           data-node-id="1:277"
         >
           <p className="leading-[32px]">TP. Đà Lạt</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.74px] right-[26.5px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.5"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.74px] right-[26.5px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.33px] tracking-[0.65px] uppercase"
           data-node-id="1:278"
         >
           <p className="leading-[27.73px]">LẨU & NƯỚNG</p>
@@ -410,7 +410,7 @@ export default function ArchivesSection() {
           />
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.61px] justify-center leading-[0] left-[70px] not-italic right-[82.01px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.61px] justify-center leading-[0] left-[70px] not-italic right-[82.01px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[20px] top-[392.29px] tracking-[0.6px]"
           data-node-id="1:281"
         >
           <p className="leading-[33px]">
@@ -478,7 +478,7 @@ export default function ArchivesSection() {
           data-name="Container"
         >
           <div
-            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-white transition-colors duration-500 text-[16px] text-right top-[16.81px] tracking-[0.16px] w-[86.333px]"
+            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[16px] text-right top-[16.81px] tracking-[0.16px] w-[86.333px]"
             data-node-id="1:293"
           >
             <p className="leading-[34.13px]">Read more</p>
@@ -506,13 +506,13 @@ export default function ArchivesSection() {
           data-name="Vertical Divider"
         />
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[25px] not-italic right-[367.64px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.64"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[25px] not-italic right-[367.64px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] top-[44px] tracking-[0.6px]"
           data-node-id="1:298"
         >
           <p className="leading-[32px]">TP. Đà Nẵng</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[446.39px] right-[27.18px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.18"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[446.39px] right-[27.18px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.33px] tracking-[0.65px] uppercase"
           data-node-id="1:299"
         >
           <p className="leading-[27.73px]">MÓN TRUNG</p>
@@ -529,7 +529,7 @@ export default function ArchivesSection() {
           />
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.6px] justify-center leading-[0] left-[70px] not-italic right-[74.37px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.6px] justify-center leading-[0] left-[70px] not-italic right-[74.37px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[20px] top-[392.28px] tracking-[0.6px]"
           data-node-id="1:302"
         >
           <p className="leading-[33px]">
@@ -606,7 +606,7 @@ export default function ArchivesSection() {
           data-name="Container"
         >
           <div
-            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-white transition-colors duration-500 text-[16px] text-right top-[16.8px] tracking-[0.16px] w-[86.333px]"
+            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[16px] text-right top-[16.8px] tracking-[0.16px] w-[86.333px]"
             data-node-id="1:318"
           >
             <p className="leading-[34.13px]">Read more</p>
@@ -634,13 +634,13 @@ export default function ArchivesSection() {
           data-name="Vertical Divider"
         />
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[24.99px] not-italic right-[367.66px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.66"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[24.99px] not-italic right-[367.66px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] top-[44px] tracking-[0.6px]"
           data-node-id="1:323"
         >
           <p className="leading-[32px]">TP. Hà Nội</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[446.4px] right-[27.18px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.18"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[446.4px] right-[27.18px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.33px] tracking-[0.65px] uppercase"
           data-node-id="1:324"
         >
           <p className="leading-[27.73px]">PHỞ & BÚN</p>
@@ -657,7 +657,7 @@ export default function ArchivesSection() {
           />
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.6px] justify-center leading-[0] left-[69.99px] not-italic right-[81.64px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.99"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.6px] justify-center leading-[0] left-[69.99px] not-italic right-[81.64px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[20px] top-[392.28px] tracking-[0.6px]"
           data-node-id="1:327"
         >
           <p className="leading-[33px]">
@@ -725,7 +725,7 @@ export default function ArchivesSection() {
           data-name="Container"
         >
           <div
-            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-white transition-colors duration-500 text-[16px] text-right top-[16.8px] tracking-[0.16px] w-[86.333px]"
+            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[16px] text-right top-[16.8px] tracking-[0.16px] w-[86.333px]"
             data-node-id="1:339"
           >
             <p className="leading-[34.13px]">Read more</p>
@@ -748,13 +748,13 @@ export default function ArchivesSection() {
           data-name="Link paints"
         />
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[25px] not-italic right-[367.65px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.65"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[25px] not-italic right-[367.65px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] top-[44px] tracking-[0.6px]"
           data-node-id="1:343"
         >
           <p className="leading-[32px]">TP. Hồ Chí Minh</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[446.4px] right-[27.18px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.18"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[446.4px] right-[27.18px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.33px] tracking-[0.65px] uppercase"
           data-node-id="1:344"
         >
           <p className="leading-[27.73px]">BÁNH MÌ</p>
@@ -771,7 +771,7 @@ export default function ArchivesSection() {
           />
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.6px] justify-center leading-[0] left-[70px] not-italic right-[84.82px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.6px] justify-center leading-[0] left-[70px] not-italic right-[84.82px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[20px] top-[392.28px] tracking-[0.6px]"
           data-node-id="1:347"
         >
           <p className="leading-[33px]">
@@ -839,7 +839,7 @@ export default function ArchivesSection() {
           data-name="Container"
         >
           <div
-            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-white transition-colors duration-500 text-[16px] text-right top-[16.8px] tracking-[0.16px] w-[86.333px]"
+            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[16px] text-right top-[16.8px] tracking-[0.16px] w-[86.333px]"
             data-node-id="1:363"
           >
             <p className="leading-[34.13px]">Read more</p>
@@ -867,13 +867,13 @@ export default function ArchivesSection() {
           data-name="Vertical Divider"
         />
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[25px] not-italic right-[367.64px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.64"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[25px] not-italic right-[367.64px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] top-[44px] tracking-[0.6px]"
           data-node-id="1:368"
         >
           <p className="leading-[32px]">TP. Huế</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[446.39px] right-[27.18px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.18"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[446.39px] right-[27.18px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.34px] tracking-[0.65px] uppercase"
           data-node-id="1:369"
         >
           <p className="leading-[27.73px]">ĐẶC SẢN</p>
@@ -890,7 +890,7 @@ export default function ArchivesSection() {
           />
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.6px] justify-center leading-[0] left-[70px] not-italic right-[74.71px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.6px] justify-center leading-[0] left-[70px] not-italic right-[74.71px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[20px] top-[392.29px] tracking-[0.6px]"
           data-node-id="1:372"
         >
           <p className="leading-[33px]">
@@ -958,7 +958,7 @@ export default function ArchivesSection() {
           data-name="Container"
         >
           <div
-            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-white transition-colors duration-500 text-[16px] text-right top-[16.8px] tracking-[0.16px] w-[86.333px]"
+            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[16px] text-right top-[16.8px] tracking-[0.16px] w-[86.333px]"
             data-node-id="1:386"
           >
             <p className="leading-[34.13px]">Read more</p>
@@ -986,13 +986,13 @@ export default function ArchivesSection() {
           data-name="Vertical Divider"
         />
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[24.99px] not-italic right-[383.26px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.26"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[24.99px] not-italic right-[383.26px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] top-[44px] tracking-[0.6px]"
           data-node-id="1:391"
         >
           <p className="leading-[32px]">TP. Hải Phòng</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.73px] right-[26.51px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.51"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.73px] right-[26.51px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.34px] tracking-[0.65px] uppercase"
           data-node-id="1:392"
         >
           <p className="leading-[27.73px]">BÁNH ĐA CUA</p>
@@ -1009,7 +1009,7 @@ export default function ArchivesSection() {
           />
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.6px] justify-center leading-[0] left-[69.99px] not-italic right-[83.88px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.99"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.6px] justify-center leading-[0] left-[69.99px] not-italic right-[83.88px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[20px] top-[392.29px] tracking-[0.6px]"
           data-node-id="1:395"
         >
           <p className="leading-[33px]">
@@ -1077,7 +1077,7 @@ export default function ArchivesSection() {
           data-name="Container"
         >
           <div
-            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-white transition-colors duration-500 text-[16px] text-right top-[16.8px] tracking-[0.16px] w-[86.333px]"
+            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[16px] text-right top-[16.8px] tracking-[0.16px] w-[86.333px]"
             data-node-id="1:411"
           >
             <p className="leading-[34.13px]">Read more</p>
@@ -1100,13 +1100,13 @@ export default function ArchivesSection() {
           data-name="Link paints"
         />
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[25px] not-italic right-[383.25px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.25"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[25px] not-italic right-[383.25px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] top-[44px] tracking-[0.6px]"
           data-node-id="1:415"
         >
           <p className="leading-[32px]">TP. Đà Lạt</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.74px] right-[26.5px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.5"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.74px] right-[26.5px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.34px] tracking-[0.65px] uppercase"
           data-node-id="1:416"
         >
           <p className="leading-[27.73px]">ĂN VẶT & PHỐ</p>
@@ -1123,7 +1123,7 @@ export default function ArchivesSection() {
           />
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.6px] justify-center leading-[0] left-[70px] not-italic right-[88.07px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.6px] justify-center leading-[0] left-[70px] not-italic right-[88.07px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[20px] top-[392.29px] tracking-[0.6px]"
           data-node-id="1:419"
         >
           <p className="leading-[33px]">
@@ -1191,7 +1191,7 @@ export default function ArchivesSection() {
           data-name="Container"
         >
           <div
-            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-white transition-colors duration-500 text-[16px] text-right top-[16.8px] tracking-[0.16px] w-[86.333px]"
+            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[16px] text-right top-[16.8px] tracking-[0.16px] w-[86.333px]"
             data-node-id="1:435"
           >
             <p className="leading-[34.13px]">Read more</p>
@@ -1219,13 +1219,13 @@ export default function ArchivesSection() {
           data-name="Vertical Divider"
         />
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[25px] not-italic right-[383.24px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.24"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[25px] not-italic right-[383.24px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] top-[44px] tracking-[0.6px]"
           data-node-id="1:440"
         >
           <p className="leading-[32px]">TP. Cần Thơ</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.73px] right-[26.5px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.5"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.73px] right-[26.5px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.34px] tracking-[0.65px] uppercase"
           data-node-id="1:441"
         >
           <p className="leading-[27.73px]">MÓN MIỀN TÂY</p>
@@ -1242,7 +1242,7 @@ export default function ArchivesSection() {
           />
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.6px] justify-center leading-[0] left-[70px] not-italic right-[75.03px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.6px] justify-center leading-[0] left-[70px] not-italic right-[75.03px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[20px] top-[392.29px] tracking-[0.6px]"
           data-node-id="1:444"
         >
           <p className="leading-[33px]">
@@ -1310,7 +1310,7 @@ export default function ArchivesSection() {
           data-name="Container"
         >
           <div
-            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-white transition-colors duration-500 text-[16px] text-right top-[16.8px] tracking-[0.16px] w-[86.333px]"
+            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[16px] text-right top-[16.8px] tracking-[0.16px] w-[86.333px]"
             data-node-id="1:464"
           >
             <p className="leading-[34.13px]">Read more</p>
@@ -1338,13 +1338,13 @@ export default function ArchivesSection() {
           data-name="Vertical Divider"
         />
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[24.99px] not-italic right-[383.26px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.26"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[24.99px] not-italic right-[383.26px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] top-[44px] tracking-[0.6px]"
           data-node-id="1:469"
         >
           <p className="leading-[32px]">TP. Nha Trang</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.73px] right-[26.51px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.51"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.73px] right-[26.51px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.34px] tracking-[0.65px] uppercase"
           data-node-id="1:470"
         >
           <p className="leading-[27.73px]">HẢI SẢN</p>
@@ -1361,7 +1361,7 @@ export default function ArchivesSection() {
           />
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.6px] justify-center leading-[0] left-[69.99px] not-italic right-[78.02px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.99"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[58.6px] justify-center leading-[0] left-[69.99px] not-italic right-[78.02px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[20px] top-[392.29px] tracking-[0.6px]"
           data-node-id="1:473"
         >
           <p className="leading-[33px]">
@@ -1429,7 +1429,7 @@ export default function ArchivesSection() {
           data-name="Container"
         >
           <div
-            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-white transition-colors duration-500 text-[16px] text-right top-[16.8px] tracking-[0.16px] w-[86.333px]"
+            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[16px] text-right top-[16.8px] tracking-[0.16px] w-[86.333px]"
             data-node-id="1:491"
           >
             <p className="leading-[34.13px]">Read more</p>
@@ -1452,13 +1452,13 @@ export default function ArchivesSection() {
           data-name="Link paints"
         />
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[25px] not-italic right-[383.25px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.25"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[32px] justify-center leading-[0] left-[25px] not-italic right-[383.25px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] top-[44px] tracking-[0.6px]"
           data-node-id="1:495"
         >
           <p className="leading-[32px]">TP. Hồ Chí Minh</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.74px] right-[26.5px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500.5"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.74px] right-[26.5px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.34px] tracking-[0.65px] uppercase"
           data-node-id="1:495-badge"
         >
           <p className="leading-[27.73px]">CÀ PHÊ & CHILL</p>
@@ -1475,7 +1475,7 @@ export default function ArchivesSection() {
           />
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[33px] justify-center leading-[0] left-[70px] not-italic right-[72.75px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500"
+          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[33px] justify-center leading-[0] left-[70px] not-italic right-[72.75px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[20px] top-[376.29px] tracking-[0.6px]"
           data-node-id="1:496"
         >
           <p className="leading-[33px]">
@@ -1543,7 +1543,7 @@ export default function ArchivesSection() {
           data-name="Container"
         >
           <div
-            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-white transition-colors duration-500 text-[16px] text-right top-[16.8px] tracking-[0.16px] w-[86.333px]"
+            className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Work_Sans:Medium'] font-medium h-[19.2px] justify-center leading-[0] right-[-0.33px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[16px] text-right top-[16.8px] tracking-[0.16px] w-[86.333px]"
             data-node-id="1:510"
           >
             <p className="leading-[34.13px]">Read more</p>
