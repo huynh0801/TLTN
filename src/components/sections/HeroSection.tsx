@@ -1,20 +1,17 @@
-"use client" /* Left preview teaser */ /* Slide 0: IMG_1592 */ /* Slide 1: IMG_5097 */ /* Slide 2: IMG_3206 */ /* Slide 3: LINE_ALBUM */ /* Main central container */ /* Left Arrow Button */ /* Central main photo frame with smooth crossfade and hover rounding (bo tròn) */ /* Slide 1: IMG_5097 */ /* Slide 3: LINE_ALBUM */ /* Slide 0: IMG_1592 */ /* Slide 2: IMG_3206 */ /* Right Arrow Button */ /* Pickup Indicator */ /* Pagination Dots */ /* Slide Card 0: TP. Hà Nội - Phở Bát Đàn */ /* Slide Card 1: TP. Hồ Chí Minh - Cơm Tấm Ba Ghiền */ /* Slide Card 2: TP. Đà Lạt - Lẩu Gà Lá É Tao Ngộ */ /* Slide Card 3: TP. Đà Nẵng - Bánh Xèo & Nem Lụi Bà Dưỡng */ /* Right preview teaser */ /* Slide 3: LINE_ALBUM */ /* Slide 2: IMG_3206 */ /* Slide 1: IMG_5097 */ /* Slide 0: IMG_1592 */
+"use client" /* Left preview teaser */ /* Slide 0: Phở Bát Đàn */ /* Slide 1: Cơm Tấm Ba Ghiền */ /* Slide 2: Lẩu Gà Lá É Tao Ngộ */ /* Slide 3: Bánh Xèo Bà Dưỡng */ /* Main central container */ /* Left Arrow Button */ /* Central main photo frame with smooth crossfade and UNIFORM hover rounding (bo tròn) */ /* Slide 0: Phở Bát Đàn */ /* Slide 1: Cơm Tấm Ba Ghiền */ /* Slide 2: Lẩu Gà Lá É Tao Ngộ */ /* Slide 3: Bánh Xèo & Nem Lụi Bà Dưỡng */ /* Right Arrow Button */ /* Pickup Indicator */ /* Pagination Dots */ /* Slide Card 0: TP. Hà Nội - Phở Bát Đàn */ /* Slide Card 1: TP. Hồ Chí Minh - Cơm Tấm Ba Ghiền */ /* Slide Card 2: TP. Đà Lạt - Lẩu Gà Lá É Tao Ngộ */ /* Slide Card 3: TP. Đà Nẵng - Bánh Xèo & Nem Lụi Bà Dưỡng */ /* Right preview teaser */ /* Slide 3: Bánh Xèo Bà Dưỡng */ /* Slide 2: Lẩu Gà Lá É Tao Ngộ */ /* Slide 1: Cơm Tấm Ba Ghiền */ /* Slide 0: Phở Bát Đàn */
+
 import { useState, useEffect } from "react"
 import {
   imgGroup,
   imgGroup1,
   imgGroup2,
-  imgImg1592Jpg,
   imgImg1592Jpg1,
   imgImg3206ScaledJpg,
   imgImg5097F09F8C9FScaledJpeg,
   imgImgTopTilte02Svg,
   imgLineAlbum22071822800X5331Jpg,
-  imgLinkImg5097F09F8C9FScaledJpeg,
   imgPickup,
 } from "@/constants/assets"
-
-const hoverRadiusValues = ["108px", "60px", "108px 60px", "60px 108px"]
 
 function TabCornerCurve({ isHovered }: { isHovered?: boolean }) {
   return (
@@ -133,6 +130,7 @@ export default function HeroSection() {
           data-node-id="1:25"
           data-name="Background"
         />
+
         {}
         <div
           className="absolute inset-[121.6px_1421.35px_289.8px_0] overflow-clip rounded-[10px]"
@@ -146,101 +144,66 @@ export default function HeroSection() {
           >
             {}
             <div
-              className={`absolute inset-[-1%] transition-opacity duration-500 ease-in-out ${
+              className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
                 prevIndex === 0 ? "opacity-100 z-10" : "opacity-0 z-0"
               }`}
               data-node-id="1:28"
               data-name="Mask Group"
             >
-              <div
-                className="absolute inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[428.4px_285.6px]"
-                data-node-id="1:31"
-                style={{ maskImage: `url("${imgImg1592Jpg}")` }}
-                data-name="IMG_1592.jpg"
-              >
-                <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                  <img
-                    alt=""
-                    className="absolute h-[112.5%] left-0 max-w-none top-[-6.25%] w-full"
-                    src={imgImg1592Jpg1}
-                  />
-                </div>
-              </div>
+              <img
+                alt="Phở Bát Đàn"
+                className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+                src={imgImg1592Jpg1}
+              />
             </div>
             {}
             <div
-              className={`absolute inset-[-1%] transition-opacity duration-500 ease-in-out ${
+              className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
                 prevIndex === 1 ? "opacity-100 z-10" : "opacity-0 z-0"
               }`}
               data-node-id="1:32"
               data-name="Mask Group"
             >
-              <div
-                className="absolute inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[428.4px_285.6px]"
-                data-node-id="1:35"
-                style={{ maskImage: `url("${imgImg1592Jpg}")` }}
-                data-name="IMG_5097%F0%9F%8C%9F-scaled.jpeg"
-              >
-                <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                  <img
-                    alt=""
-                    className="absolute h-[100.02%] left-0 max-w-none top-[-0.01%] w-full"
-                    src={imgImg5097F09F8C9FScaledJpeg}
-                  />
-                </div>
-              </div>
+              <img
+                alt="Cơm Tấm Ba Ghiền"
+                className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+                src={imgImg5097F09F8C9FScaledJpeg}
+              />
             </div>
             {}
             <div
-              className={`absolute inset-[-1%_-8.14%_-1%_6.14%] transition-opacity duration-500 ease-in-out ${
+              className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
                 prevIndex === 2 ? "opacity-100 z-10" : "opacity-0 z-0"
               }`}
               data-node-id="1:36"
               data-name="Mask Group"
             >
-              <div
-                className="absolute inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[428.4px_285.6px]"
-                data-node-id="1:39"
-                style={{ maskImage: `url("${imgImg1592Jpg}")` }}
-                data-name="IMG_3206-scaled.jpg"
-              >
-                <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                  <img
-                    alt=""
-                    className="absolute h-[112.5%] left-0 max-w-none top-[-6.25%] w-full"
-                    src={imgImg3206ScaledJpg}
-                  />
-                </div>
-              </div>
+              <img
+                alt="Lẩu Gà Lá É"
+                className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+                src={imgImg3206ScaledJpg}
+              />
             </div>
             {}
             <div
-              className={`absolute inset-[-1%] transition-opacity duration-500 ease-in-out ${
+              className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
                 prevIndex === 3 ? "opacity-100 z-10" : "opacity-0 z-0"
               }`}
               data-node-id="1:40"
               data-name="Mask Group"
             >
-              <div
-                className="absolute inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[428.4px_285.6px]"
-                data-node-id="1:43"
-                style={{ maskImage: `url("${imgImg1592Jpg}")` }}
-                data-name="LINE_ALBUM_220718_22-800x533-1.jpg"
-              >
-                <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                  <img
-                    alt=""
-                    className="absolute h-full left-[-0.03%] max-w-none top-0 w-[100.06%]"
-                    src={imgLineAlbum22071822800X5331Jpg}
-                  />
-                </div>
-              </div>
+              <img
+                alt="Bánh Xèo & Nem Lụi Bà Dưỡng"
+                className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+                src={imgLineAlbum22071822800X5331Jpg}
+              />
             </div>
           </div>
         </div>
+
         {}
         <div
-          className="absolute border border-[#1c1c1c] border-solid bottom-[162.2px] left-[540.68px] rounded-[10px] top-0 w-[760px]"
+          className="absolute border border-[#1c1c1c] border-solid bottom-[162.2px] left-[540.68px] rounded-[10px] top-0 w-[760px] z-10"
           data-node-id="1:44"
           data-name="Border"
         >
@@ -249,6 +212,7 @@ export default function HeroSection() {
             data-node-id="1:45"
             data-name="Background"
           />
+
           {}
           <button
             type="button"
@@ -295,6 +259,7 @@ export default function HeroSection() {
               </div>
             </div>
           </button>
+
           {}
           <div
             className="-translate-y-1/2 absolute h-[440px] left-[48.6px] overflow-clip right-[48.6px] top-1/2 cursor-pointer z-0"
@@ -312,9 +277,7 @@ export default function HeroSection() {
             <div
               className="absolute inset-0 overflow-hidden transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)]"
               style={{
-                borderRadius: isHovered
-                  ? hoverRadiusValues[activeSlide]
-                  : "10px",
+                borderRadius: isHovered ? "108px" : "10px",
               }}
               data-node-id="1:56"
               data-name="Container"
@@ -322,116 +285,70 @@ export default function HeroSection() {
               <div
                 className="absolute inset-0 overflow-hidden transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)]"
                 style={{
-                  borderRadius: isHovered
-                    ? hoverRadiusValues[activeSlide]
-                    : "10px",
+                  borderRadius: isHovered ? "108px" : "10px",
                 }}
                 data-node-id="1:57"
                 data-name="Container"
               >
                 {}
                 <div
-                  className={`absolute inset-[-1%] transition-opacity duration-500 ease-in-out ${
-                    activeSlide === 1 ? "opacity-100 z-10" : "opacity-0 z-0"
-                  }`}
-                  data-node-id="1:58"
-                  data-name="Mask Group"
-                >
-                  <div
-                    className="absolute inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[674.01px_448.8px]"
-                    data-node-id="1:61"
-                    style={{
-                      maskImage: `url("${imgLinkImg5097F09F8C9FScaledJpeg}")`,
-                    }}
-                    data-name="Link → IMG_5097%F0%9F%8C%9F-scaled.jpeg"
-                  >
-                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                      <img
-                        alt=""
-                        className="absolute h-[100.14%] left-0 max-w-none top-[-0.07%] w-full"
-                        src={imgImg5097F09F8C9FScaledJpeg}
-                      />
-                    </div>
-                  </div>
-                </div>
-                {}
-                <div
-                  className={`absolute inset-[-1%] transition-opacity duration-500 ease-in-out ${
-                    activeSlide === 3 ? "opacity-100 z-10" : "opacity-0 z-0"
-                  }`}
-                  data-node-id="1:62"
-                  data-name="Mask Group"
-                >
-                  <div
-                    className="absolute inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[674.01px_448.8px]"
-                    data-node-id="1:65"
-                    style={{
-                      maskImage: `url("${imgLinkImg5097F09F8C9FScaledJpeg}")`,
-                    }}
-                    data-name="Link → LINE_ALBUM_220718_22-800x533-1.jpg"
-                  >
-                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                      <img
-                        alt=""
-                        className="absolute h-[100.06%] left-0 max-w-none top-[-0.03%] w-full"
-                        src={imgLineAlbum22071822800X5331Jpg}
-                      />
-                    </div>
-                  </div>
-                </div>
-                {}
-                <div
-                  className={`absolute inset-[-1%_-8.14%_-1%_6.14%] transition-opacity duration-500 ease-in-out ${
+                  className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
                     activeSlide === 0 ? "opacity-100 z-10" : "opacity-0 z-0"
                   }`}
-                  data-node-id="1:66"
-                  data-name="Mask Group"
+                  data-name="Slide 0 - Phở Bát Đàn"
                 >
-                  <div
-                    className="absolute inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[674.01px_448.8px]"
-                    data-node-id="1:69"
-                    style={{
-                      maskImage: `url("${imgLinkImg5097F09F8C9FScaledJpeg}")`,
-                    }}
-                    data-name="Link → IMG_1592.jpg"
-                  >
-                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                      <img
-                        alt=""
-                        className="absolute h-[112.64%] left-0 max-w-none top-[-6.32%] w-full"
-                        src={imgImg1592Jpg1}
-                      />
-                    </div>
-                  </div>
+                  <img
+                    alt="Phở Bát Đàn"
+                    className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+                    src={imgImg1592Jpg1}
+                  />
                 </div>
+
                 {}
                 <div
-                  className={`absolute inset-[-1%] transition-opacity duration-500 ease-in-out ${
+                  className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
+                    activeSlide === 1 ? "opacity-100 z-10" : "opacity-0 z-0"
+                  }`}
+                  data-name="Slide 1 - Cơm Tấm Ba Ghiền"
+                >
+                  <img
+                    alt="Cơm Tấm Ba Ghiền"
+                    className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+                    src={imgImg5097F09F8C9FScaledJpeg}
+                  />
+                </div>
+
+                {}
+                <div
+                  className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
                     activeSlide === 2 ? "opacity-100 z-10" : "opacity-0 z-0"
                   }`}
-                  data-node-id="1:70"
-                  data-name="Mask Group"
+                  data-name="Slide 2 - Lẩu Gà Lá É"
                 >
-                  <div
-                    className="absolute inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[674.01px_448.8px]"
-                    data-node-id="1:73"
-                    style={{
-                      maskImage: `url("${imgLinkImg5097F09F8C9FScaledJpeg}")`,
-                    }}
-                    data-name="Link → IMG_3206-scaled.jpg"
-                  >
-                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                      <img
-                        alt=""
-                        className="absolute h-[112.64%] left-0 max-w-none top-[-6.32%] w-full"
-                        src={imgImg3206ScaledJpg}
-                      />
-                    </div>
-                  </div>
+                  <img
+                    alt="Lẩu Gà Lá É Tao Ngộ"
+                    className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+                    src={imgImg3206ScaledJpg}
+                  />
+                </div>
+
+                {}
+                <div
+                  className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
+                    activeSlide === 3 ? "opacity-100 z-10" : "opacity-0 z-0"
+                  }`}
+                  data-name="Slide 3 - Bánh Xèo & Nem Lụi Bà Dưỡng"
+                >
+                  <img
+                    alt="Bánh Xèo & Nem Lụi Bà Dưỡng"
+                    className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+                    src={imgLineAlbum22071822800X5331Jpg}
+                  />
                 </div>
               </div>
             </div>
           </div>
+
           {}
           <button
             type="button"
@@ -484,11 +401,13 @@ export default function HeroSection() {
               </div>
             </div>
           </button>
+
           <div
             className="absolute bg-white bottom-[-1.4px] h-[4px] left-[calc(4.16%-0.92px)] right-[calc(4.96%-0.9px)]"
             data-node-id="1:83"
             data-name="Background"
           />
+
           {}
           <div
             className="absolute flex h-[110.62px] items-center justify-center right-[-20.78px] top-[43.6px] w-[45px]"
@@ -522,6 +441,7 @@ export default function HeroSection() {
               </div>
             </div>
           </div>
+
           {}
           <button
             type="button"
@@ -1253,6 +1173,7 @@ export default function HeroSection() {
           data-node-id="1:180"
           data-name="Background"
         />
+
         {}
         <div
           className="absolute inset-[121.6px_-0.01px_289.8px_1421.36px] overflow-clip rounded-[10px]"
@@ -1266,95 +1187,59 @@ export default function HeroSection() {
           >
             {}
             <div
-              className={`absolute inset-[-1%] transition-opacity duration-500 ease-in-out ${
+              className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
                 nextIndex === 3 ? "opacity-100 z-10" : "opacity-0 z-0"
               }`}
               data-node-id="1:183"
               data-name="Mask Group"
             >
-              <div
-                className="absolute inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[428.4px_285.6px]"
-                data-node-id="1:186"
-                style={{ maskImage: `url("${imgImg1592Jpg}")` }}
-                data-name="LINE_ALBUM_220718_22-800x533-1.jpg"
-              >
-                <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                  <img
-                    alt=""
-                    className="absolute h-full left-[-0.03%] max-w-none top-0 w-[100.06%]"
-                    src={imgLineAlbum22071822800X5331Jpg}
-                  />
-                </div>
-              </div>
+              <img
+                alt="Bánh Xèo & Nem Lụi Bà Dưỡng"
+                className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+                src={imgLineAlbum22071822800X5331Jpg}
+              />
             </div>
             {}
             <div
-              className={`absolute inset-[-1%] transition-opacity duration-500 ease-in-out ${
+              className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
                 nextIndex === 2 ? "opacity-100 z-10" : "opacity-0 z-0"
               }`}
               data-node-id="1:187"
               data-name="Mask Group"
             >
-              <div
-                className="absolute inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[428.4px_285.6px]"
-                data-node-id="1:190"
-                style={{ maskImage: `url("${imgImg1592Jpg}")` }}
-                data-name="IMG_3206-scaled.jpg"
-              >
-                <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                  <img
-                    alt=""
-                    className="absolute h-[112.5%] left-0 max-w-none top-[-6.25%] w-full"
-                    src={imgImg3206ScaledJpg}
-                  />
-                </div>
-              </div>
+              <img
+                alt="Lẩu Gà Lá É"
+                className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+                src={imgImg3206ScaledJpg}
+              />
             </div>
             {}
             <div
-              className={`absolute inset-[-1%_-8.14%_-1%_6.14%] transition-opacity duration-500 ease-in-out ${
+              className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
                 nextIndex === 1 ? "opacity-100 z-10" : "opacity-0 z-0"
               }`}
               data-node-id="1:191"
               data-name="Mask Group"
             >
-              <div
-                className="absolute inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[428.4px_285.6px]"
-                data-node-id="1:194"
-                style={{ maskImage: `url("${imgImg1592Jpg}")` }}
-                data-name="IMG_5097%F0%9F%8C%9F-scaled.jpeg"
-              >
-                <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                  <img
-                    alt=""
-                    className="absolute h-[100.02%] left-0 max-w-none top-[-0.01%] w-full"
-                    src={imgImg5097F09F8C9FScaledJpeg}
-                  />
-                </div>
-              </div>
+              <img
+                alt="Cơm Tấm Ba Ghiền"
+                className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+                src={imgImg5097F09F8C9FScaledJpeg}
+              />
             </div>
             {}
             <div
-              className={`absolute inset-[-1%] transition-opacity duration-500 ease-in-out ${
+              className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
                 nextIndex === 0 ? "opacity-100 z-10" : "opacity-0 z-0"
               }`}
               data-node-id="1:195"
               data-name="Mask Group"
             >
-              <div
-                className="absolute inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[428.4px_285.6px]"
-                data-node-id="1:198"
-                style={{ maskImage: `url("${imgImg1592Jpg}")` }}
-                data-name="IMG_1592.jpg"
-              >
-                <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                  <img
-                    alt=""
-                    className="absolute h-[112.5%] left-0 max-w-none top-[-6.25%] w-full"
-                    src={imgImg1592Jpg1}
-                  />
-                </div>
-              </div>
+              <img
+                alt="Phở Bát Đàn"
+                className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+                src={imgImg1592Jpg1}
+              />
             </div>
           </div>
         </div>

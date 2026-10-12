@@ -229,17 +229,15 @@ export default function ArchivesSection() {
           </div>
         </div>
         <div
-          className="absolute aspect-[366.92999267578125/244.61000061035156] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
+          className="absolute aspect-[366.93/244.61] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
           data-node-id="1:249"
           data-name="Container"
         >
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img
-              alt=""
-              className="absolute h-[112.5%] left-0 max-w-none top-[-6.25%] w-full"
-              src={imgImg3206ScaledJpg}
-            />
-          </div>
+          <img
+            alt="Bún Chả Hương Liên"
+            className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+            src={imgImg3206ScaledJpg}
+          />
         </div>
         <div
           className="absolute h-[34.13px] overflow-clip right-[26px] top-[613.98px] w-[86px]"
@@ -350,17 +348,15 @@ export default function ArchivesSection() {
           </div>
         </div>
         <div
-          className="absolute aspect-[366.94000244140625/244.6300048828125] left-[69.99px] overflow-hidden right-[70.01px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
+          className="absolute aspect-[366.93/244.61] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
           data-node-id="1:270"
           data-name="Container"
         >
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img
-              alt=""
-              className="absolute left-0 max-w-none size-full top-0"
-              src={imgContainer}
-            />
-          </div>
+          <img
+            alt="Cơm Tấm Phúc Lộc Thọ"
+            className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+            src={imgContainer}
+          />
         </div>
         <div
           className="absolute h-[34.13px] overflow-clip right-[26.01px] top-[613.98px] w-[86px]"
@@ -466,17 +462,15 @@ export default function ArchivesSection() {
           </div>
         </div>
         <div
-          className="absolute aspect-[366.94000244140625/244.6300048828125] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
+          className="absolute aspect-[366.93/244.61] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
           data-node-id="1:290"
           data-name="Container"
         >
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img
-              alt=""
-              className="absolute h-full left-[-0.03%] max-w-none top-0 w-[100.06%]"
-              src={imgContainer1}
-            />
-          </div>
+          <img
+            alt="Lẩu Bò Ba Toa Quán Gỗ"
+            className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+            src={imgContainer1}
+          />
         </div>
         <div
           className="absolute h-[34.13px] overflow-clip right-[26px] top-[613.98px] w-[86px]"
@@ -596,17 +590,15 @@ export default function ArchivesSection() {
           </div>
         </div>
         <div
-          className="absolute aspect-[366.92999267578125/244.61000061035156] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
+          className="absolute aspect-[366.93/244.61] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
           data-node-id="1:315"
           data-name="Container"
         >
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img
-              alt=""
-              className="absolute h-[112.5%] left-0 max-w-none top-[-6.25%] w-full"
-              src={imgImg1592Jpg1}
-            />
-          </div>
+          <img
+            alt="Mì Quảng Bếp Trang"
+            className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+            src={imgImg1592Jpg1}
+          />
         </div>
         <div
           className="absolute h-[34.13px] overflow-clip right-[26px] top-[571.98px] w-[86px]"
@@ -717,17 +709,15 @@ export default function ArchivesSection() {
           </div>
         </div>
         <div
-          className="absolute aspect-[366.94000244140625/244.6300048828125] left-[69.99px] overflow-hidden right-[70.01px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
+          className="absolute aspect-[366.93/244.61] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
           data-node-id="1:336"
           data-name="Container"
         >
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img
-              alt=""
-              className="absolute h-[100.02%] left-0 max-w-none top-[-0.01%] w-full"
-              src={imgImg5097F09F8C9FScaledJpeg}
-            />
-          </div>
+          <img
+            alt="Bún Đậu Mẹt Hàng Khay"
+            className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+            src={imgImg5097F09F8C9FScaledJpeg}
+          />
         </div>
         <div
           className="absolute h-[34.13px] overflow-clip right-[26.01px] top-[571.98px] w-[86px]"
@@ -833,17 +823,15 @@ export default function ArchivesSection() {
           </div>
         </div>
         <div
-          className="absolute aspect-[366.94000244140625/244.6300048828125] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
+          className="absolute aspect-[366.93/244.61] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
           data-node-id="1:360"
           data-name="Container"
         >
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img
-              alt=""
-              className="absolute h-[100.02%] left-0 max-w-none top-[-0.01%] w-full"
-              src={imgContainer2}
-            />
-          </div>
+          <img
+            alt="Bánh Mì Huỳnh Hoa"
+            className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+            src={imgContainer2}
+          />
         </div>
         <div
           className="absolute h-[34.13px] overflow-clip right-[26px] top-[571.98px] w-[86px]"
@@ -954,17 +942,15 @@ export default function ArchivesSection() {
           </div>
         </div>
         <div
-          className="absolute aspect-[366.92999267578125/244.61000061035156] left-[70px] overflow-clip right-[70px] rounded-[10px] top-[93.23px]"
+          className="absolute aspect-[366.93/244.61] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
           data-node-id="1:383"
           data-name="Container"
         >
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img
-              alt=""
-              className="absolute h-full left-[-0.02%] max-w-none top-0 w-[100.03%]"
-              src={imgContainer3}
-            />
-          </div>
+          <img
+            alt="Bún Bò Huế Mụ Rơi"
+            className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+            src={imgContainer3}
+          />
         </div>
         <div
           className="absolute h-[34.13px] overflow-clip right-[26px] top-[613.99px] w-[86px]"
@@ -1075,17 +1061,15 @@ export default function ArchivesSection() {
           </div>
         </div>
         <div
-          className="absolute aspect-[366.94000244140625/244.6300048828125] left-[69.99px] overflow-clip right-[70.01px] rounded-[10px] top-[93.23px]"
+          className="absolute aspect-[366.93/244.61] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
           data-node-id="1:408"
           data-name="Container"
         >
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img
-              alt=""
-              className="absolute h-[112.5%] left-0 max-w-none top-[-6.25%] w-full"
-              src={imgContainer4}
-            />
-          </div>
+          <img
+            alt="Bánh Đa Cua Bể Bà Cụ"
+            className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+            src={imgContainer4}
+          />
         </div>
         <div
           className="absolute h-[34.13px] overflow-clip right-[26.01px] top-[613.99px] w-[86px]"
@@ -1191,17 +1175,15 @@ export default function ArchivesSection() {
           </div>
         </div>
         <div
-          className="absolute aspect-[366.94000244140625/244.6300048828125] left-[70px] overflow-clip right-[70px] rounded-[10px] top-[93.23px]"
+          className="absolute aspect-[366.93/244.61] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
           data-node-id="1:432"
           data-name="Container"
         >
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img
-              alt=""
-              className="absolute h-full left-[-0.03%] max-w-none top-0 w-[100.06%]"
-              src={imgContainer5}
-            />
-          </div>
+          <img
+            alt="Bánh Căn Lệ Đà Lạt"
+            className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+            src={imgContainer5}
+          />
         </div>
         <div
           className="absolute h-[34.13px] overflow-clip right-[26px] top-[613.99px] w-[86px]"
@@ -1312,17 +1294,15 @@ export default function ArchivesSection() {
           </div>
         </div>
         <div
-          className="absolute aspect-[366.92999267578125/244.61000061035156] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
+          className="absolute aspect-[366.93/244.61] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
           data-node-id="1:461"
           data-name="Container"
         >
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img
-              alt=""
-              className="absolute h-full left-[-0.9%] max-w-none top-0 w-[101.79%]"
-              src={imgContainer6}
-            />
-          </div>
+          <img
+            alt="Lẩu Mắm Dạ Lý Cần Thơ"
+            className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+            src={imgContainer6}
+          />
         </div>
         <div
           className="absolute h-[34.13px] overflow-clip right-[26px] top-[613.99px] w-[86px]"
@@ -1433,17 +1413,15 @@ export default function ArchivesSection() {
           </div>
         </div>
         <div
-          className="absolute aspect-[366.94000244140625/244.6300048828125] left-[69.99px] overflow-hidden right-[70.01px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
+          className="absolute aspect-[366.93/244.61] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
           data-node-id="1:488"
           data-name="Container"
         >
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img
-              alt=""
-              className="absolute left-0 max-w-none size-full top-0"
-              src={imgContainer7}
-            />
-          </div>
+          <img
+            alt="Hải Sản Thanh Sương"
+            className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+            src={imgContainer7}
+          />
         </div>
         <div
           className="absolute h-[34.13px] overflow-clip right-[26.01px] top-[613.99px] w-[86px]"
@@ -1549,17 +1527,15 @@ export default function ArchivesSection() {
           </div>
         </div>
         <div
-          className="absolute aspect-[366.94000244140625/244.6300048828125] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
+          className="absolute aspect-[366.93/244.61] left-[70px] overflow-hidden right-[70px] rounded-[10px] group-hover:rounded-[108px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] top-[93.22px]"
           data-node-id="1:507"
           data-name="Container"
         >
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img
-              alt=""
-              className="absolute h-[112.5%] left-0 max-w-none top-[-6.25%] w-full"
-              src={imgContainer8}
-            />
-          </div>
+          <img
+            alt="Cà Phê Đỗ Phủ"
+            className="absolute inset-0 size-full object-cover object-center pointer-events-none"
+            src={imgContainer8}
+          />
         </div>
         <div
           className="absolute h-[34.13px] overflow-clip right-[26px] top-[613.99px] w-[86px]"
