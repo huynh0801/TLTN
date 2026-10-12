@@ -44,12 +44,12 @@ export default function HeroSection() {
         </div>
       </div>
       <div
-        className="absolute z-10 bottom-[65.82px] h-[211.78px] overflow-clip right-[-8.77px] w-[196.99px]"
+        className="absolute z-10 bottom-[65.82px] h-[211.78px] overflow-visible right-[-8.77px] w-[196.99px]"
         data-node-id="1:14"
         data-name="img_top_tilte02.svg"
       >
         <div
-          className="-translate-x-1/2 -translate-y-1/2 absolute h-[211.771px] left-1/2 overflow-clip top-1/2 w-[196.99px]"
+          className="-translate-x-1/2 -translate-y-1/2 absolute h-[211.771px] left-1/2 overflow-visible top-1/2 w-[196.99px]"
           data-node-id="1:15"
           data-name="img_top_tilte02.svg"
         >
