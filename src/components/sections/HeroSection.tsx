@@ -1,5 +1,4 @@
 "use client" /* Left preview teaser */ /* Slide 0: IMG_1592 */ /* Slide 1: IMG_5097 */ /* Slide 2: IMG_3206 */ /* Slide 3: LINE_ALBUM */ /* Main central container */ /* Left Arrow Button */ /* Central main photo frame with smooth crossfade and hover rounding (bo tròn) */ /* Slide 1: IMG_5097 */ /* Slide 3: LINE_ALBUM */ /* Slide 0: IMG_1592 */ /* Slide 2: IMG_3206 */ /* Right Arrow Button */ /* Pickup Indicator */ /* Pagination Dots */ /* Slide Card 0: TP. Hà Nội - Phở Bát Đàn */ /* Slide Card 1: TP. Hồ Chí Minh - Cơm Tấm Ba Ghiền */ /* Slide Card 2: TP. Đà Lạt - Lẩu Gà Lá É Tao Ngộ */ /* Slide Card 3: TP. Đà Nẵng - Bánh Xèo & Nem Lụi Bà Dưỡng */ /* Right preview teaser */ /* Slide 3: LINE_ALBUM */ /* Slide 2: IMG_3206 */ /* Slide 1: IMG_5097 */ /* Slide 0: IMG_1592 */
-
 import { useState, useEffect } from "react"
 import {
   imgGroup,
@@ -298,7 +297,7 @@ export default function HeroSection() {
           </button>
           {}
           <div
-            className="-translate-y-1/2 absolute h-[440px] left-[48.6px] overflow-clip right-[48.6px] top-1/2 cursor-pointer z-10"
+            className="-translate-y-1/2 absolute h-[440px] left-[48.6px] overflow-clip right-[48.6px] top-1/2 cursor-pointer z-0"
             data-node-id="1:55"
             data-name="Container"
             onMouseEnter={() => {
@@ -576,7 +575,7 @@ export default function HeroSection() {
             setIsHovered(false)
             setIsPaused(false)
           }}
-          className={`group cursor-pointer absolute border border-solid bottom-[126.22px] left-[492.42px] rounded-bl-[10px] rounded-br-[10px] rounded-tr-[10px] top-[402.98px] w-[523.49px] transition-all duration-300 ${
+          className={`group cursor-pointer absolute z-30 border border-solid bottom-[126.22px] left-[492.42px] rounded-bl-[10px] rounded-br-[10px] rounded-tr-[10px] top-[402.98px] w-[523.49px] transition-all duration-300 ${
             isHovered
               ? "bg-[#07374d] border-[#07374d]"
               : "bg-white hover:bg-[#07374d] border-[#2b2b2b] hover:border-[#07374d]"
@@ -723,7 +722,7 @@ export default function HeroSection() {
             setIsHovered(false)
             setIsPaused(false)
           }}
-          className={`group cursor-pointer absolute border border-solid bottom-[126.22px] left-[492.42px] rounded-bl-[10px] rounded-br-[10px] rounded-tr-[10px] top-[402.98px] w-[523.49px] transition-all duration-300 ${
+          className={`group cursor-pointer absolute z-30 border border-solid bottom-[126.22px] left-[492.42px] rounded-bl-[10px] rounded-br-[10px] rounded-tr-[10px] top-[402.98px] w-[523.49px] transition-all duration-300 ${
             isHovered
               ? "bg-[#07374d] border-[#07374d]"
               : "bg-white hover:bg-[#07374d] border-[#2b2b2b] hover:border-[#07374d]"
@@ -908,7 +907,7 @@ export default function HeroSection() {
             setIsHovered(false)
             setIsPaused(false)
           }}
-          className={`group cursor-pointer absolute border border-solid bottom-[166.22px] left-[492.42px] rounded-bl-[10px] rounded-br-[10px] rounded-tr-[10px] top-[402.98px] w-[487.39px] transition-all duration-300 ${
+          className={`group cursor-pointer absolute z-30 border border-solid bottom-[166.22px] left-[492.42px] rounded-bl-[10px] rounded-br-[10px] rounded-tr-[10px] top-[402.98px] w-[487.39px] transition-all duration-300 ${
             isHovered
               ? "bg-[#07374d] border-[#07374d]"
               : "bg-white hover:bg-[#07374d] border-[#2b2b2b] hover:border-[#07374d]"
@@ -1055,7 +1054,7 @@ export default function HeroSection() {
             setIsHovered(false)
             setIsPaused(false)
           }}
-          className={`group cursor-pointer absolute border border-solid bottom-[110px] left-[492.42px] rounded-bl-[10px] rounded-br-[10px] rounded-tr-[10px] top-[419.2px] w-[523.49px] transition-all duration-300 ${
+          className={`group cursor-pointer absolute z-30 border border-solid bottom-[110px] left-[492.42px] rounded-bl-[10px] rounded-br-[10px] rounded-tr-[10px] top-[419.2px] w-[523.49px] transition-all duration-300 ${
             isHovered
               ? "bg-[#07374d] border-[#07374d]"
               : "bg-white hover:bg-[#07374d] border-[#2b2b2b] hover:border-[#07374d]"
