@@ -173,7 +173,7 @@ export default function AboutSection() {
       >
         <div className="-rotate-90 flex-none h-[100cqw] w-[100cqh]">
           <div className="[word-break:break-word] flex flex-col font-['Inter:Regular'] font-normal justify-center leading-[0] not-italic relative size-full text-[#222] text-[15.8px] tracking-[0.64px]">
-            <p className="leading-[24px]">about minkura</p>
+            <p className="leading-[24px]">about HYUN</p>
           </div>
         </div>
       </div>
@@ -214,7 +214,7 @@ export default function AboutSection() {
           className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[20.8px] justify-center leading-[0] left-[calc(50%+0.1px)] not-italic text-[#222] text-[16px] text-center top-[22.4px] tracking-[0.48px] w-[235.83px]"
           data-node-id="1:559"
         >
-          <p className="leading-[25.6px]">みんなの暮らし方不動産について</p>
+          <p className="leading-[25.6px]">Về điểm hẹn ẩm thực HYUN</p>
         </div>
       </div>
       <div
@@ -270,12 +270,14 @@ export default function AboutSection() {
         data-node-id="1:572"
       >
         <p className="leading-[40px] mb-0">
-          みんなの暮らし方不動産は、ユニークな物件の紹介
+          HYUN là không gian kết nối những điểm hẹn ẩm thực chuẩn
         </p>
         <p className="leading-[40px] mb-0">
-          をメインに、ローカルの暮らし方、地域に住む方を
+          gu, nơi khám phá các quán ăn ngon, hương vị đặc sắc và
         </p>
-        <p className="leading-[40px]">紹介するWebメディアです。</p>
+        <p className="leading-[40px]">
+          những trải nghiệm ẩm thực đáng nhớ tại Việt Nam.
+        </p>
       </div>
       <div
         className="absolute h-[33px] left-[780.94px] right-[213.94px] top-[552.3px]"
@@ -286,7 +288,7 @@ export default function AboutSection() {
           className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[33px] justify-center leading-[0] not-italic right-[46.8px] text-[#222] text-[22px] text-right top-1/2 tracking-[0.66px] w-[190.7px]"
           data-node-id="1:574"
         >
-          <p className="leading-[33px]">わたしたちについて</p>
+          <p className="leading-[33px]">Khám phá thêm</p>
         </div>
         <div
           className="-translate-y-1/2 absolute bg-[#222] overflow-clip right-0 rounded-[16px] size-[32px] top-1/2"
