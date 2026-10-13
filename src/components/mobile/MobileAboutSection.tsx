@@ -1,65 +1,84 @@
-import type { JSX } from "react"
-import { imgGroup10, imgImgAboutImage01Jpg } from "@/constants/assets"
+"use client" /* Faint Background Watermark Graphic */ /* Top Speech Balloon Container */ /* Downward Pointer Arrow */ /* Center: Photo Card with Iconic White Logo Overlay */ /* Base Photo */ /* Slight Dark Vignette Overlay for Crisp Logo Contrast */ /* Centered Large White Logo Overlaid */ /* min logo */ /* Subtitle tag */ /* kura logo */ /* Bottom: Description Paragraph Text */
 
-export default function MobileAboutSection(): JSX.Element {
+import {
+  imgGroup10,
+  imgGroup3,
+  imgGroup4,
+  imgGroup6,
+  imgImgAboutImage01Jpg,
+} from "@/constants/assets"
+
+export default function MobileAboutSection() {
   return (
-    <section className="relative w-full bg-[#f7f6f4] py-14 px-4 overflow-hidden border-t border-black/10">
-      <div className="max-w-2xl mx-auto flex flex-col items-center text-center">
-        {/* 1. Uppercase label */}
-        <span className="font-mono text-xs uppercase tracking-widest text-[#666] mb-2">
-          About HYUN
-        </span>
+    <section className="relative w-full bg-white py-12 px-4 sm:px-6 overflow-hidden text-[#222]">
+      {}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-15 overflow-hidden">
+        <img
+          src={imgGroup6}
+          alt=""
+          className="w-[380px] max-w-none -rotate-12 translate-x-12 translate-y-6"
+        />
+      </div>
 
-        {/* 2. Speech bubble heading */}
-        <div className="border border-[#222] rounded-xl px-6 py-2.5 bg-white shadow-sm mb-8 relative">
-          <h2 className="font-bold text-base sm:text-lg text-[#1c1c1c] tracking-wide">
-            Về điểm hẹn ẩm thực HYUN
-          </h2>
-          {/* Balloon tail indicator at bottom center */}
-          <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-3.5 h-2 pointer-events-none">
-            <img
-              src={imgGroup10}
-              alt=""
-              className="w-full h-full block object-contain"
-            />
+      <div className="relative z-10 w-full max-w-[420px] mx-auto text-center">
+        {}
+        <div className="inline-block relative">
+          <div className="bg-white border-[1.6px] border-[#222] rounded-[10px] px-6 py-2 shadow-2xs">
+            <span className="font-['Noto_Sans_JP:Bold','Inter:Bold',sans-serif] font-bold text-[14.5px] sm:text-[15.5px] text-[#222] tracking-wide">
+              みんなの暮らし方不動産について
+            </span>
+          </div>
+          {}
+          <div className="flex justify-center -mt-[1px]">
+            <img src={imgGroup10} alt="" className="w-[14px] h-[10px] block" />
           </div>
         </div>
 
-        {/* 3. Featured Image Showcase */}
-        <div className="relative w-full max-w-[300px] sm:max-w-[340px] aspect-square rounded-2xl overflow-hidden shadow-lg border-2 border-white rotate-[3deg] transition-transform duration-300 hover:rotate-0 my-4">
+        {}
+        <div className="w-full max-w-[325px] aspect-square mx-auto mt-6 rounded-[24px] overflow-hidden relative shadow-sm border border-black/10 bg-[#faf9f7] rotate-[2deg] sm:rotate-0 transition-transform">
+          {}
           <img
             src={imgImgAboutImage01Jpg}
-            alt="HYUN không gian ẩm thực"
-            className="object-cover size-full"
-            loading="lazy"
+            alt="About Minkura / HYUN"
+            className="size-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-black/10 pointer-events-none" />
+
+          {}
+          <div className="absolute inset-0 bg-black/15 pointer-events-none" />
+
+          {}
+          <div className="absolute inset-0 flex flex-col items-center justify-center p-4 pointer-events-none select-none drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
+            <div className="relative w-[150px] flex flex-col items-center justify-center">
+              {}
+              <img
+                src={imgGroup3}
+                alt="みん"
+                className="w-[105px] object-contain brightness-105"
+              />
+              {}
+              <div className="flex items-center gap-4 text-white text-[10px] tracking-[0.25em] font-semibold my-0.5">
+                <span>min</span>
+                <span>kura</span>
+              </div>
+              {}
+              <img
+                src={imgGroup4}
+                alt="くら"
+                className="w-[105px] object-contain brightness-105"
+              />
+            </div>
+          </div>
         </div>
 
-        {/* 4. Brand Story Text */}
-        <p className="text-[#222] font-semibold text-base sm:text-lg leading-relaxed max-w-lg mt-6">
-          HYUN là không gian kết nối những điểm hẹn ẩm thực chuẩn gu, nơi khám
-          phá các quán ăn ngon, hương vị đặc sắc và những trải nghiệm ẩm thực
-          đáng nhớ tại Việt Nam.
-        </p>
-
-        {/* 5. Call-To-Action Link / Button */}
-        <div className="mt-8 flex justify-center">
-          <a
-            href="#explore"
-            className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-[#222] hover:bg-[#333] text-white font-bold text-sm sm:text-base tracking-wide transition-all shadow-md active:scale-95 min-h-[44px] min-w-[44px] cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#222]/40 group"
-            aria-label="Khám phá thêm về điểm hẹn ẩm thực HYUN"
-          >
-            <span>Khám phá thêm</span>
-            <span
-              className="size-7 rounded-full bg-white/20 flex items-center justify-center transition-transform duration-200 group-hover:translate-x-0.5"
-              aria-hidden="true"
-            >
-              <svg className="size-3.5 fill-current" viewBox="0 0 13 14">
-                <path d="M7.94225 0L6.36386 1.18379L8.97708 4.67203C9.05375 4.77463 9.10036 4.89652 9.11173 5.02409C9.12309 5.15166 9.09876 5.27988 9.04144 5.39441C8.98412 5.50894 8.89608 5.60528 8.78716 5.67265C8.67824 5.74002 8.55272 5.77578 8.42465 5.77591H0V7.7489H8.4207C8.54928 7.74816 8.67551 7.78334 8.78517 7.85047C8.89484 7.9176 8.98358 8.01401 9.04141 8.12885C9.09924 8.24369 9.12386 8.3724 9.1125 8.50047C9.10113 8.62855 9.05423 8.75091 8.97708 8.85377L6.36485 12.346L7.94324 13.5297L13.001 6.76537L7.94225 0Z" />
-              </svg>
-            </span>
-          </a>
+        {}
+        <div className="mt-8 max-w-[345px] mx-auto text-left px-1">
+          <p className="font-['Noto_Sans_JP:Regular','Inter:Regular',sans-serif] font-medium text-[14px] sm:text-[14.5px] leading-[1.8] text-[#222]">
+            みんなの暮らし方不動産は、ユニークな物件の紹介をメインに、ローカルの暮らし方、地域に住む方を紹介するWebメディアです。
+          </p>
+          <p className="font-['Inter:Regular',sans-serif] text-[13px] text-[#555] leading-[1.65] mt-2.5 pt-2.5 border-t border-black/10">
+            HYUN là không gian kết nối những điểm hẹn ẩm thực chuẩn gu, nơi khám
+            phá các quán ăn ngon, hương vị đặc sắc và trải nghiệm đáng nhớ.
+          </p>
         </div>
       </div>
     </section>

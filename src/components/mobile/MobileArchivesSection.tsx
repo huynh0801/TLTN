@@ -1,51 +1,53 @@
+"use client" /* Top Running Marquee Banner */ /* Track 1 */ /* Track 2 (Clone for infinite seamless loop) */ /* Stacked Single-Column Archive Cards (Authentic Figma Design) */ /* Top Row: Location Name (Left) + Category Stamp Circle (Right) */ /* RENT Round Category Stamp */ /* Center: Capsule Oval Photo with Vertical Archive Label on Left */ /* Vertical Archive Label Running on Left Edge */ /* Stadium Capsule Oval Rounded Photo */ /* Bottom Row: Title and Dark Navy Tags */ /* Title in Dark Navy */ /* Tag Pills in Dark Navy */
+
 import { ARCHIVE_ITEMS } from "@/constants/archivesData"
 
 export default function MobileArchivesSection() {
   return (
-    <section className="relative w-full bg-[#faf9f6] border-b border-black/10">
-      {/* 1. Running Marquee Banner */}
-      <div className="bg-[#222] py-3 overflow-hidden select-none">
+    <section className="relative w-full bg-[#ecebe3] border-b-[1.6px] border-[#222]">
+      {}
+      <div className="relative w-full bg-[#222] h-[52px] sm:h-[56px] flex items-center overflow-hidden border-t-[1.6px] border-b-[1.6px] border-[#222] select-none">
         <div className="flex w-max animate-marquee whitespace-nowrap">
-          {/* Track 1 */}
+          {}
           <div className="flex items-center shrink-0">
-            {Array.from({ length: 6 }).map((_, idx) => (
+            {Array.from({ length: 4 }).map((_, idx) => (
               <div
                 key={`m1-${idx}`}
-                className="flex items-center shrink-0 mx-4 sm:mx-6 tracking-[0.03em]"
+                className="flex items-center shrink-0 mx-6 tracking-[0.03em]"
               >
-                <span className="font-['Inter:Bold','Inter',sans-serif] font-bold text-sm sm:text-[15px] text-white tracking-[0.06em]">
+                <span className="font-['Inter:Bold','Inter',sans-serif] font-bold text-[16px] text-white tracking-[0.06em]">
                   HYUN
                 </span>
-                <span className="mx-2.5 text-white/40 text-sm font-light">
+                <span className="mx-2.5 text-white/40 text-[15px] font-light">
                   -
                 </span>
-                <span className="font-['Inter:Regular','Inter',sans-serif] font-medium text-sm sm:text-[15px] text-white/95">
+                <span className="font-['Inter:Regular','Inter',sans-serif] font-medium text-[15.5px] text-white/95">
                   Điểm hẹn chuẩn gu, yêu không cần nghĩ
                 </span>
-                <span className="text-[#ff4b72] text-xs ml-6 sm:ml-8 select-none">
+                <span className="text-[#ff4b72] text-[13px] ml-8 select-none">
                   ✦
                 </span>
               </div>
             ))}
           </div>
 
-          {/* Track 2 (Clone for seamless infinite marquee) */}
+          {}
           <div className="flex items-center shrink-0" aria-hidden="true">
-            {Array.from({ length: 6 }).map((_, idx) => (
+            {Array.from({ length: 4 }).map((_, idx) => (
               <div
                 key={`m2-${idx}`}
-                className="flex items-center shrink-0 mx-4 sm:mx-6 tracking-[0.03em]"
+                className="flex items-center shrink-0 mx-6 tracking-[0.03em]"
               >
-                <span className="font-['Inter:Bold','Inter',sans-serif] font-bold text-sm sm:text-[15px] text-white tracking-[0.06em]">
+                <span className="font-['Inter:Bold','Inter',sans-serif] font-bold text-[16px] text-white tracking-[0.06em]">
                   HYUN
                 </span>
-                <span className="mx-2.5 text-white/40 text-sm font-light">
+                <span className="mx-2.5 text-white/40 text-[15px] font-light">
                   -
                 </span>
-                <span className="font-['Inter:Regular','Inter',sans-serif] font-medium text-sm sm:text-[15px] text-white/95">
+                <span className="font-['Inter:Regular','Inter',sans-serif] font-medium text-[15.5px] text-white/95">
                   Điểm hẹn chuẩn gu, yêu không cần nghĩ
                 </span>
-                <span className="text-[#ff4b72] text-xs ml-6 sm:ml-8 select-none">
+                <span className="text-[#ff4b72] text-[13px] ml-8 select-none">
                   ✦
                 </span>
               </div>
@@ -54,99 +56,68 @@ export default function MobileArchivesSection() {
         </div>
       </div>
 
-      {/* Main Section Content */}
-      <div className="py-8 sm:py-12">
-        {/* 2. Section Header */}
-        <div className="px-4 text-center mb-8 sm:mb-10">
-          <span className="inline-block px-3 py-1 mb-2.5 text-xs font-bold uppercase tracking-widest text-[#292c4b] bg-[#292c4b]/10 rounded-full">
-            Khám Phá Danh Sách
-          </span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#1c1c1c] tracking-tight mt-1">
-            Minkura Archives
-          </h2>
-          <p className="mt-2.5 text-sm sm:text-base text-black/60 max-w-xl mx-auto leading-relaxed">
-            Tổng hợp 12 điểm hẹn ẩm thực trứ danh ba miền cùng câu chuyện đậm đà
-            bản sắc.
-          </p>
-        </div>
+      {}
+      <div className="w-full max-w-[440px] mx-auto divide-y-[1.6px] divide-[#222]">
+        {ARCHIVE_ITEMS.map((item) => (
+          <article
+            key={item.id}
+            className="w-full bg-[#ecebe3] p-5 sm:p-6 transition-colors duration-300"
+          >
+            {}
+            <div className="flex items-center justify-between mb-2">
+              <span className="font-['Noto_Sans_JP:Bold','Inter:Bold',sans-serif] font-bold text-[16px] text-[#292c4b] tracking-wide">
+                {item.city}
+              </span>
 
-        {/* 3. 12-Card Grid Layout */}
-        <div className="max-w-4xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
-          {ARCHIVE_ITEMS.map((item) => (
-            <article
-              key={item.id}
-              className="group border border-black/15 bg-white p-4 sm:p-5 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between"
-            >
-              <div>
-                {/* 4. Card Top Row */}
-                <div className="flex items-center justify-between mb-3.5">
-                  <span className="font-bold text-sm text-[#292c4b] tracking-wide">
-                    {item.city}
-                  </span>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs font-medium text-black/50 tracking-wider">
-                      {item.archiveNo}
-                    </span>
-                    <span className="inline-flex items-center justify-center size-7 rounded-full bg-black/5 border border-black/10 text-xs font-bold text-[#1c1c1c]">
-                      {item.index}
-                    </span>
-                  </div>
-                </div>
+              {}
+              <div className="size-[42px] rounded-full border-[1.5px] border-[#292c4b] flex items-center justify-center shrink-0 select-none">
+                <span className="font-['Space_Grotesk:Light','Inter',sans-serif] font-bold text-[11.5px] text-[#292c4b] tracking-wider">
+                  RENT
+                </span>
+              </div>
+            </div>
 
-                {/* Image Frame */}
-                <div className="aspect-[16/10] w-full rounded-xl overflow-hidden bg-black/5 relative">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    loading="lazy"
-                    className="size-full object-cover object-center transition-transform duration-500 group-hover:scale-105 select-none"
-                    draggable={false}
-                  />
-                </div>
-
-                {/* Title */}
-                <h3 className="font-bold text-base sm:text-lg text-[#1c1c1c] line-clamp-2 mt-3.5 leading-snug">
-                  {item.title}
-                </h3>
-
-                {/* Tags */}
-                <div className="flex flex-wrap gap-1.5 mt-3">
-                  {item.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="bg-[#262626] text-white text-[11px] px-2.5 py-1 rounded font-medium tracking-wide"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+            {}
+            <div className="relative my-3 flex items-center justify-center">
+              {}
+              <div className="absolute left-[-8px] top-1/2 -translate-y-1/2 select-none">
+                <span className="-rotate-90 block font-['Space_Grotesk:Light','Inter',sans-serif] text-[12px] text-[#292c4b] tracking-[0.2em] whitespace-nowrap font-medium">
+                  {item.archiveNo.toLowerCase()}
+                </span>
               </div>
 
-              {/* Read More Footer */}
-              <div className="mt-4 pt-3 border-t border-black/10 flex items-center justify-end">
-                <a
-                  href={`#${item.id}`}
-                  className="min-h-[44px] min-w-[44px] -my-1 -mr-2 px-2 inline-flex items-center justify-end gap-1.5 text-xs font-semibold text-[#1c1c1c] hover:text-[#ff4b72] transition-colors focus:outline-none focus:ring-2 focus:ring-[#ff4b72]/40 rounded-lg group/link"
-                  aria-label={`Xem chi tiết ${item.title}`}
-                >
-                  <span>Read more</span>
-                  <svg
-                    className="size-3.5 transition-transform group-hover/link:translate-x-0.5"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden="true"
+              {}
+              <div className="w-[82%] sm:w-[78%] aspect-[1/1.08] rounded-t-[130px] rounded-b-[130px] overflow-hidden border border-black/10 shadow-xs bg-[#e2e1d7] mx-auto">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="size-full object-cover object-center transition-transform duration-500 hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            {}
+            <div className="mt-2">
+              {}
+              <h3 className="font-['Noto_Sans_JP:Bold','Inter:Bold',sans-serif] font-bold text-[16.5px] sm:text-[17.5px] text-[#292c4b] leading-[1.38] mb-3 tracking-tight">
+                {item.title}
+              </h3>
+
+              {}
+              <div className="flex flex-wrap gap-2">
+                {item.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="bg-[#292c4b] text-white font-medium text-[12px] px-3 py-1 rounded-[6px] tracking-wide shadow-2xs whitespace-nowrap"
                   >
-                    <polyline points="9 18 15 12 9 6" />
-                  </svg>
-                </a>
+                    {tag}
+                  </span>
+                ))}
               </div>
-            </article>
-          ))}
-        </div>
+            </div>
+          </article>
+        ))}
       </div>
     </section>
   )
