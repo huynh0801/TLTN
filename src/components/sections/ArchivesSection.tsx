@@ -13,7 +13,6 @@ import {
   imgImg1592Jpg1,
   imgImg3206ScaledJpg,
   imgImg5097F09F8C9FScaledJpeg,
-  imgImgSectionTitleArchiveSvg,
   imgSvg1,
 } from "@/constants/assets"
 
@@ -24,94 +23,57 @@ export default function ArchivesSection() {
       data-node-id="1:199"
       data-name="Section"
     >
+      {/* Running Marquee Banner / Chữ chạy */}
       <div
-        className="absolute bg-[#222] h-[59.6px] left-0 overflow-clip right-0 top-[19.74px]"
+        className="absolute bg-[#222] h-[59.6px] left-0 overflow-hidden right-0 top-[19.74px] flex items-center select-none"
         data-node-id="1:200"
-        data-name="Heading 2"
+        data-name="Heading 2 - Marquee Banner"
       >
-        <div
-          className="absolute aspect-[322/25.600000381469727] bottom-[17px] left-[-280.97px] overflow-clip top-[17px]"
-          data-node-id="1:201"
-          data-name="みんくら事例 minkura archives"
-        >
-          <div
-            className="-translate-x-1/2 -translate-y-1/2 absolute h-[25.6px] left-1/2 overflow-clip top-1/2 w-[321.921px]"
-            data-node-id="1:202"
-            data-name="img_section_title_archive.svg"
-          >
-            <img
-              alt=""
-              className="absolute block inset-0 max-w-none size-full"
-              src={imgImgSectionTitleArchiveSvg}
-            />
+        <div className="flex w-max animate-marquee whitespace-nowrap">
+          {/* Track 1 */}
+          <div className="flex items-center shrink-0">
+            {Array.from({ length: 6 }).map((_, idx) => (
+              <div
+                key={`m1-${idx}`}
+                className="flex items-center shrink-0 mx-6 tracking-[0.03em]"
+              >
+                <span className="font-['Inter:Bold','Inter',sans-serif] font-bold text-[16.5px] text-white tracking-[0.06em]">
+                  HYUN
+                </span>
+                <span className="mx-2.5 text-white/40 text-[15px] font-light">
+                  -
+                </span>
+                <span className="font-['Inter:Regular','Inter',sans-serif] font-medium text-[16px] text-white/95">
+                  Điểm hẹn chuẩn gu, yêu không cần nghĩ
+                </span>
+                <span className="text-[#ff4b72] text-[13px] ml-8 select-none">
+                  ✦
+                </span>
+              </div>
+            ))}
           </div>
-        </div>
-        <div
-          className="absolute aspect-[322/25.600000381469727] bottom-[17px] left-[89.03px] overflow-clip top-[17px]"
-          data-node-id="1:206"
-          data-name="みんくら事例 minkura archives"
-        >
-          <div
-            className="-translate-x-1/2 -translate-y-1/2 absolute h-[25.6px] left-1/2 overflow-clip top-1/2 w-[321.921px]"
-            data-node-id="1:207"
-            data-name="img_section_title_archive.svg"
-          >
-            <img
-              alt=""
-              className="absolute block inset-0 max-w-none size-full"
-              src={imgImgSectionTitleArchiveSvg}
-            />
-          </div>
-        </div>
-        <div
-          className="absolute aspect-[322/25.600000381469727] bottom-[17px] left-[459.03px] overflow-clip top-[17px]"
-          data-node-id="1:211"
-          data-name="みんくら事例 minkura archives"
-        >
-          <div
-            className="-translate-x-1/2 -translate-y-1/2 absolute h-[25.6px] left-1/2 overflow-clip top-1/2 w-[321.921px]"
-            data-node-id="1:212"
-            data-name="img_section_title_archive.svg"
-          >
-            <img
-              alt=""
-              className="absolute block inset-0 max-w-none size-full"
-              src={imgImgSectionTitleArchiveSvg}
-            />
-          </div>
-        </div>
-        <div
-          className="absolute aspect-[322/25.600000381469727] bottom-[17px] left-[829.03px] overflow-clip top-[17px]"
-          data-node-id="1:216"
-          data-name="みんくら事例 minkura archives"
-        >
-          <div
-            className="-translate-x-1/2 -translate-y-1/2 absolute h-[25.6px] left-1/2 overflow-clip top-1/2 w-[321.921px]"
-            data-node-id="1:217"
-            data-name="img_section_title_archive.svg"
-          >
-            <img
-              alt=""
-              className="absolute block inset-0 max-w-none size-full"
-              src={imgImgSectionTitleArchiveSvg}
-            />
-          </div>
-        </div>
-        <div
-          className="absolute aspect-[322/25.600000381469727] bottom-[17px] left-[1199.03px] overflow-clip top-[17px]"
-          data-node-id="1:221"
-          data-name="みんくら事例 minkura archives"
-        >
-          <div
-            className="-translate-x-1/2 -translate-y-1/2 absolute h-[25.6px] left-1/2 overflow-clip top-1/2 w-[321.921px]"
-            data-node-id="1:222"
-            data-name="img_section_title_archive.svg"
-          >
-            <img
-              alt=""
-              className="absolute block inset-0 max-w-none size-full"
-              src={imgImgSectionTitleArchiveSvg}
-            />
+
+          {/* Track 2 (Clone for infinite seamless loop) */}
+          <div className="flex items-center shrink-0" aria-hidden="true">
+            {Array.from({ length: 6 }).map((_, idx) => (
+              <div
+                key={`m2-${idx}`}
+                className="flex items-center shrink-0 mx-6 tracking-[0.03em]"
+              >
+                <span className="font-['Inter:Bold','Inter',sans-serif] font-bold text-[16.5px] text-white tracking-[0.06em]">
+                  HYUN
+                </span>
+                <span className="mx-2.5 text-white/40 text-[15px] font-light">
+                  -
+                </span>
+                <span className="font-['Inter:Regular','Inter',sans-serif] font-medium text-[16px] text-white/95">
+                  Điểm hẹn chuẩn gu, yêu không cần nghĩ
+                </span>
+                <span className="text-[#ff4b72] text-[13px] ml-8 select-none">
+                  ✦
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -142,10 +104,10 @@ export default function ArchivesSection() {
           <p className="leading-[32px]">TP. Hà Nội</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.73px] right-[26.5px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.33px] tracking-[0.65px] uppercase"
+          className="-translate-y-1/2 absolute flex items-center justify-center font-['Space_Grotesk:Light'] font-bold h-[20px] left-[445.73px] right-[26.5px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] text-center top-[40px] tracking-[0.5px]"
           data-node-id="1:231"
         >
-          <p className="leading-[27.73px]">PHỞ & BÚN</p>
+          <p className="leading-none">01</p>
         </div>
         <div
           className="absolute h-[48px] left-[438.93px] overflow-clip right-[20px] top-[16px]"
@@ -279,10 +241,10 @@ export default function ArchivesSection() {
           <p className="leading-[32px]">TP. Hồ Chí Minh</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.73px] right-[26.51px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.33px] tracking-[0.65px] uppercase"
+          className="-translate-y-1/2 absolute flex items-center justify-center font-['Space_Grotesk:Light'] font-bold h-[20px] left-[445.73px] right-[26.51px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] text-center top-[40px] tracking-[0.5px]"
           data-node-id="1:258"
         >
-          <p className="leading-[27.73px]">CƠM TẤM</p>
+          <p className="leading-none">02</p>
         </div>
         <div
           className="absolute h-[48px] left-[438.93px] overflow-clip right-[20.01px] top-[16px]"
@@ -393,10 +355,10 @@ export default function ArchivesSection() {
           <p className="leading-[32px]">TP. Đà Lạt</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.74px] right-[26.5px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.33px] tracking-[0.65px] uppercase"
+          className="-translate-y-1/2 absolute flex items-center justify-center font-['Space_Grotesk:Light'] font-bold h-[20px] left-[445.74px] right-[26.5px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] text-center top-[40px] tracking-[0.5px]"
           data-node-id="1:278"
         >
-          <p className="leading-[27.73px]">LẨU & NƯỚNG</p>
+          <p className="leading-none">03</p>
         </div>
         <div
           className="absolute h-[48px] left-[438.94px] overflow-clip right-[20px] top-[16px]"
@@ -512,10 +474,10 @@ export default function ArchivesSection() {
           <p className="leading-[32px]">TP. Đà Nẵng</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[446.39px] right-[27.18px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.33px] tracking-[0.65px] uppercase"
+          className="-translate-y-1/2 absolute flex items-center justify-center font-['Space_Grotesk:Light'] font-bold h-[20px] left-[446.39px] right-[27.18px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] text-center top-[40px] tracking-[0.5px]"
           data-node-id="1:299"
         >
-          <p className="leading-[27.73px]">MÓN TRUNG</p>
+          <p className="leading-none">04</p>
         </div>
         <div
           className="absolute h-[48px] left-[438.93px] overflow-clip right-[20px] top-[16px]"
@@ -640,10 +602,10 @@ export default function ArchivesSection() {
           <p className="leading-[32px]">TP. Hà Nội</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[446.4px] right-[27.18px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.33px] tracking-[0.65px] uppercase"
+          className="-translate-y-1/2 absolute flex items-center justify-center font-['Space_Grotesk:Light'] font-bold h-[20px] left-[446.4px] right-[27.18px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] text-center top-[40px] tracking-[0.5px]"
           data-node-id="1:324"
         >
-          <p className="leading-[27.73px]">PHỞ & BÚN</p>
+          <p className="leading-none">05</p>
         </div>
         <div
           className="absolute h-[48px] left-[438.93px] overflow-clip right-[20.01px] top-[16px]"
@@ -754,10 +716,10 @@ export default function ArchivesSection() {
           <p className="leading-[32px]">TP. Hồ Chí Minh</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[446.4px] right-[27.18px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.33px] tracking-[0.65px] uppercase"
+          className="-translate-y-1/2 absolute flex items-center justify-center font-['Space_Grotesk:Light'] font-bold h-[20px] left-[446.4px] right-[27.18px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] text-center top-[40px] tracking-[0.5px]"
           data-node-id="1:344"
         >
-          <p className="leading-[27.73px]">BÁNH MÌ</p>
+          <p className="leading-none">06</p>
         </div>
         <div
           className="absolute h-[48px] left-[438.94px] overflow-clip right-[20px] top-[16px]"
@@ -873,10 +835,10 @@ export default function ArchivesSection() {
           <p className="leading-[32px]">TP. Huế</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[446.39px] right-[27.18px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.34px] tracking-[0.65px] uppercase"
+          className="-translate-y-1/2 absolute flex items-center justify-center font-['Space_Grotesk:Light'] font-bold h-[20px] left-[446.39px] right-[27.18px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] text-center top-[40px] tracking-[0.5px]"
           data-node-id="1:369"
         >
-          <p className="leading-[27.73px]">ĐẶC SẢN</p>
+          <p className="leading-none">07</p>
         </div>
         <div
           className="absolute h-[48px] left-[438.93px] overflow-clip right-[20px] top-[16px]"
@@ -992,10 +954,10 @@ export default function ArchivesSection() {
           <p className="leading-[32px]">TP. Hải Phòng</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.73px] right-[26.51px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.34px] tracking-[0.65px] uppercase"
+          className="-translate-y-1/2 absolute flex items-center justify-center font-['Space_Grotesk:Light'] font-bold h-[20px] left-[445.73px] right-[26.51px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] text-center top-[40px] tracking-[0.5px]"
           data-node-id="1:392"
         >
-          <p className="leading-[27.73px]">BÁNH ĐA CUA</p>
+          <p className="leading-none">08</p>
         </div>
         <div
           className="absolute h-[48px] left-[438.93px] overflow-clip right-[20.01px] top-[16px]"
@@ -1106,10 +1068,10 @@ export default function ArchivesSection() {
           <p className="leading-[32px]">TP. Đà Lạt</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.74px] right-[26.5px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.34px] tracking-[0.65px] uppercase"
+          className="-translate-y-1/2 absolute flex items-center justify-center font-['Space_Grotesk:Light'] font-bold h-[20px] left-[445.74px] right-[26.5px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] text-center top-[40px] tracking-[0.5px]"
           data-node-id="1:416"
         >
-          <p className="leading-[27.73px]">ĂN VẶT & PHỐ</p>
+          <p className="leading-none">09</p>
         </div>
         <div
           className="absolute h-[48px] left-[438.94px] overflow-clip right-[20px] top-[16px]"
@@ -1225,10 +1187,10 @@ export default function ArchivesSection() {
           <p className="leading-[32px]">TP. Cần Thơ</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.73px] right-[26.5px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.34px] tracking-[0.65px] uppercase"
+          className="-translate-y-1/2 absolute flex items-center justify-center font-['Space_Grotesk:Light'] font-bold h-[20px] left-[445.73px] right-[26.5px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] text-center top-[40px] tracking-[0.5px]"
           data-node-id="1:441"
         >
-          <p className="leading-[27.73px]">MÓN MIỀN TÂY</p>
+          <p className="leading-none">10</p>
         </div>
         <div
           className="absolute h-[48px] left-[438.93px] overflow-clip right-[20px] top-[16px]"
@@ -1344,10 +1306,10 @@ export default function ArchivesSection() {
           <p className="leading-[32px]">TP. Nha Trang</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.73px] right-[26.51px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.34px] tracking-[0.65px] uppercase"
+          className="-translate-y-1/2 absolute flex items-center justify-center font-['Space_Grotesk:Light'] font-bold h-[20px] left-[445.73px] right-[26.51px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] text-center top-[40px] tracking-[0.5px]"
           data-node-id="1:470"
         >
-          <p className="leading-[27.73px]">HẢI SẢN</p>
+          <p className="leading-none">11</p>
         </div>
         <div
           className="absolute h-[48px] left-[438.93px] overflow-clip right-[20.01px] top-[16px]"
@@ -1458,10 +1420,10 @@ export default function ArchivesSection() {
           <p className="leading-[32px]">TP. Hồ Chí Minh</p>
         </div>
         <div
-          className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Space_Grotesk:Light'] font-medium h-[16.8px] justify-center leading-[0] left-[445.74px] right-[26.5px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[13px] text-center top-[39.34px] tracking-[0.65px] uppercase"
+          className="-translate-y-1/2 absolute flex items-center justify-center font-['Space_Grotesk:Light'] font-bold h-[20px] left-[445.74px] right-[26.5px] text-[#222] group-hover:text-[#292c4b] transition-colors duration-500 text-[15px] text-center top-[40px] tracking-[0.5px]"
           data-node-id="1:495-badge"
         >
-          <p className="leading-[27.73px]">CÀ PHÊ & CHILL</p>
+          <p className="leading-none">12</p>
         </div>
         <div
           className="absolute h-[48px] left-[438.94px] overflow-clip right-[20px] top-[16px]"

@@ -1,5 +1,6 @@
-"use client" /* Left preview teaser */ /* Slide 0: Phở Bát Đàn */ /* Slide 1: Cơm Tấm Ba Ghiền */ /* Slide 2: Lẩu Gà Lá É Tao Ngộ */ /* Slide 3: Bánh Xèo Bà Dưỡng */ /* Main central container */ /* Left Arrow Button */ /* Central main photo frame with smooth crossfade and UNIFORM hover rounding (bo tròn) */ /* Slide 0: Phở Bát Đàn */ /* Slide 1: Cơm Tấm Ba Ghiền */ /* Slide 2: Lẩu Gà Lá É Tao Ngộ */ /* Slide 3: Bánh Xèo & Nem Lụi Bà Dưỡng */ /* Right Arrow Button */ /* Pickup Indicator */ /* Pagination Dots */ /* Slide Card 0: TP. Hà Nội - Phở Bát Đàn */ /* Slide Card 1: TP. Hồ Chí Minh - Cơm Tấm Ba Ghiền */ /* Slide Card 2: TP. Đà Lạt - Lẩu Gà Lá É Tao Ngộ */ /* Slide Card 3: TP. Đà Nẵng - Bánh Xèo & Nem Lụi Bà Dưỡng */ /* Right preview teaser */ /* Slide 3: Bánh Xèo Bà Dưỡng */ /* Slide 2: Lẩu Gà Lá É Tao Ngộ */ /* Slide 1: Cơm Tấm Ba Ghiền */ /* Slide 0: Phở Bát Đàn */
+"use client" /* Left preview teaser */ /* Slide 0: Phở Bát Đàn */ /* Slide 1: Cơm Tấm Ba Ghiền */ /* Slide 2: Lẩu Gà Lá É Tao Ngộ */ /* Slide 3: Bánh Xèo Bà Dưỡng */ /* Main central container */ /* Left Arrow Button */ /* Central main photo frame with smooth crossfade and UNIFORM hover rounding (bo tròn) */ /* Slide 0: Phở Bát Đàn */ /* Slide 1: Cơm Tấm Ba Ghiền */ /* Slide 2: Lẩu Gà Lá É Tao Ngộ */ /* Slide 3: Bánh Xèo & Nem Lụi Bà Dưỡng */ /* Right Arrow Button */ /* Pickup Indicator */ /* Pagination Dots */ /* Slide Card 0: TP. Hà Nội - Phở Bát Đàn */ /* Slide Card 1: TP. Hồ Chí Minh - Cơm Tấm Ba Ghiền */ /* Slide Card 2: TP. Đà Lạt - Lẩu Gà Lá É Tao Ngộ */ /* Slide Card 3: TP. Đà Nẵng - Bánh Xèo & Nem Lụi Bà Dưỡng */ /* Right preview teaser */ /* Slide 3: Bánh Xèo Bà Dưỡng */ /* Slide 2: Lẩu Gà Lá É Tao Ngộ */ /* Slide 1: Cơm Tấm Ba Ghiền */ /* Slide 0: Phở Bát Đàn */ /* Slide 0: Phở Bát Đàn */ /* Slide 1: Cơm Tấm Ba Ghiền */ /* Slide 2: Lẩu Gà Lá É Tao Ngộ */ /* Slide 3: Bánh Xèo & Nem Lụi Bà Dưỡng */ /* Right Arrow Button */ /* Pickup Indicator */ /* Pagination Dots */ /* Slide Card 0: TP. Hà Nội - Phở Bát Đàn */ /* Slide Card 1: TP. Hồ Chí Minh - Cơm Tấm Ba Ghiền */ /* Slide Card 2: TP. Đà Lạt - Lẩu Gà Lá É Tao Ngộ */ /* Slide Card 3: TP. Đà Nẵng - Bánh Xèo & Nem Lụi Bà Dưỡng */
 import { useState, useEffect } from "react"
+
 import {
   imgGroup,
   imgGroup1,
@@ -44,22 +45,74 @@ function TabCornerCurve({ isHovered }: { isHovered?: boolean }) {
 
 export default function HeroSection() {
   const [activeSlide, setActiveSlide] = useState(0)
+  const [prevSlideIndex, setPrevSlideIndex] = useState<number | null>(null)
+  const [slideDirection, setSlideDirection] = useState<"next" | "prev">("next")
+  const [isAnimating, setIsAnimating] = useState(false)
   const [isPaused, setIsPaused] = useState(false)
   const [isHovered, setIsHovered] = useState(false)
+
+  const goToSlide = (targetIndex: number, forcedDir?: "next" | "prev") => {
+    if (targetIndex === activeSlide) return
+    const dir = forcedDir ?? (targetIndex > activeSlide ? "next" : "prev")
+    setSlideDirection(dir)
+    setPrevSlideIndex(activeSlide)
+    setActiveSlide(targetIndex)
+    setIsAnimating(true)
+  }
+
+  const prevSlide = () => {
+    goToSlide((activeSlide - 1 + 4) % 4, "prev")
+  }
+
+  const nextSlide = () => {
+    goToSlide((activeSlide + 1) % 4, "next")
+  }
+
+  useEffect(() => {
+    if (!isAnimating) return
+    const timer = setTimeout(() => {
+      setIsAnimating(false)
+      setPrevSlideIndex(null)
+    }, 650)
+    return () => clearTimeout(timer)
+  }, [isAnimating, activeSlide])
 
   useEffect(() => {
     if (isPaused || isHovered) return
     const timer = setInterval(() => {
-      setActiveSlide((prev) => (prev + 1) % 4)
+      goToSlide((activeSlide + 1) % 4, "next")
     }, 5000)
     return () => clearInterval(timer)
-  }, [isPaused, isHovered])
-
-  const prevSlide = () => setActiveSlide((prev) => (prev - 1 + 4) % 4)
-  const nextSlide = () => setActiveSlide((prev) => (prev + 1) % 4)
+  }, [isPaused, isHovered, activeSlide])
 
   const prevIndex = (activeSlide - 1 + 4) % 4
   const nextIndex = (activeSlide + 1) % 4
+
+  const getSlideImageClass = (slideIndex: number) => {
+    if (slideIndex === activeSlide) {
+      if (isAnimating && prevSlideIndex !== null) {
+        return slideDirection === "next"
+          ? "hero-slide-in-right z-10 opacity-100"
+          : "hero-slide-in-left z-10 opacity-100"
+      }
+      return "translate-x-0 opacity-100 z-10"
+    }
+
+    if (slideIndex === prevSlideIndex && isAnimating) {
+      return slideDirection === "next"
+        ? "hero-slide-out-left z-0 opacity-100"
+        : "hero-slide-out-right z-0 opacity-100"
+    }
+
+    return "opacity-0 pointer-events-none z-0 invisible"
+  }
+
+  const getCardAnimationClass = (cardIdx: number) => {
+    if (activeSlide === cardIdx) {
+      return "opacity-100 translate-y-0 scale-100 pointer-events-auto"
+    }
+    return "opacity-0 translate-y-7 scale-[0.98] pointer-events-none"
+  }
 
   return (
     <div
@@ -262,10 +315,12 @@ export default function HeroSection() {
             data-name="Container"
             onMouseEnter={() => {
               setIsHovered(true)
+
               setIsPaused(true)
             }}
             onMouseLeave={() => {
               setIsHovered(false)
+
               setIsPaused(false)
             }}
           >
@@ -285,11 +340,9 @@ export default function HeroSection() {
                 data-node-id="1:57"
                 data-name="Container"
               >
-                {}
+                {/* Slide 0: Phở Bát Đàn */}
                 <div
-                  className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
-                    activeSlide === 0 ? "opacity-100 z-10" : "opacity-0 z-0"
-                  }`}
+                  className={`absolute inset-0 ${getSlideImageClass(0)}`}
                   data-name="Slide 0 - Phở Bát Đàn"
                 >
                   <img
@@ -299,11 +352,9 @@ export default function HeroSection() {
                   />
                 </div>
 
-                {}
+                {/* Slide 1: Cơm Tấm Ba Ghiền */}
                 <div
-                  className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
-                    activeSlide === 1 ? "opacity-100 z-10" : "opacity-0 z-0"
-                  }`}
+                  className={`absolute inset-0 ${getSlideImageClass(1)}`}
                   data-name="Slide 1 - Cơm Tấm Ba Ghiền"
                 >
                   <img
@@ -313,11 +364,9 @@ export default function HeroSection() {
                   />
                 </div>
 
-                {}
+                {/* Slide 2: Lẩu Gà Lá É Tao Ngộ */}
                 <div
-                  className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
-                    activeSlide === 2 ? "opacity-100 z-10" : "opacity-0 z-0"
-                  }`}
+                  className={`absolute inset-0 ${getSlideImageClass(2)}`}
                   data-name="Slide 2 - Lẩu Gà Lá É"
                 >
                   <img
@@ -327,11 +376,9 @@ export default function HeroSection() {
                   />
                 </div>
 
-                {}
+                {/* Slide 3: Bánh Xèo & Nem Lụi Bà Dưỡng */}
                 <div
-                  className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
-                    activeSlide === 3 ? "opacity-100 z-10" : "opacity-0 z-0"
-                  }`}
+                  className={`absolute inset-0 ${getSlideImageClass(3)}`}
                   data-name="Slide 3 - Bánh Xèo & Nem Lụi Bà Dưỡng"
                 >
                   <img
@@ -440,7 +487,7 @@ export default function HeroSection() {
           {}
           <button
             type="button"
-            onClick={() => setActiveSlide(0)}
+            onClick={() => goToSlide(0)}
             aria-label="Chuyển đến Slide 1"
             className={`absolute border border-[#1c1c1c] border-solid bottom-[-4.4px] h-[8px] left-[calc(86.26%+0.73px)] right-[calc(12.68%-0.75px)] rounded-[4px] cursor-pointer transition-colors duration-300 ${
               activeSlide === 0 ? "bg-[#1c1c1c]" : "bg-white hover:bg-gray-200"
@@ -450,7 +497,7 @@ export default function HeroSection() {
           />
           <button
             type="button"
-            onClick={() => setActiveSlide(1)}
+            onClick={() => goToSlide(1)}
             aria-label="Chuyển đến Slide 2"
             className={`absolute border border-[#1c1c1c] border-solid bottom-[-4.4px] h-[8px] left-[calc(88.24%+0.76px)] right-[calc(10.71%-0.79px)] rounded-[4px] cursor-pointer transition-colors duration-300 ${
               activeSlide === 1 ? "bg-[#1c1c1c]" : "bg-white hover:bg-gray-200"
@@ -460,7 +507,7 @@ export default function HeroSection() {
           />
           <button
             type="button"
-            onClick={() => setActiveSlide(2)}
+            onClick={() => goToSlide(2)}
             aria-label="Chuyển đến Slide 3"
             className={`absolute border border-[#1c1c1c] border-solid bottom-[-4.4px] h-[8px] left-[calc(90.21%+0.8px)] right-[calc(8.74%-0.83px)] rounded-[4px] cursor-pointer transition-colors duration-300 ${
               activeSlide === 2 ? "bg-[#1c1c1c]" : "bg-white hover:bg-gray-200"
@@ -470,7 +517,7 @@ export default function HeroSection() {
           />
           <button
             type="button"
-            onClick={() => setActiveSlide(3)}
+            onClick={() => goToSlide(3)}
             aria-label="Chuyển đến Slide 4"
             className={`absolute border border-[#1c1c1c] border-solid bottom-[-4.4px] h-[8px] left-[calc(92.19%+0.84px)] right-[calc(6.76%-0.86px)] rounded-[4px] cursor-pointer transition-colors duration-300 ${
               activeSlide === 3 ? "bg-[#1c1c1c]" : "bg-white hover:bg-gray-200"
@@ -484,19 +531,17 @@ export default function HeroSection() {
         <div
           onMouseEnter={() => {
             setIsHovered(true)
+
             setIsPaused(true)
           }}
           onMouseLeave={() => {
             setIsHovered(false)
+
             setIsPaused(false)
           }}
-          className={`group cursor-pointer absolute z-30 border border-solid border-[#2b2b2b] bottom-[126.22px] left-[492.42px] rounded-bl-[10px] rounded-br-[10px] rounded-tr-[10px] top-[402.98px] w-[523.49px] transition-all duration-300 ${
+          className={`group cursor-pointer absolute z-30 border-[1.6px] border-solid border-[#2b2b2b] bottom-[126.22px] left-[492.42px] rounded-bl-[10px] rounded-br-[10px] rounded-tr-[10px] top-[402.98px] w-[523.49px] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
             isHovered ? "bg-[#ebebdf]" : "bg-white hover:bg-[#ebebdf]"
-          } ${
-            activeSlide === 0
-              ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
-          }`}
+          } ${getCardAnimationClass(0)}`}
           data-node-id="1:94"
           data-name="Link"
         >
@@ -513,21 +558,14 @@ export default function HeroSection() {
             </p>
           </div>
           <div
-            className={`absolute border-l-[1.6px] border-r-[1.6px] border-solid border-t-[1.6px] border-[#2b2b2b] h-[37.6px] left-[-1.4px] rounded-tl-[6px] rounded-tr-[6px] top-[-37.4px] w-[162.49px] transition-colors duration-300 ${
+            className={`absolute border-l-[1.6px] border-r-[1.6px] border-solid border-t-[1.6px] border-[#2b2b2b] h-[37.6px] left-[-1.6px] rounded-tl-[6px] rounded-tr-[6px] top-[-37.6px] w-[162.49px] transition-colors duration-300 ${
               isHovered ? "bg-[#ebebdf]" : "bg-white group-hover:bg-[#ebebdf]"
             }`}
             data-node-id="1:96"
             data-name="Background+Border"
           >
             <div
-              className={`absolute h-[4px] left-[-2px] top-[13px] w-[163.29px] transition-colors duration-300 ${
-                isHovered ? "bg-[#ebebdf]" : "bg-white group-hover:bg-[#ebebdf]"
-              }`}
-              data-node-id="1:97"
-              data-name="Background"
-            />
-            <div
-              className={`absolute bottom-[-2px] h-[4px] left-0 w-[161.29px] transition-colors duration-300 ${
+              className={`absolute -bottom-[2px] h-[3.5px] left-0 right-[-1px] transition-colors duration-300 ${
                 isHovered ? "bg-[#ebebdf]" : "bg-white group-hover:bg-[#ebebdf]"
               }`}
               data-node-id="1:98"
@@ -551,13 +589,6 @@ export default function HeroSection() {
               <p className="leading-[15px]">TP. Hà Nội</p>
             </div>
           </div>
-          <div
-            className={`absolute bottom-[35.6px] h-[8px] left-[-1.4px] w-[524.29px] transition-colors duration-300 ${
-              isHovered ? "bg-[#ebebdf]" : "bg-white group-hover:bg-[#ebebdf]"
-            }`}
-            data-node-id="1:104"
-            data-name="Background"
-          />
           <div
             className="absolute flex flex-wrap gap-[8px] left-[19.6px] top-[60.6px] w-[482.29px]"
             data-node-id="1:105"
@@ -609,19 +640,17 @@ export default function HeroSection() {
         <div
           onMouseEnter={() => {
             setIsHovered(true)
+
             setIsPaused(true)
           }}
           onMouseLeave={() => {
             setIsHovered(false)
+
             setIsPaused(false)
           }}
-          className={`group cursor-pointer absolute z-30 border border-solid border-[#2b2b2b] bottom-[126.22px] left-[492.42px] rounded-bl-[10px] rounded-br-[10px] rounded-tr-[10px] top-[402.98px] w-[523.49px] transition-all duration-300 ${
+          className={`group cursor-pointer absolute z-30 border-[1.6px] border-solid border-[#2b2b2b] bottom-[126.22px] left-[492.42px] rounded-bl-[10px] rounded-br-[10px] rounded-tr-[10px] top-[402.98px] w-[523.49px] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
             isHovered ? "bg-[#ebebdf]" : "bg-white hover:bg-[#ebebdf]"
-          } ${
-            activeSlide === 1
-              ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
-          }`}
+          } ${getCardAnimationClass(1)}`}
           data-node-id="1:116"
           data-name="Link"
         >
@@ -638,21 +667,14 @@ export default function HeroSection() {
             </p>
           </div>
           <div
-            className={`absolute border-l-[1.6px] border-r-[1.6px] border-solid border-t-[1.6px] border-[#2b2b2b] h-[37.6px] left-[-1.4px] rounded-tl-[6px] rounded-tr-[6px] top-[-37.4px] w-[146.74px] transition-colors duration-300 ${
+            className={`absolute border-l-[1.6px] border-r-[1.6px] border-solid border-t-[1.6px] border-[#2b2b2b] h-[37.6px] left-[-1.6px] rounded-tl-[6px] rounded-tr-[6px] top-[-37.6px] w-[146.74px] transition-colors duration-300 ${
               isHovered ? "bg-[#ebebdf]" : "bg-white group-hover:bg-[#ebebdf]"
             }`}
             data-node-id="1:118"
             data-name="Background+Border"
           >
             <div
-              className={`absolute h-[4px] left-[-2px] top-[13px] w-[147.54px] transition-colors duration-300 ${
-                isHovered ? "bg-[#ebebdf]" : "bg-white group-hover:bg-[#ebebdf]"
-              }`}
-              data-node-id="1:119"
-              data-name="Background"
-            />
-            <div
-              className={`absolute bottom-[-2px] h-[4px] left-0 w-[145.54px] transition-colors duration-300 ${
+              className={`absolute -bottom-[2px] h-[3.5px] left-0 right-[-1px] transition-colors duration-300 ${
                 isHovered ? "bg-[#ebebdf]" : "bg-white group-hover:bg-[#ebebdf]"
               }`}
               data-node-id="1:120"
@@ -676,13 +698,6 @@ export default function HeroSection() {
               <p className="leading-[15px]">TP. Hồ Chí Minh</p>
             </div>
           </div>
-          <div
-            className={`absolute bottom-[35.6px] h-[8px] left-[-1.4px] w-[524.29px] transition-colors duration-300 ${
-              isHovered ? "bg-[#ebebdf]" : "bg-white group-hover:bg-[#ebebdf]"
-            }`}
-            data-node-id="1:126"
-            data-name="Background"
-          />
           <div
             className="absolute flex flex-wrap gap-[8px] left-[19.6px] top-[60.6px] w-[482.29px]"
             data-node-id="1:127"
@@ -760,19 +775,17 @@ export default function HeroSection() {
         <div
           onMouseEnter={() => {
             setIsHovered(true)
+
             setIsPaused(true)
           }}
           onMouseLeave={() => {
             setIsHovered(false)
+
             setIsPaused(false)
           }}
-          className={`group cursor-pointer absolute z-30 border border-solid border-[#2b2b2b] bottom-[166.22px] left-[492.42px] rounded-bl-[10px] rounded-br-[10px] rounded-tr-[10px] top-[402.98px] w-[487.39px] transition-all duration-300 ${
+          className={`group cursor-pointer absolute z-30 border-[1.6px] border-solid border-[#2b2b2b] bottom-[166.22px] left-[492.42px] rounded-bl-[10px] rounded-br-[10px] rounded-tr-[10px] top-[402.98px] w-[487.39px] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
             isHovered ? "bg-[#ebebdf]" : "bg-white hover:bg-[#ebebdf]"
-          } ${
-            activeSlide === 2
-              ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
-          }`}
+          } ${getCardAnimationClass(2)}`}
           data-node-id="1:138"
           data-name="Link"
         >
@@ -789,21 +802,14 @@ export default function HeroSection() {
             </p>
           </div>
           <div
-            className={`absolute border-l-[1.6px] border-r-[1.6px] border-solid border-t-[1.6px] border-[#2b2b2b] h-[37.6px] left-[-1.4px] rounded-tl-[6px] rounded-tr-[6px] top-[-37.4px] w-[162.49px] transition-colors duration-300 ${
+            className={`absolute border-l-[1.6px] border-r-[1.6px] border-solid border-t-[1.6px] border-[#2b2b2b] h-[37.6px] left-[-1.6px] rounded-tl-[6px] rounded-tr-[6px] top-[-37.6px] w-[162.49px] transition-colors duration-300 ${
               isHovered ? "bg-[#ebebdf]" : "bg-white group-hover:bg-[#ebebdf]"
             }`}
             data-node-id="1:140"
             data-name="Background+Border"
           >
             <div
-              className={`absolute h-[4px] left-[-2px] top-[13px] w-[163.29px] transition-colors duration-300 ${
-                isHovered ? "bg-[#ebebdf]" : "bg-white group-hover:bg-[#ebebdf]"
-              }`}
-              data-node-id="1:141"
-              data-name="Background"
-            />
-            <div
-              className={`absolute bottom-[-2px] h-[4px] left-0 w-[161.29px] transition-colors duration-300 ${
+              className={`absolute -bottom-[2px] h-[3.5px] left-0 right-[-1px] transition-colors duration-300 ${
                 isHovered ? "bg-[#ebebdf]" : "bg-white group-hover:bg-[#ebebdf]"
               }`}
               data-node-id="1:142"
@@ -827,13 +833,6 @@ export default function HeroSection() {
               <p className="leading-[15px]">TP. Đà Lạt</p>
             </div>
           </div>
-          <div
-            className={`absolute bottom-[35.6px] h-[8px] left-[-1.4px] w-[488.19px] transition-colors duration-300 ${
-              isHovered ? "bg-[#ebebdf]" : "bg-white group-hover:bg-[#ebebdf]"
-            }`}
-            data-node-id="1:148"
-            data-name="Background"
-          />
           <div
             className="absolute flex flex-wrap gap-[8px] left-[19.6px] top-[60.6px] w-[446.19px]"
             data-node-id="1:149"
@@ -885,19 +884,17 @@ export default function HeroSection() {
         <div
           onMouseEnter={() => {
             setIsHovered(true)
+
             setIsPaused(true)
           }}
           onMouseLeave={() => {
             setIsHovered(false)
+
             setIsPaused(false)
           }}
-          className={`group cursor-pointer absolute z-30 border border-solid border-[#2b2b2b] bottom-[110px] left-[492.42px] rounded-bl-[10px] rounded-br-[10px] rounded-tr-[10px] top-[419.2px] w-[523.49px] transition-all duration-300 ${
+          className={`group cursor-pointer absolute z-30 border-[1.6px] border-solid border-[#2b2b2b] bottom-[110px] left-[492.42px] rounded-bl-[10px] rounded-br-[10px] rounded-tr-[10px] top-[419.2px] w-[523.49px] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
             isHovered ? "bg-[#ebebdf]" : "bg-white hover:bg-[#ebebdf]"
-          } ${
-            activeSlide === 3
-              ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
-          }`}
+          } ${getCardAnimationClass(3)}`}
           data-node-id="1:156"
           data-name="Link"
         >
@@ -914,21 +911,14 @@ export default function HeroSection() {
             </p>
           </div>
           <div
-            className={`absolute border-l-[1.6px] border-r-[1.6px] border-solid border-t-[1.6px] border-[#2b2b2b] h-[37.6px] left-[-1.4px] rounded-tl-[6px] rounded-tr-[6px] top-[-37.4px] w-[141.7px] transition-colors duration-300 ${
+            className={`absolute border-l-[1.6px] border-r-[1.6px] border-solid border-t-[1.6px] border-[#2b2b2b] h-[37.6px] left-[-1.6px] rounded-tl-[6px] rounded-tr-[6px] top-[-37.6px] w-[141.7px] transition-colors duration-300 ${
               isHovered ? "bg-[#ebebdf]" : "bg-white group-hover:bg-[#ebebdf]"
             }`}
             data-node-id="1:158"
             data-name="Background+Border"
           >
             <div
-              className={`absolute h-[4px] left-[-2px] top-[13px] w-[142.5px] transition-colors duration-300 ${
-                isHovered ? "bg-[#ebebdf]" : "bg-white group-hover:bg-[#ebebdf]"
-              }`}
-              data-node-id="1:159"
-              data-name="Background"
-            />
-            <div
-              className={`absolute bottom-[-2px] h-[4px] left-0 w-[140.5px] transition-colors duration-300 ${
+              className={`absolute -bottom-[2px] h-[3.5px] left-0 right-[-1px] transition-colors duration-300 ${
                 isHovered ? "bg-[#ebebdf]" : "bg-white group-hover:bg-[#ebebdf]"
               }`}
               data-node-id="1:160"
@@ -952,13 +942,6 @@ export default function HeroSection() {
               <p className="leading-[15px]">TP. Đà Nẵng</p>
             </div>
           </div>
-          <div
-            className={`absolute bottom-[35.6px] h-[8px] left-[-1.4px] w-[524.29px] transition-colors duration-300 ${
-              isHovered ? "bg-[#ebebdf]" : "bg-white group-hover:bg-[#ebebdf]"
-            }`}
-            data-node-id="1:166"
-            data-name="Background"
-          />
           <div
             className="absolute flex flex-wrap gap-[8px] left-[19.6px] top-[60.6px] w-[482.29px]"
             data-node-id="1:167"

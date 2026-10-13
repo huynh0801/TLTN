@@ -56,16 +56,6 @@ export const imgGroup3 = `${assetPathPrefix}/cd9d7.svg`
 
 export const imgGroup4 = `${assetPathPrefix}/9085e.svg`
 
-export const imgGroup5 = `${assetPathPrefix}/ae817.svg`
-
 export const imgGroup6 = `${assetPathPrefix}/1d942.svg`
 
-export const imgGroup7 = `${assetPathPrefix}/ead92.svg`
-
-export const imgGroup8 = `${assetPathPrefix}/14649.svg`
-
-export const imgGroup9 = `${assetPathPrefix}/0957d.svg`
-
 export const imgGroup10 = `${assetPathPrefix}/3379e.svg`
-
-export const imgImgAboutImageTextSvg = `${assetPathPrefix}/2898b.svg`

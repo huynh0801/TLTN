@@ -2,13 +2,8 @@ import {
   imgGroup10,
   imgGroup3,
   imgGroup4,
-  imgGroup5,
   imgGroup6,
-  imgGroup7,
-  imgGroup8,
-  imgGroup9,
   imgImgAboutImage01Jpg,
-  imgImgAboutImageTextSvg,
 } from "@/constants/assets"
 
 export default function AboutSection() {
@@ -35,21 +30,6 @@ export default function AboutSection() {
             data-name="Group"
           >
             <div
-              className="absolute flex inset-[0_0.07%_54.11%_0] items-center justify-center"
-              data-node-id="1:528"
-              style={{ containerType: "size" }}
-            >
-              <div className="flex-none h-[100cqh] rotate-180 w-[100cqw]">
-                <div className="relative size-full" data-name="Group">
-                  <img
-                    alt=""
-                    className="absolute block inset-0 max-w-none size-full"
-                    src={imgGroup5}
-                  />
-                </div>
-              </div>
-            </div>
-            <div
               className="absolute contents inset-[44.44%_0_0_0]"
               data-node-id="1:531"
               style={{ containerType: "size" }}
@@ -70,102 +50,11 @@ export default function AboutSection() {
                   </div>
                 </div>
               </div>
-              <div
-                className="absolute flex inset-[44.44%_0.84%_29.06%_0] items-center justify-center"
-                data-node-id="1:535"
-                style={{ containerType: "size" }}
-              >
-                <div className="flex-none h-[100cqh] rotate-180 w-[100cqw]">
-                  <div className="relative size-full" data-name="Group">
-                    <img
-                      alt=""
-                      className="absolute block inset-0 max-w-none size-full"
-                      src={imgGroup7}
-                    />
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
-      <div
-        className="absolute bottom-0 flex h-[1037.11px] items-center justify-center right-[-85.58px] w-[441.16px]"
-        data-node-id="1:538"
-      >
-        <div className="flex-none rotate-180">
-          <div
-            className="h-[1037.11px] overflow-clip relative w-[441.16px]"
-            data-name="img_section_about_bg01.svg"
-          >
-            <div
-              className="-translate-x-1/2 -translate-y-1/2 absolute h-[1037.08px] left-1/2 overflow-clip top-1/2 w-[441.16px]"
-              data-node-id="1:539"
-              data-name="img_section_about_bg01.svg"
-            >
-              <div
-                className="absolute contents inset-0"
-                data-node-id="1:540"
-                style={{ containerType: "size" }}
-                data-name="Group"
-              >
-                <div
-                  className="absolute flex inset-[0_0.07%_54.11%_0] items-center justify-center"
-                  data-node-id="1:541"
-                  style={{ containerType: "size" }}
-                >
-                  <div className="flex-none h-[100cqh] rotate-180 w-[100cqw]">
-                    <div className="relative size-full" data-name="Group">
-                      <img
-                        alt=""
-                        className="absolute block inset-0 max-w-none size-full"
-                        src={imgGroup8}
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="absolute contents inset-[44.44%_0_0_0]"
-                  data-node-id="1:544"
-                  style={{ containerType: "size" }}
-                  data-name="Group"
-                >
-                  <div
-                    className="absolute flex inset-[73.8%_0_0_2.01%] items-center justify-center"
-                    data-node-id="1:545"
-                    style={{ containerType: "size" }}
-                  >
-                    <div className="flex-none h-[100cqh] rotate-180 w-[100cqw]">
-                      <div className="relative size-full" data-name="Group">
-                        <img
-                          alt=""
-                          className="absolute block inset-0 max-w-none size-full"
-                          src={imgGroup9}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="absolute flex inset-[44.44%_0.84%_29.06%_0] items-center justify-center"
-                    data-node-id="1:548"
-                    style={{ containerType: "size" }}
-                  >
-                    <div className="flex-none h-[100cqh] rotate-180 w-[100cqw]">
-                      <div className="relative size-full" data-name="Group">
-                        <img
-                          alt=""
-                          className="absolute block inset-0 max-w-none size-full"
-                          src={imgGroup7}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <div
         className="absolute bottom-[428.21px] flex items-center justify-center left-[52.1px] top-[371.62px] w-[20.8px]"
         data-node-id="1:551"
@@ -248,23 +137,7 @@ export default function AboutSection() {
           </div>
         </div>
       </div>
-      <div
-        className="absolute aspect-[170/284.20001220703125] left-[368.94px] overflow-clip right-[981.86px] top-[305.7px]"
-        data-node-id="1:563"
-        data-name="みんくら minkura"
-      >
-        <div
-          className="-translate-x-1/2 -translate-y-1/2 absolute h-[284.2px] left-1/2 overflow-clip top-1/2 w-[169.996px]"
-          data-node-id="1:564"
-          data-name="img_about_image_text.svg"
-        >
-          <img
-            alt=""
-            className="absolute block inset-0 max-w-none size-full"
-            src={imgImgAboutImageTextSvg}
-          />
-        </div>
-      </div>
+
       <div
         className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Inter:Bold'] font-bold h-[111.2px] justify-center leading-[0] left-[780.94px] not-italic right-[215.75px] text-[#222] text-[24px] top-[435.9px] tracking-[0.24px]"
         data-node-id="1:572"
