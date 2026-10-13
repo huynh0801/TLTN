@@ -1,5 +1,4 @@
 "use client" /* Faint Background Watermark Graphic */ /* Top Speech Balloon Container */ /* Downward Pointer Arrow */ /* Center: Photo Card with Iconic White Logo Overlay */ /* Base Photo */ /* Slight Dark Vignette Overlay for Crisp Logo Contrast */ /* Centered Large White Logo Overlaid */ /* min logo */ /* Subtitle tag */ /* kura logo */ /* Bottom: Description Paragraph Text */
-
 import {
   imgGroup10,
   imgGroup3,

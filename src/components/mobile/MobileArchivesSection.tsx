@@ -1,5 +1,4 @@
 "use client" /* Top Running Marquee Banner */ /* Track 1 */ /* Track 2 (Clone for infinite seamless loop) */ /* Stacked Single-Column Archive Cards (Authentic Figma Design) */ /* Top Row: Location Name (Left) + Category Stamp Circle (Right) */ /* RENT Round Category Stamp */ /* Center: Capsule Oval Photo with Vertical Archive Label on Left */ /* Vertical Archive Label Running on Left Edge */ /* Stadium Capsule Oval Rounded Photo */ /* Bottom Row: Title and Dark Navy Tags */ /* Title in Dark Navy */ /* Tag Pills in Dark Navy */
-
 import { ARCHIVE_ITEMS } from "@/constants/archivesData"
 
 export default function MobileArchivesSection() {
