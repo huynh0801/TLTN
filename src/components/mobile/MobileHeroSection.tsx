@@ -176,18 +176,18 @@ export default function MobileHeroSection() {
       >
         {}
         <div className="relative w-full pt-[22px]">
-          {}
-          <div className="absolute top-0 left-0 right-0 h-[65px] border-t-[1.6px] border-l-[1.6px] border-r-[1.6px] border-[#222] rounded-t-[32px] pointer-events-none" />
+          {/* Đường viền khung phía trên */}
+          <div className="absolute top-0 left-0 right-0 h-[65px] border-t-[1.6px] border-l-[1.6px] border-r-[1.6px] border-[#222] rounded-t-[14px] pointer-events-none" />
 
-          {}
+          {/* Tag Pickup nằm trên đường viền */}
           <div className="absolute -top-[11px] left-[26px] bg-white px-2 z-20">
             <span className="font-['Space_Grotesk:Light','Inter',sans-serif] font-bold text-[13.5px] text-[#222] tracking-[1.4px] whitespace-nowrap">
               Pickup {currentSlide.pickupNo}
             </span>
           </div>
 
-          {}
-          <div className="relative w-[92%] aspect-[1.42/1] rounded-t-[145px] sm:rounded-t-[160px] rounded-b-[90px] sm:rounded-b-[100px] overflow-hidden border border-black/10 shadow-xs bg-[#faf9f7] z-10 mx-auto">
+          {/* Ảnh chính bo góc 10px đồng bộ như giao diện Desktop */}
+          <div className="relative w-[92%] aspect-[1.42/1] rounded-[10px] overflow-hidden border border-black/10 shadow-xs bg-[#faf9f7] z-10 mx-auto">
             {MOBILE_HERO_SLIDES.map((slide, idx) => (
               <div
                 key={slide.id}
