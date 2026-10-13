@@ -1,5 +1,4 @@
 "use client" /* Top-Left Authentic Calligraphy Graphic */ /* Top Header Bar with Centered Slogan Title */ /* Left spacing for top-left logo */ /* Center: Slogan Title */ /* Right spacing for sticky NavigationMenu */ /* Main Content Area */ /* Top Arch Frame Line with Embedded Pickup Indicator */ /* Black Arch Outline (Left line, top curve, top line, right curve, right line) */ /* Pickup Indicator Text resting directly on top line (breaks the line with white padding) */ /* Central Dome Stadium Capsule Photo */ /* Description Card with Raised Tab (Continuous 4-sided border, perfect rounded corners, zero overhang) */ /* The Raised Tab on top-left of the card */ /* Mask strip covering the card body's top border directly beneath the tab */ /* Seamless SVG Fillet Curve connecting tab right border to card top border */ /* Title */ /* Tag Pills in Dark Teal */ /* Slide Pagination Dots */
-
 import { useState, useEffect, useRef, type TouchEvent } from "react"
 import {
   imgGroup,
@@ -143,10 +142,10 @@ export default function MobileHeroSection() {
   return (
     <section className="relative w-full overflow-hidden bg-white pt-3 pb-6 text-[#222]">
       {}
-      <div className="absolute -top-[12px] -left-[14px] w-[115px] h-[165px] pointer-events-none select-none z-10">
+      <div className="absolute top-0 -left-[6px] w-[90px] h-[220px] pointer-events-none select-none z-10">
         <img
           src={imgGroup}
-          alt="min"
+          alt="HYUN"
           className="size-full object-contain object-left-top"
         />
       </div>
@@ -156,10 +155,9 @@ export default function MobileHeroSection() {
         {}
         <div className="w-[60px] shrink-0" aria-hidden="true" />
 
-        {}
         <div className="flex-1 text-center px-1">
-          <h1 className="font-['Noto_Sans_JP:Bold','Inter:Bold',sans-serif] font-bold text-[18px] sm:text-[19px] text-[#222] tracking-[0.06em] leading-tight">
-            みんなの暮らし方不動産
+          <h1 className="font-['Inter:Bold',sans-serif] font-bold text-[18px] sm:text-[19px] text-[#222] tracking-[0.05em] leading-tight">
+            Điểm hẹn chuẩn gu
           </h1>
         </div>
 
