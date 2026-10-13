@@ -1,4 +1,4 @@
-"use client" /* Top-Left Authentic Calligraphy Graphic */ /* Top Header Bar with Centered Slogan Title */ /* Left spacing for top-left logo */ /* Center: Slogan Title */ /* Right spacing for sticky NavigationMenu */ /* Main Content Area */ /* Top Arch Frame Line with Embedded Pickup Indicator */ /* Black Arch Outline (Left line, top curve, top line, right curve, right line) */ /* Pickup Indicator Text resting directly on top line (breaks the line with white padding) */ /* Central Dome Stadium Capsule Photo */ /* Description Card with Raised Tab (Overlaps the bottom of the photo) */ /* Tab Row (Left Tab + SVG Fillet Curve + Top Right Border Line) */ /* The Raised Tab */ /* Seamless SVG Fillet Curve */ /* Remaining Top Border Line */ /* Main Card Body */ /* Title */ /* Tag Pills in Dark Teal */ /* Slide Pagination Dots */
+"use client" /* Top-Left Authentic Calligraphy Graphic */ /* Top Header Bar with Centered Slogan Title */ /* Left spacing for top-left logo */ /* Center: Slogan Title */ /* Right spacing for sticky NavigationMenu */ /* Main Content Area */ /* Top Arch Frame Line with Embedded Pickup Indicator */ /* Black Arch Outline (Left line, top curve, top line, right curve, right line) */ /* Pickup Indicator Text resting directly on top line (breaks the line with white padding) */ /* Central Dome Stadium Capsule Photo */ /* Description Card with Raised Tab (Continuous 4-sided border, perfect rounded corners, zero overhang) */ /* The Raised Tab on top-left of the card */ /* Mask strip covering the card body's top border directly beneath the tab */ /* Seamless SVG Fillet Curve connecting tab right border to card top border */ /* Title */ /* Tag Pills in Dark Teal */ /* Slide Pagination Dots */
 
 import { useState, useEffect, useRef, type TouchEvent } from "react"
 import {
@@ -57,6 +57,32 @@ const MOBILE_HERO_SLIDES: MobileSlide[] = [
     tags: ["Bánh xèo giòn", "Nem lụi than", "Đặc sản miền Trung", "Gia truyền"],
   },
 ]
+
+function TabCornerCurve({ fillColor }: { fillColor: string }) {
+  return (
+    <svg
+      preserveAspectRatio="none"
+      overflow="visible"
+      className="block size-full"
+      viewBox="0 0 10 10"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g id="Group">
+        <path
+          id="Vector"
+          d="M0 10V2H2V6.315C2.20896 6.62872 2.44665 6.92232 2.71 7.192C3.00573 7.49482 3.33253 7.76564 3.685 8H8V10H0Z"
+          fill={fillColor}
+        />
+        <path
+          id="Vector_2"
+          d="M8 9C5.416 9 3.6 8.359 2.455 7.04C1.463 5.9 1 4.3 1 2V0H3V2C2.86688 3.31798 3.20912 4.64014 3.965 5.728C4.709 6.584 6.029 7 8 7H10V9H8Z"
+          fill="#222"
+        />
+      </g>
+    </svg>
+  )
+}
 
 export default function MobileHeroSection() {
   const [activeSlide, setActiveSlide] = useState(0)
@@ -185,44 +211,32 @@ export default function MobileHeroSection() {
         </div>
 
         {}
-        <div className="relative w-full -mt-[38px] z-20">
-          {}
-          <div className="relative flex items-end">
+        <div className="relative w-full -mt-[22px] z-20">
+          <div
+            className="relative w-full p-4 sm:p-5 border-[1.6px] border-[#222] rounded-bl-[16px] rounded-br-[16px] rounded-tr-[16px] shadow-sm transition-colors duration-400"
+            style={{ backgroundColor: currentSlide.bgColor }}
+          >
             {}
             <div
-              className="px-4 py-2 border-t-[1.6px] border-l-[1.6px] border-r-[1.6px] border-[#222] rounded-tl-[8px] z-20 relative"
+              className="absolute -top-[37.6px] left-[-1.6px] h-[37.6px] px-4 flex items-center border-t-[1.6px] border-l-[1.6px] border-r-[1.6px] border-[#222] rounded-tl-[8px] rounded-tr-[8px] z-20"
               style={{ backgroundColor: currentSlide.bgColor }}
             >
               <span className="font-['Noto_Sans_JP:Bold','Inter:Bold',sans-serif] font-bold text-[14px] text-[#075d50] tracking-wide whitespace-nowrap">
                 {currentSlide.city}
               </span>
+
+              {}
+              <div
+                className="absolute -bottom-[2px] left-0 right-[-1px] h-[3.5px]"
+                style={{ backgroundColor: currentSlide.bgColor }}
+              />
+
+              {}
+              <div className="absolute bottom-0 overflow-clip right-[-9px] size-[10px] pointer-events-none">
+                <TabCornerCurve fillColor={currentSlide.bgColor} />
+              </div>
             </div>
 
-            {}
-            <div className="relative w-[14px] h-[14px] -ml-[1.6px] z-20 shrink-0">
-              <svg viewBox="0 0 14 14" className="size-full block" fill="none">
-                <path
-                  d="M 0 0 C 0 7.732 6.268 14 14 14 L 0 14 Z"
-                  fill={currentSlide.bgColor}
-                />
-                <path
-                  d="M 0 0 C 0 7.732 6.268 14 14 14"
-                  fill="none"
-                  stroke="#222"
-                  strokeWidth="1.6"
-                />
-              </svg>
-            </div>
-
-            {}
-            <div className="flex-1 h-[1.6px] bg-[#222] -ml-[1.6px]" />
-          </div>
-
-          {}
-          <div
-            className="w-full p-4 sm:p-5 border-l-[1.6px] border-r-[1.6px] border-b-[1.6px] border-[#222] rounded-b-[16px] rounded-tr-[16px] shadow-sm -mt-[1.6px] transition-colors duration-400"
-            style={{ backgroundColor: currentSlide.bgColor }}
-          >
             {}
             <h2 className="font-['Noto_Sans_JP:Bold','Inter:Bold',sans-serif] font-bold text-[17px] sm:text-[18px] text-[#075d50] leading-[1.38] mb-3.5 tracking-tight">
               {currentSlide.title}
