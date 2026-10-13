@@ -19,22 +19,31 @@ export default function MobileAboutSection() {
       </div>
 
       <div className="relative z-10 w-full max-w-[390px] mx-auto">
-        {/* Top Speech Balloon Header: "Về điểm hẹn ẩm thực HYUN" */}
-        <div className="flex flex-col items-center justify-center mb-8">
-          <div className="relative inline-block">
-            <div className="bg-white border-[1.6px] border-[#222] rounded-[8px] px-5 py-2 shadow-2xs">
-              <h2 className="font-['Inter:Bold',sans-serif] font-bold text-[15px] sm:text-[16px] text-[#222] tracking-[0.03em] whitespace-nowrap">
-                Về điểm hẹn ẩm thực HYUN
-              </h2>
-            </div>
-            {/* Balloon Bottom Notch */}
-            <div className="flex justify-center -mt-[1px]">
+        {/* Top Speech Balloon Header: "Về điểm hẹn ẩm thực HYUN" - Matching Desktop exactly */}
+        <div className="flex items-center justify-center mb-8">
+          <div className="relative w-[284px] h-[46.8px] border border-[#222] rounded-[8px] bg-white flex items-center justify-center select-none">
+            {/* Cutout strip for left & right border gaps matching desktop */}
+            <div
+              className="absolute bg-white -left-[2px] -right-[2px] top-[42.78%] bottom-[44.4%] pointer-events-none"
+              aria-hidden="true"
+            />
+
+            {/* Bottom Balloon Notch / Curly Bracket Tip with mask matching desktop */}
+            <div
+              className="absolute -bottom-[7.4px] left-1/2 -translate-x-1/2 w-[14px] h-[10px] pointer-events-none z-10"
+              aria-hidden="true"
+            >
               <img
                 src={imgGroup10}
                 alt=""
-                className="w-[14px] h-[10px] block"
+                className="w-full h-full block"
               />
             </div>
+
+            {/* Centered Title */}
+            <h2 className="relative z-10 font-['Inter:Bold',sans-serif] font-bold text-[16px] text-[#222] tracking-[0.48px] text-center whitespace-nowrap">
+              Về điểm hẹn ẩm thực HYUN
+            </h2>
           </div>
         </div>
 
