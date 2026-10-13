@@ -10,7 +10,6 @@ import {
   imgImg5097F09F8C9FScaledJpeg,
   imgImgTopTilte02Svg,
   imgLineAlbum22071822800X5331Jpg,
-  imgPickup,
 } from "@/constants/assets"
 
 function TabCornerCurve({ isHovered }: { isHovered?: boolean }) {
@@ -450,36 +449,19 @@ export default function HeroSection() {
             data-name="Background"
           />
 
-          {}
+          {/* Pickup Indicator on right border */}
           <div
-            className="absolute flex h-[110.62px] items-center justify-center right-[-20.78px] top-[43.6px] w-[45px]"
+            className="absolute flex h-[110.62px] items-center justify-center right-[-20.78px] top-[43.6px] w-[45px] select-none pointer-events-none z-20"
             data-node-id="1:84"
           >
             <div className="flex-none rotate-90">
               <div
-                className="bg-white h-[45px] relative w-[110.62px]"
+                className="bg-white h-[45px] relative w-[110.62px] flex items-center justify-center"
                 data-name="Background"
               >
-                <div
-                  className="[word-break:break-word] absolute font-['Work_Sans:SemiBold'] font-semibold h-[19.2px] leading-[0] left-[12px] text-[#222] text-[16px] top-[10.4px] tracking-[1.28px] w-[86.62px]"
-                  data-node-id="1:85"
-                  data-name="Mask Group"
-                >
-                  <div
-                    className="-translate-y-1/2 absolute flex flex-col h-[19.2px] justify-center left-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-size-[19.2px_86.62px] top-[9.6px] w-[67.523px]"
-                    data-node-id="1:88"
-                    style={{ maskImage: `url("${imgPickup}")` }}
-                  >
-                    <p className="leading-[16px]">{`Pickup `}</p>
-                  </div>
-                  <div
-                    className="-translate-y-1/2 absolute flex flex-col h-[19.2px] justify-center left-[67.22px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_-67.22px] mask-size-[19.2px_86.62px] top-[9.6px] w-[19.715px]"
-                    data-node-id="1:89"
-                    style={{ maskImage: `url("${imgPickup}")` }}
-                  >
-                    <p className="leading-[16px]">0{activeSlide + 1}</p>
-                  </div>
-                </div>
+                <span className="font-['Work_Sans:SemiBold','Space_Grotesk','Inter',sans-serif] font-semibold text-[16px] text-[#222] tracking-[1.28px] whitespace-nowrap">
+                  Pickup 0{activeSlide + 1}
+                </span>
               </div>
             </div>
           </div>
