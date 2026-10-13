@@ -23,3 +23,8 @@ logs/
 # Next.js
 .next/
 out/
+
+# Superpowers documentation
+docs/superpowers/
+doc/superpower/
+
