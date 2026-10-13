@@ -160,11 +160,11 @@ export default function ChatBox() {
   return (
     <div
       ref={chatRef}
-      className="fixed bottom-6 right-6 md:bottom-8 md:right-10 z-50 flex flex-col items-end select-none font-['Inter',system-ui,-apple-system,sans-serif]"
+      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-10 z-50 flex flex-col items-end select-none font-['Inter',system-ui,-apple-system,sans-serif]"
     >
       {}
       {isOpen && !isMinimized && (
-        <div className="flex flex-col w-[340px] sm:w-[365px] h-[500px] max-h-[85vh] rounded-[22px] bg-[#1c1c1c] border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)] overflow-hidden animate-menu-card">
+        <div className="flex flex-col w-[calc(100vw-32px)] sm:w-[365px] max-w-[365px] h-[500px] max-h-[80vh] sm:max-h-[85vh] rounded-[22px] bg-[#1c1c1c] border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)] overflow-hidden animate-menu-card">
           {}
           <div className="relative flex items-center justify-between px-4 py-3 bg-[#1e1e1e] border-b border-white/10 text-white">
             {}

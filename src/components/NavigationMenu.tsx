@@ -104,7 +104,7 @@ export default function NavigationMenu() {
 
   return (
     <div
-      className="fixed top-6 right-6 md:top-8 md:right-10 z-50"
+      className="fixed top-4 right-4 sm:top-6 sm:right-6 md:top-8 md:right-10 z-50"
       ref={menuRef}
     >
       {}
@@ -127,7 +127,7 @@ export default function NavigationMenu() {
       {}
       {isOpen && (
         <div
-          className="relative w-[270px] animate-menu-card rounded-[26px] bg-[#1c1c1c] p-7 text-white shadow-2xl transition-all duration-300 border border-white/10"
+          className="relative w-[270px] max-w-[calc(100vw-32px)] animate-menu-card rounded-[26px] bg-[#1c1c1c] p-7 text-white shadow-2xl transition-all duration-300 border border-white/10"
           role="dialog"
           aria-label="Menu điều hướng"
         >
