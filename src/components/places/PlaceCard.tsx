@@ -11,10 +11,10 @@ export default function PlaceCard({ place, className = "" }: PlaceCardProps) {
   return (
     <Link
       href={`/places/${place.id}`}
-      className={`group relative flex flex-col overflow-hidden rounded-2xl border border-zinc-200/80 bg-white p-3.5 transition-all duration-300 hover:-translate-y-1 hover:border-black hover:shadow-xl sm:p-4 ${className}`}
+      className={`group relative flex flex-col border-2 border-black bg-white p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000000] ${className}`}
     >
       {/* Image Showcase */}
-      <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl bg-zinc-100">
+      <div className="relative aspect-[16/10] w-full overflow-hidden border border-black bg-neutral-100">
         <Image
           src={place.image}
           alt={place.name}
@@ -25,30 +25,32 @@ export default function PlaceCard({ place, className = "" }: PlaceCardProps) {
         />
 
         {/* Top-left City Badge */}
-        <span className="absolute top-3 left-3 z-10 rounded-full bg-black/85 px-3 py-1 text-[11px] font-bold tracking-wider text-white uppercase backdrop-blur-sm">
+        <span className="absolute top-2.5 left-2.5 z-10 border border-white/20 bg-black px-2.5 py-1 text-[10px] sm:text-[11px] font-bold tracking-wider text-white uppercase">
           {place.city}
         </span>
 
         {/* Top-right Archive Code */}
-        <span className="absolute top-3 right-3 z-10 rounded-md bg-white/90 px-2.5 py-1 font-mono text-[11px] font-semibold tracking-wider text-black uppercase backdrop-blur-sm">
+        <span className="absolute top-2.5 right-2.5 z-10 border border-black bg-white px-2 py-0.5 font-mono text-[10px] sm:text-[11px] font-bold tracking-wider text-black uppercase shadow-[2px_2px_0px_#000000]">
           {place.archiveCode}
         </span>
       </div>
 
       {/* Content Body */}
-      <div className="mt-3.5 flex flex-1 flex-col justify-between">
+      <div className="mt-4 flex flex-1 flex-col justify-between">
         <div>
           {/* Index & Category Row */}
-          <div className="flex items-center gap-2 text-xs font-semibold text-zinc-400">
-            <span className="font-mono text-zinc-900">#{place.indexNo}</span>
+          <div className="flex items-center gap-2 text-xs font-semibold text-zinc-500">
+            <span className="border border-black bg-neutral-100 px-1.5 py-0.5 font-mono text-[11px] font-bold text-black">
+              #{place.indexNo}
+            </span>
             <span aria-hidden="true">•</span>
-            <span className="uppercase tracking-wider text-zinc-500">
+            <span className="uppercase tracking-wider text-zinc-600 font-semibold text-[11px]">
               {place.tags?.[0] || "Ẩm thực"}
             </span>
           </div>
 
           {/* Place Title */}
-          <h3 className="mt-1 text-base font-bold text-black sm:text-lg group-hover:underline line-clamp-1">
+          <h3 className="mt-2 text-base font-black text-black sm:text-lg group-hover:underline line-clamp-1">
             {place.name}
           </h3>
 
@@ -62,7 +64,7 @@ export default function PlaceCard({ place, className = "" }: PlaceCardProps) {
           {/* Address */}
           <div className="mt-2.5 flex items-center gap-1.5 text-xs text-zinc-500">
             <svg
-              className="size-3.5 shrink-0 text-zinc-400"
+              className="size-3.5 shrink-0 text-black"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -85,7 +87,7 @@ export default function PlaceCard({ place, className = "" }: PlaceCardProps) {
               {place.tags.slice(0, 3).map((tag) => (
                 <span
                   key={tag}
-                  className="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] text-zinc-600"
+                  className="border border-black/20 bg-neutral-100 px-2 py-0.5 text-[11px] font-medium text-black"
                 >
                   {tag}
                 </span>
@@ -94,7 +96,7 @@ export default function PlaceCard({ place, className = "" }: PlaceCardProps) {
           )}
 
           {/* Bottom Action Hint */}
-          <div className="mt-3.5 flex items-center justify-between border-t border-zinc-100 pt-3 text-xs font-semibold text-zinc-800">
+          <div className="mt-3.5 flex items-center justify-between border-t border-black/10 pt-3 text-xs font-bold text-black">
             <span>Khám phá chi tiết</span>
             <span
               className="transition-transform duration-200 group-hover:translate-x-1"

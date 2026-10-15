@@ -58,24 +58,24 @@ export default function PlacesExplorer({
         </div>
 
         {/* Dynamic Places Counter Badge */}
-        <div className="inline-flex shrink-0 items-center gap-2 self-start rounded-full border border-zinc-200 bg-zinc-50 px-3.5 py-1.5 text-xs font-medium text-zinc-600 sm:self-end">
-          <span className="size-2 rounded-full bg-emerald-500 animate-pulse" />
+        <div className="inline-flex shrink-0 items-center gap-2 self-start border-2 border-black bg-white px-3.5 py-1.5 text-xs font-bold text-black shadow-[2px_2px_0px_#000000] sm:self-end">
+          <span className="size-2 bg-emerald-500 animate-pulse" />
           <span>
-            Hiển thị <strong className="font-semibold text-black">{filteredPlaces.length}</strong> trên tổng số{" "}
-            <strong className="font-semibold text-black">{UNIFIED_PLACES.length}</strong> địa điểm
+            Hiển thị <strong className="font-extrabold text-black">{filteredPlaces.length}</strong> trên tổng số{" "}
+            <strong className="font-extrabold text-black">{UNIFIED_PLACES.length}</strong> địa điểm
           </span>
         </div>
       </div>
 
       {/* Search Input Section */}
       <div className="relative">
-        <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-zinc-400">
+        <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-black">
           <svg
             className="size-5"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            strokeWidth="2"
+            strokeWidth="2.5"
             strokeLinecap="round"
             strokeLinejoin="round"
             aria-hidden="true"
@@ -89,16 +89,16 @@ export default function PlacesExplorer({
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           placeholder="Tìm kiếm theo tên quán, món ăn (phở, bún chả, cà phê...), hoặc địa chỉ..."
-          className="w-full rounded-2xl border border-zinc-200 bg-white py-3.5 pl-11 pr-11 text-sm text-black placeholder-zinc-400 shadow-sm transition-all focus:border-black focus:outline-none focus:ring-1 focus:ring-black sm:text-base"
+          className="w-full border-2 border-black bg-white py-3.5 pl-11 pr-11 text-sm font-medium text-black placeholder-zinc-400 shadow-[4px_4px_0px_#000000] transition-all focus:border-black focus:outline-none sm:text-base"
         />
         {searchQuery !== "" && (
           <button
             type="button"
             onClick={() => setSearchQuery("")}
             aria-label="Xóa tìm kiếm"
-            className="absolute inset-y-0 right-0 flex items-center pr-3.5 text-zinc-400 hover:text-black transition-colors"
+            className="absolute inset-y-0 right-0 flex items-center pr-3.5 text-zinc-500 hover:text-black transition-colors"
           >
-            <span className="flex size-6 items-center justify-center rounded-full hover:bg-zinc-100">
+            <span className="flex size-6 items-center justify-center border border-black bg-white hover:bg-black hover:text-white transition-colors">
               <svg
                 className="size-3.5"
                 viewBox="0 0 24 24"
@@ -128,16 +128,16 @@ export default function PlacesExplorer({
                 key={city}
                 type="button"
                 onClick={() => setSelectedCity(city)}
-                className={`inline-flex shrink-0 items-center gap-1.5 rounded-full border px-4 py-2 text-xs sm:text-sm transition-all duration-200 ${
+                className={`inline-flex shrink-0 items-center gap-1.5 border-2 px-3.5 py-1.5 text-xs sm:text-sm font-bold tracking-wide transition-all duration-150 ${
                   isActive
-                    ? "bg-black text-white border-black shadow-sm font-semibold"
-                    : "bg-white text-zinc-700 border-zinc-200 hover:border-black font-medium"
+                    ? "bg-black text-white border-black shadow-[3px_3px_0px_#000000]"
+                    : "bg-white text-black border-black/30 hover:border-black hover:bg-neutral-50 shadow-[1px_1px_0px_#000000]"
                 }`}
               >
                 <span>{city}</span>
                 <span
-                  className={`text-xs font-mono ${
-                    isActive ? "text-zinc-300" : "text-zinc-400"
+                  className={`text-[11px] font-mono font-bold ${
+                    isActive ? "text-neutral-300" : "text-zinc-500"
                   }`}
                 >
                   ({count})
@@ -156,14 +156,14 @@ export default function PlacesExplorer({
           ))}
         </div>
       ) : (
-        <div className="flex flex-col items-center justify-center rounded-3xl border border-dashed border-zinc-200 bg-zinc-50/50 px-6 py-16 text-center sm:py-20">
-          <div className="flex size-16 items-center justify-center rounded-2xl border border-zinc-100 bg-white text-zinc-400 shadow-sm">
+        <div className="flex flex-col items-center justify-center border-2 border-dashed border-black bg-white px-6 py-16 text-center sm:py-20 shadow-[6px_6px_0px_#000000]">
+          <div className="flex size-16 items-center justify-center border-2 border-black bg-neutral-100 text-black shadow-[2px_2px_0px_#000000]">
             <svg
               className="size-8"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              strokeWidth="1.5"
+              strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
               aria-hidden="true"
@@ -175,11 +175,11 @@ export default function PlacesExplorer({
             </svg>
           </div>
 
-          <h3 className="mt-5 text-lg font-bold text-black sm:text-xl">
+          <h3 className="mt-5 text-lg font-black text-black sm:text-xl uppercase tracking-tight">
             Không tìm thấy điểm hẹn phù hợp
           </h3>
 
-          <p className="mt-2 max-w-md text-sm text-zinc-500">
+          <p className="mt-2 max-w-md text-sm text-zinc-600">
             Không có địa điểm nào khớp với từ khóa "{searchQuery}" tại {selectedCity}.
           </p>
 
@@ -189,7 +189,7 @@ export default function PlacesExplorer({
               setSearchQuery("")
               setSelectedCity("Tất cả")
             }}
-            className="mt-6 inline-flex items-center gap-2 rounded-xl bg-black px-5 py-2.5 text-sm font-semibold text-white shadow transition-all hover:bg-zinc-800 hover:shadow-md"
+            className="mt-6 inline-flex items-center gap-2 border-2 border-black bg-black px-5 py-2.5 text-sm font-bold text-white shadow-[3px_3px_0px_#000000] transition-all hover:bg-neutral-800"
           >
             <span>Xóa bộ lọc & Xem tất cả</span>
           </button>
