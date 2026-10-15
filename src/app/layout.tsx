@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next"
 import PwaRegister from "@/components/pwa/PwaRegister"
+import InstallPromptBanner from "@/components/pwa/InstallPromptBanner"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -38,9 +39,9 @@ export default function RootLayout({
     <html lang="vi">
       <body className="antialiased min-h-screen selection:bg-black selection:text-white">
         <PwaRegister />
+        <InstallPromptBanner />
         {children}
       </body>
     </html>
   )
 }
-
