@@ -68,7 +68,7 @@ export default function ProfilePage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#141414] text-white selection:bg-[#F2A93B]/30 selection:text-white">
+    <div className="min-h-screen bg-[#fafafa] text-[#111111] selection:bg-black selection:text-white">
       {/* Floating navigation and chat widgets */}
       <NavigationMenu />
       <ChatBox />

@@ -1,4 +1,4 @@
-"use client" /* Ambient background decoration */ /* 1. Avatar & Identity Header */ /* Avatar Container with Verified Crown Badge */ /* Crown Verified Badge */ /* Names & Title */ /* Bio text */ /* Subtle Divider */ /* 2. Contact & Location Information */ /* Location */ /* Email */ /* Phone */ /* Subtle Divider */ /* 3. Stats Grid 2x2 */ /* Quán đã ghé */ /* Bài đánh giá */ /* Lịch trình ẩm thực */ /* Điểm thưởng foodie */ /* Subtle Divider */ /* 4. Favorite Taste Tags */ /* Subtle Divider */ /* 5. Schedule Filter Tabs */
+"use client"
 
 import type { UserProfile } from "@/types/profile"
 
@@ -30,36 +30,26 @@ export default function PersonalInfoCard({
   ]
 
   return (
-    <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-[#1c1c1c] p-5 shadow-2xl backdrop-blur-sm sm:rounded-3xl sm:p-7">
-      {}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -right-20 -top-20 size-64 rounded-full bg-[#F2A93B]/10 blur-3xl"
-      />
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -left-20 bottom-1/3 size-64 rounded-full bg-[#F2A93B]/5 blur-3xl"
-      />
-
-      <div className="relative z-10 flex flex-col gap-6 sm:gap-7">
-        {}
+    <div className="border-2 border-black bg-white p-5 sm:p-6 shadow-[4px_4px_0px_#000000]">
+      <div className="flex flex-col gap-6">
+        {/* 1. Avatar & Identity Header */}
         <div className="flex flex-col items-center text-center sm:items-start sm:text-left">
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-center">
-            {}
+            {/* Avatar Container with Sharp Border */}
             <div className="relative shrink-0">
               <img
                 src={profile.avatarUrl}
                 alt={profile.name}
-                className="size-20 rounded-full border-2 border-[#F2A93B]/70 object-cover shadow-lg shadow-black/50 sm:size-24"
+                className="size-20 sm:size-24 border-2 border-black object-cover shadow-[3px_3px_0px_#000000]"
               />
-              {}
+              {/* Verified Badge */}
               <div
-                className="absolute -bottom-1 -right-1 flex size-7 items-center justify-center rounded-full bg-[#F2A93B] text-[#1c1c1c] shadow-md ring-4 ring-[#1c1c1c] sm:size-8"
+                className="absolute -bottom-1 -right-1 flex size-6 sm:size-7 items-center justify-center border-2 border-black bg-black text-white shadow-[2px_2px_0px_#ffffff]"
                 title="Thành viên Tinh Hoa Xác Thực"
                 aria-label="Thành viên Tinh Hoa Xác Thực"
               >
                 <svg
-                  className="size-4"
+                  className="size-3.5"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                   aria-hidden="true"
@@ -69,45 +59,45 @@ export default function PersonalInfoCard({
               </div>
             </div>
 
-            {}
+            {/* Names & Title */}
             <div className="flex flex-col items-center sm:items-start">
               <div className="flex flex-wrap items-center justify-center gap-2 sm:justify-start">
-                <h2 className="text-xl font-bold tracking-tight text-white sm:text-2xl">
+                <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-black">
                   {profile.name}
                 </h2>
-                <span className="inline-flex items-center rounded-full border border-[#F2A93B]/30 bg-[#F2A93B]/10 px-2.5 py-0.5 text-xs font-semibold text-[#F2A93B]">
+                <span className="border border-black bg-black px-2 py-0.5 text-xs font-bold text-white uppercase tracking-wider">
                   VIP Foodie
                 </span>
               </div>
-              <p className="mt-0.5 text-sm font-medium text-white/50">
+              <p className="mt-0.5 text-sm font-semibold text-neutral-600">
                 {profile.handle}
               </p>
-              <div className="mt-2.5 inline-flex items-center rounded-full border border-[#F2A93B]/25 bg-[#F2A93B]/10 px-2.5 py-1 text-xs font-semibold text-[#F2A93B] w-fit">
+              <div className="mt-2 inline-flex items-center border border-black bg-neutral-100 px-2.5 py-1 text-xs font-bold text-black">
                 {profile.title}
               </div>
             </div>
           </div>
 
-          {}
-          <p className="mt-4 text-sm leading-relaxed text-white/75 sm:mt-5">
+          {/* Bio text */}
+          <p className="mt-4 text-xs sm:text-sm leading-relaxed text-neutral-700 sm:mt-5 font-medium">
             {profile.bio}
           </p>
         </div>
 
-        {}
-        <div className="h-px w-full bg-white/10" aria-hidden="true" />
+        {/* Divider */}
+        <div className="h-[2px] w-full bg-black/10" aria-hidden="true" />
 
-        {}
+        {/* 2. Contact & Location Information */}
         <div className="flex flex-col gap-2.5 text-xs sm:text-sm">
-          {}
-          <div className="flex items-center gap-3 text-white/75">
-            <span className="flex size-8 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-[#F2A93B]">
+          {/* Location */}
+          <div className="flex items-center gap-3 text-neutral-800 font-medium">
+            <span className="flex size-7 shrink-0 items-center justify-center border border-black bg-neutral-100 text-black">
               <svg
-                className="size-4"
+                className="size-3.5"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2"
+                strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 aria-hidden="true"
@@ -119,23 +109,23 @@ export default function PersonalInfoCard({
             <span className="truncate">{profile.locationName}</span>
           </div>
 
-          {}
+          {/* Email */}
           <a
             href={`mailto:${profile.email}`}
-            className="group flex items-center gap-3 text-white/75 transition-colors hover:text-white"
+            className="group flex items-center gap-3 text-neutral-800 transition-colors hover:text-black font-medium"
           >
-            <span className="flex size-8 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-[#F2A93B] transition-colors group-hover:border-[#F2A93B]/40 group-hover:bg-[#F2A93B]/10">
+            <span className="flex size-7 shrink-0 items-center justify-center border border-black bg-neutral-100 text-black transition-colors group-hover:bg-black group-hover:text-white">
               <svg
-                className="size-4"
+                className="size-3.5"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2"
+                strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 aria-hidden="true"
               >
-                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <rect width="20" height="16" x="2" y="4" rx="0" />
                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
               </svg>
             </span>
@@ -144,18 +134,18 @@ export default function PersonalInfoCard({
             </span>
           </a>
 
-          {}
+          {/* Phone */}
           <a
             href={`tel:${profile.phone.replace(/\s+/g, "")}`}
-            className="group flex items-center gap-3 text-white/75 transition-colors hover:text-white"
+            className="group flex items-center gap-3 text-neutral-800 transition-colors hover:text-black font-medium"
           >
-            <span className="flex size-8 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-[#F2A93B] transition-colors group-hover:border-[#F2A93B]/40 group-hover:bg-[#F2A93B]/10">
+            <span className="flex size-7 shrink-0 items-center justify-center border border-black bg-neutral-100 text-black transition-colors group-hover:bg-black group-hover:text-white">
               <svg
-                className="size-4"
+                className="size-3.5"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2"
+                strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 aria-hidden="true"
@@ -169,31 +159,31 @@ export default function PersonalInfoCard({
           </a>
         </div>
 
-        {}
-        <div className="h-px w-full bg-white/10" aria-hidden="true" />
+        {/* Divider */}
+        <div className="h-[2px] w-full bg-black/10" aria-hidden="true" />
 
-        {}
+        {/* 3. Stats Grid 2x2 */}
         <div>
           <div className="mb-3 flex items-center justify-between">
-            <span className="text-xs font-bold uppercase tracking-wider text-white/50">
+            <span className="text-xs font-bold uppercase tracking-wider text-black">
               Thống kê hoạt động
             </span>
-            <span className="text-[11px] font-medium text-[#F2A93B]">
+            <span className="text-[11px] font-bold text-neutral-600 uppercase">
               Ẩm thực Hà Nội
             </span>
           </div>
           <div className="grid grid-cols-2 gap-2.5 sm:gap-3">
-            {}
-            <div className="group rounded-xl border border-white/5 bg-[#252525]/80 p-3.5 transition-all hover:border-[#F2A93B]/30 hover:bg-[#282828]">
+            {/* Quán đã ghé */}
+            <div className="group border-2 border-black bg-white p-3 shadow-[2px_2px_0px_#000000] transition-all hover:bg-neutral-50">
               <div className="flex items-center justify-between">
-                <span className="text-xs text-white/50">Quán đã ghé</span>
-                <span className="text-[#F2A93B]/70 group-hover:text-[#F2A93B]">
+                <span className="text-xs font-semibold text-neutral-600">Quán đã ghé</span>
+                <span className="text-black">
                   <svg
                     className="size-4"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    strokeWidth="2"
+                    strokeWidth="2.2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     aria-hidden="true"
@@ -204,22 +194,22 @@ export default function PersonalInfoCard({
                   </svg>
                 </span>
               </div>
-              <p className="mt-2 text-xl font-bold text-white transition-colors group-hover:text-[#F2A93B]">
+              <p className="mt-1.5 text-xl font-bold text-black">
                 {profile.stats.visitedPlaces}
               </p>
             </div>
 
-            {}
-            <div className="group rounded-xl border border-white/5 bg-[#252525]/80 p-3.5 transition-all hover:border-[#F2A93B]/30 hover:bg-[#282828]">
+            {/* Bài đánh giá */}
+            <div className="group border-2 border-black bg-white p-3 shadow-[2px_2px_0px_#000000] transition-all hover:bg-neutral-50">
               <div className="flex items-center justify-between">
-                <span className="text-xs text-white/50">Bài đánh giá</span>
-                <span className="text-[#F2A93B]/70 group-hover:text-[#F2A93B]">
+                <span className="text-xs font-semibold text-neutral-600">Đánh giá</span>
+                <span className="text-black">
                   <svg
                     className="size-4"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    strokeWidth="2"
+                    strokeWidth="2.2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     aria-hidden="true"
@@ -228,49 +218,49 @@ export default function PersonalInfoCard({
                   </svg>
                 </span>
               </div>
-              <p className="mt-2 text-xl font-bold text-white transition-colors group-hover:text-[#F2A93B]">
+              <p className="mt-1.5 text-xl font-bold text-black">
                 {profile.stats.reviewsCount}
               </p>
             </div>
 
-            {}
-            <div className="group rounded-xl border border-white/5 bg-[#252525]/80 p-3.5 transition-all hover:border-[#F2A93B]/30 hover:bg-[#282828]">
+            {/* Lịch trình */}
+            <div className="group border-2 border-black bg-white p-3 shadow-[2px_2px_0px_#000000] transition-all hover:bg-neutral-50">
               <div className="flex items-center justify-between">
-                <span className="text-xs text-white/50">Lịch trình</span>
-                <span className="text-[#F2A93B]/70 group-hover:text-[#F2A93B]">
+                <span className="text-xs font-semibold text-neutral-600">Lịch trình</span>
+                <span className="text-black">
                   <svg
                     className="size-4"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    strokeWidth="2"
+                    strokeWidth="2.2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     aria-hidden="true"
                   >
-                    <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
-                    <line x1="16" x2="16" y1="2" y2="6" />
-                    <line x1="8" x2="8" y1="2" y2="6" />
-                    <line x1="3" x2="21" y1="10" y2="10" />
+                    <rect width="18" height="18" x="3" y="4" rx="0" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
                   </svg>
                 </span>
               </div>
-              <p className="mt-2 text-xl font-bold text-white transition-colors group-hover:text-[#F2A93B]">
+              <p className="mt-1.5 text-xl font-bold text-black">
                 {profile.stats.upcomingTrips}
               </p>
             </div>
 
-            {}
-            <div className="group rounded-xl border border-white/5 bg-[#252525]/80 p-3.5 transition-all hover:border-[#F2A93B]/30 hover:bg-[#282828]">
+            {/* Điểm thưởng */}
+            <div className="group border-2 border-black bg-white p-3 shadow-[2px_2px_0px_#000000] transition-all hover:bg-neutral-50">
               <div className="flex items-center justify-between">
-                <span className="text-xs text-white/50">Điểm thưởng</span>
-                <span className="text-[#F2A93B]/70 group-hover:text-[#F2A93B]">
+                <span className="text-xs font-semibold text-neutral-600">Điểm thưởng</span>
+                <span className="text-black">
                   <svg
                     className="size-4"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    strokeWidth="2"
+                    strokeWidth="2.2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     aria-hidden="true"
@@ -279,20 +269,20 @@ export default function PersonalInfoCard({
                   </svg>
                 </span>
               </div>
-              <p className="mt-2 text-xl font-bold text-white transition-colors group-hover:text-[#F2A93B]">
+              <p className="mt-1.5 text-xl font-bold text-black">
                 {profile.stats.rewardPoints.toLocaleString("vi-VN")}
               </p>
             </div>
           </div>
         </div>
 
-        {}
-        <div className="h-px w-full bg-white/10" aria-hidden="true" />
+        {/* Divider */}
+        <div className="h-[2px] w-full bg-black/10" aria-hidden="true" />
 
-        {}
+        {/* 4. Favorite Taste Tags */}
         <div>
           <div className="mb-3 flex items-center justify-between">
-            <span className="text-xs font-bold uppercase tracking-wider text-white/50">
+            <span className="text-xs font-bold uppercase tracking-wider text-black">
               Gu ẩm thực yêu thích
             </span>
           </div>
@@ -300,7 +290,7 @@ export default function PersonalInfoCard({
             {profile.favoriteTags.map((tag) => (
               <span
                 key={tag}
-                className="cursor-default rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-white/80 transition-all hover:border-[#F2A93B]/40 hover:bg-[#F2A93B]/10 hover:text-[#F2A93B]"
+                className="cursor-default border border-black bg-white px-2.5 py-1 text-xs font-semibold text-black shadow-[2px_2px_0px_#000000] transition-transform hover:-translate-y-0.5"
               >
                 #{tag}
               </span>
@@ -308,17 +298,17 @@ export default function PersonalInfoCard({
           </div>
         </div>
 
-        {}
-        <div className="h-px w-full bg-white/10" aria-hidden="true" />
+        {/* Divider */}
+        <div className="h-[2px] w-full bg-black/10" aria-hidden="true" />
 
-        {}
+        {/* 5. Schedule Filter Tabs */}
         <div>
           <div className="mb-3 flex items-center justify-between">
-            <span className="text-xs font-bold uppercase tracking-wider text-white/50">
+            <span className="text-xs font-bold uppercase tracking-wider text-black">
               Bộ lọc lịch trình
             </span>
           </div>
-          <div className="grid grid-cols-3 gap-2 rounded-xl border border-white/10 bg-[#141414] p-1.5">
+          <div className="grid grid-cols-3 gap-2 border-2 border-black bg-neutral-100 p-1.5">
             {filterTabs.map((tab) => {
               const isActive = filterStatus === tab.id
               return (
@@ -326,19 +316,19 @@ export default function PersonalInfoCard({
                   key={tab.id}
                   type="button"
                   onClick={() => onFilterChange(tab.id)}
-                  className={`flex flex-col items-center justify-center rounded-lg px-1 py-2 text-xs transition-all active:scale-95 ${
+                  className={`flex flex-col items-center justify-center p-2 text-xs transition-all ${
                     isActive
-                      ? "bg-[#F2A93B] font-bold text-[#141414] shadow-md shadow-[#F2A93B]/20"
-                      : "text-white/70 hover:bg-white/5 hover:text-white"
+                      ? "border-2 border-black bg-black text-white font-bold shadow-[2px_2px_0px_#ffffff]"
+                      : "border border-transparent bg-transparent text-black font-semibold hover:border-black hover:bg-white"
                   }`}
                   aria-pressed={isActive}
                 >
-                  <span className="font-semibold">{tab.label}</span>
+                  <span>{tab.label}</span>
                   <span
-                    className={`mt-1 inline-flex items-center justify-center rounded-full px-2 py-0.5 text-[11px] leading-none ${
+                    className={`mt-1 inline-flex items-center justify-center px-1.5 py-0.2 text-[11px] leading-tight font-bold ${
                       isActive
-                        ? "bg-black/15 font-bold text-[#141414]"
-                        : "bg-white/10 text-white/60"
+                        ? "bg-white text-black"
+                        : "bg-neutral-200 text-neutral-800"
                     }`}
                   >
                     {tab.count}
