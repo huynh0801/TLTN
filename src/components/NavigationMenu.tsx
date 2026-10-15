@@ -4,6 +4,7 @@
 /* 3-dots Hamburger Trigger Button */ /* Popup Menu Card */ /* Close button */ /* Menu Items */ /* Active / hover bullet dot */ /* Item Icon */ /* Item Label */ /* Close button */ /* Menu Items */ /* Active / hover bullet dot */ /* Item Icon */ /* Item Label */
 
 import { useState, useEffect, useRef, type ReactNode } from "react"
+import Link from "next/link"
 
 interface MenuItem {
   id: string
@@ -16,7 +17,7 @@ const MENU_ITEMS: MenuItem[] = [
   {
     id: "profile",
     label: "Profile",
-    href: "#profile",
+    href: "/profile",
     icon: (
       <svg
         className="size-[19px] shrink-0"
@@ -35,7 +36,7 @@ const MENU_ITEMS: MenuItem[] = [
   {
     id: "schedule",
     label: "Lịch hẹn",
-    href: "#schedule",
+    href: "/schedule",
     icon: (
       <svg
         className="size-[19px] shrink-0"
@@ -166,7 +167,7 @@ export default function NavigationMenu() {
 
                 return (
                   <li key={item.id} className={pushClass}>
-                    <a
+                    <Link
                       href={item.href}
                       onClick={() => {
                         setActiveItem(item.id)
@@ -192,7 +193,7 @@ export default function NavigationMenu() {
                       <span className="transition-transform duration-200">
                         {item.label}
                       </span>
-                    </a>
+                    </Link>
                   </li>
                 )
               })}
