@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next"
+import PwaRegister from "@/components/pwa/PwaRegister"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -36,8 +37,10 @@ export default function RootLayout({
   return (
     <html lang="vi">
       <body className="antialiased min-h-screen selection:bg-black selection:text-white">
+        <PwaRegister />
         {children}
       </body>
     </html>
   )
 }
+
