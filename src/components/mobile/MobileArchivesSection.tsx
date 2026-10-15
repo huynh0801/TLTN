@@ -62,7 +62,7 @@ export default function MobileArchivesSection() {
         {ARCHIVE_ITEMS.map((item) => (
           <Link
             key={item.id}
-            href={`/schedule/${item.id}`}
+            href={`/places/${item.id}`}
             className="group block w-full bg-[#ecebe3] p-5 sm:p-6 transition-colors duration-300 hover:bg-[#e4e2d8]"
           >
             {/* Top Row: Location Name (Left) + Category Stamp Circle (Right) */}

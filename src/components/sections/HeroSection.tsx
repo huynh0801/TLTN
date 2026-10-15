@@ -512,7 +512,7 @@ export default function HeroSection() {
 
         {}
         <Link
-          href="/schedule/hanoi-pho-bat-dan"
+          href="/places/hanoi-pho-bat-dan"
           onMouseEnter={() => {
             setIsHovered(true)
 
@@ -622,7 +622,7 @@ export default function HeroSection() {
 
         {}
         <Link
-          href="/schedule/hcm-com-tam"
+          href="/places/hcm-com-tam"
           onMouseEnter={() => {
             setIsHovered(true)
 
@@ -758,7 +758,7 @@ export default function HeroSection() {
 
         {}
         <Link
-          href="/schedule/dalat-lau-ga-la-e"
+          href="/places/dalat-lau-ga-la-e"
           onMouseEnter={() => {
             setIsHovered(true)
 
@@ -868,7 +868,7 @@ export default function HeroSection() {
 
         {}
         <Link
-          href="/schedule/danang-banh-xeo-ba-duong"
+          href="/places/danang-banh-xeo-ba-duong"
           onMouseEnter={() => {
             setIsHovered(true)
 

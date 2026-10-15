@@ -217,7 +217,7 @@ export default function MobileHeroSection() {
         {}
         <div className="relative w-full -mt-[22px] z-20">
           <Link
-            href={`/schedule/${currentSlide.placeId}`}
+            href={`/places/${currentSlide.placeId}`}
             className="group block relative w-full p-4 sm:p-5 border-[1.6px] border-[#222] rounded-bl-[16px] rounded-br-[16px] rounded-tr-[16px] shadow-sm transition-all duration-400 cursor-pointer active:scale-[0.99]"
             style={{ backgroundColor: currentSlide.bgColor }}
           >
