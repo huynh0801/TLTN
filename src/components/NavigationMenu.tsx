@@ -36,7 +36,7 @@ const MENU_ITEMS: MenuItem[] = [
   {
     id: "schedule",
     label: "Lịch hẹn",
-    href: "#schedule",
+    href: "/schedule",
     icon: (
       <svg
         className="size-[19px] shrink-0"

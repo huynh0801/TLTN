@@ -5,10 +5,10 @@ export default function ProfileHeader() {
     <header className="sticky top-0 z-40 w-full border-b-2 border-black bg-white/95 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Back Button & Breadcrumbs */}
-        <div className="flex items-center gap-3 sm:gap-4">
+        <div className="flex items-center gap-2.5 sm:gap-4">
           <Link
             href="/"
-            className="group flex items-center gap-2.5 border-2 border-black bg-white px-3.5 py-2 text-xs sm:text-sm font-semibold text-black transition-all hover:bg-black hover:text-white active:translate-x-0.5 active:translate-y-0.5 shadow-[2px_2px_0px_#000000]"
+            className="group flex items-center gap-2 border-2 border-black bg-white px-3 py-2 text-xs sm:text-sm font-semibold text-black transition-all hover:bg-black hover:text-white active:translate-x-0.5 active:translate-y-0.5 shadow-[2px_2px_0px_#000000]"
             aria-label="Quay về Trang chủ HYUN"
           >
             <svg
@@ -24,7 +24,8 @@ export default function ProfileHeader() {
               <line x1="19" y1="12" x2="5" y2="12" />
               <polyline points="12 19 5 12 12 5" />
             </svg>
-            <span>Trang chủ HYUN</span>
+            <span className="hidden sm:inline">Trang chủ HYUN</span>
+            <span className="sm:hidden">Trang chủ</span>
           </Link>
 
           <span className="hidden sm:inline-block h-5 w-[2px] bg-black/20" aria-hidden="true" />
@@ -35,13 +36,21 @@ export default function ProfileHeader() {
           >
             <span>Hồ sơ cá nhân</span>
             <span className="text-black/30">/</span>
-            <span className="text-black underline underline-offset-4 decoration-2">Lịch trình trải nghiệm</span>
+            <span className="text-black underline underline-offset-4 decoration-2">Foodie Profile</span>
           </nav>
         </div>
 
-        {/* Member Badge */}
-        <div className="flex items-center gap-3">
-          <div className="flex items-center gap-2 border-2 border-black bg-white px-3.5 py-1.5 text-xs font-bold text-black shadow-[2px_2px_0px_#000000]">
+        {/* Right Actions */}
+        <div className="flex items-center gap-2 sm:gap-3">
+          <Link
+            href="/schedule"
+            className="flex items-center gap-1.5 border-2 border-black bg-black text-white px-3 py-1.5 text-xs font-bold transition-all hover:bg-neutral-800 shadow-[2px_2px_0px_#000000]"
+          >
+            <span>Lịch trình & Bản đồ</span>
+            <span>→</span>
+          </Link>
+
+          <div className="hidden sm:flex items-center gap-2 border-2 border-black bg-white px-3 py-1.5 text-xs font-bold text-black shadow-[2px_2px_0px_#000000]">
             <span className="size-2 bg-black animate-pulse" />
             <span>Thành viên Tinh Hoa</span>
           </div>

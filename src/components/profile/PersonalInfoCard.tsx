@@ -1,12 +1,11 @@
 "use client"
 
+import Link from "next/link"
 import type { UserProfile } from "@/types/profile"
 
 export interface PersonalInfoCardProps {
   profile: UserProfile
-  filterStatus: "all" | "upcoming" | "completed"
-  onFilterChange: (status: "all" | "upcoming" | "completed") => void
-  schedulesCount: {
+  schedulesCount?: {
     all: number
     upcoming: number
     completed: number
@@ -15,20 +14,8 @@ export interface PersonalInfoCardProps {
 
 export default function PersonalInfoCard({
   profile,
-  filterStatus,
-  onFilterChange,
   schedulesCount,
 }: PersonalInfoCardProps) {
-  const filterTabs: Array<{
-    id: "all" | "upcoming" | "completed"
-    label: string
-    count: number
-  }> = [
-    { id: "all", label: "Tất cả", count: schedulesCount.all },
-    { id: "upcoming", label: "Sắp tới", count: schedulesCount.upcoming },
-    { id: "completed", label: "Đã ghé", count: schedulesCount.completed },
-  ]
-
   return (
     <div className="border-2 border-black bg-white p-5 sm:p-6 shadow-[4px_4px_0px_#000000]">
       <div className="flex flex-col gap-6">
@@ -241,7 +228,7 @@ export default function PersonalInfoCard({
                     <rect width="18" height="18" x="3" y="4" rx="0" />
                     <line x1="16" y1="2" x2="16" y2="6" />
                     <line x1="8" y1="2" x2="8" y2="6" />
-                    <line x1="3" y1="10" x2="21" y2="10" />
+                    <line x1="3" y1="21" x2="21" y2="10" />
                   </svg>
                 </span>
               </div>
@@ -301,42 +288,26 @@ export default function PersonalInfoCard({
         {/* Divider */}
         <div className="h-[2px] w-full bg-black/10" aria-hidden="true" />
 
-        {/* 5. Schedule Filter Tabs */}
-        <div>
-          <div className="mb-3 flex items-center justify-between">
+        {/* 5. Quick Schedule Link Box */}
+        <div className="border-2 border-black bg-neutral-50 p-4 shadow-[2px_2px_0px_#000000]">
+          <div className="flex items-center justify-between mb-2">
             <span className="text-xs font-bold uppercase tracking-wider text-black">
-              Bộ lọc lịch trình
+              Lịch trình & Bản đồ
+            </span>
+            <span className="border border-black bg-black text-white px-2 py-0.5 text-[10px] font-bold">
+              {schedulesCount?.upcoming ?? 4} điểm hẹn
             </span>
           </div>
-          <div className="grid grid-cols-3 gap-2 border-2 border-black bg-neutral-100 p-1.5">
-            {filterTabs.map((tab) => {
-              const isActive = filterStatus === tab.id
-              return (
-                <button
-                  key={tab.id}
-                  type="button"
-                  onClick={() => onFilterChange(tab.id)}
-                  className={`flex flex-col items-center justify-center p-2 text-xs transition-all ${
-                    isActive
-                      ? "border-2 border-black bg-black text-white font-bold shadow-[2px_2px_0px_#ffffff]"
-                      : "border border-transparent bg-transparent text-black font-semibold hover:border-black hover:bg-white"
-                  }`}
-                  aria-pressed={isActive}
-                >
-                  <span>{tab.label}</span>
-                  <span
-                    className={`mt-1 inline-flex items-center justify-center px-1.5 py-0.2 text-[11px] leading-tight font-bold ${
-                      isActive
-                        ? "bg-white text-black"
-                        : "bg-neutral-200 text-neutral-800"
-                    }`}
-                  >
-                    {tab.count}
-                  </span>
-                </button>
-              )
-            })}
-          </div>
+          <p className="text-xs text-neutral-600 font-medium mb-3.5 leading-relaxed">
+            Theo dõi vị trí các quán ăn chuẩn gu và xem lộ trình trải nghiệm trên trang bản đồ riêng biệt.
+          </p>
+          <Link
+            href="/schedule"
+            className="flex items-center justify-center gap-2 w-full border-2 border-black bg-black text-white py-2.5 text-xs font-bold transition-all hover:bg-neutral-800 active:translate-x-0.5 active:translate-y-0.5 shadow-[2px_2px_0px_#000000]"
+          >
+            <span>Mở Lịch trình & Bản đồ</span>
+            <span>→</span>
+          </Link>
         </div>
       </div>
     </div>
