@@ -101,7 +101,7 @@ export default async function PlaceDetailPage({ params }: PlaceDetailPageProps) 
       <DetailHeader placeTitle={displayItem.title.split("|")[0].trim()} />
 
       {/* Main Container */}
-      <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <main className="mx-auto max-w-7xl px-4 pt-12 pb-16 sm:px-6 sm:pt-16 sm:pb-24 lg:px-8 lg:pt-20">
         {/* Editorial Showcase Card (Exact Match to User Sample) */}
         <EditorialShowcaseCard
           city={displayItem.city}

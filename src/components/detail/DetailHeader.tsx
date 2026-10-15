@@ -8,7 +8,7 @@ export interface DetailHeaderProps {
 
 export default function DetailHeader({ placeTitle }: DetailHeaderProps) {
   return (
-    <header className="sticky top-0 z-40 w-full border-b-2 border-black bg-white/95 backdrop-blur-md">
+    <header className="sticky top-0 z-40 w-full border-b-2 border-black bg-white/95 backdrop-blur-md pt-[env(safe-area-inset-top)]">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Navigation Back Buttons */}
         <div className="flex items-center gap-2.5 sm:gap-4">

@@ -16,7 +16,7 @@ export default function PlacesPage() {
       <NavigationMenu />
       <ChatBox />
       <PlacesHeader />
-      <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <main className="mx-auto max-w-7xl px-4 pt-12 pb-16 sm:px-6 sm:pt-16 sm:pb-24 lg:px-8 lg:pt-20">
         <PlacesExplorer />
       </main>
     </div>
