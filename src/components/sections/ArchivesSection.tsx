@@ -1,3 +1,4 @@
+import Link from "next/link"
 import {
   imgContainer,
   imgContainer1,
@@ -77,7 +78,7 @@ export default function ArchivesSection() {
           </div>
         </div>
       </div>
-      <div
+      <Link href="/schedule/hanoi-bun-cha"
         className="absolute group cursor-pointer h-[695.79px] left-0 right-[1013.87px] top-[79.34px]"
         data-node-id="1:226"
         data-name="Link"
@@ -213,8 +214,8 @@ export default function ArchivesSection() {
             <p className="leading-[34.13px]">Read more</p>
           </div>
         </div>
-      </div>
-      <div
+      </Link>
+      <Link href="/schedule/hcm-banh-mi-huynh-hoa"
         className="absolute group cursor-pointer h-[695.79px] left-[506.93px] right-[506.93px] top-[79.34px]"
         data-node-id="1:253"
         data-name="Link"
@@ -332,8 +333,8 @@ export default function ArchivesSection() {
             <p className="leading-[34.13px]">Read more</p>
           </div>
         </div>
-      </div>
-      <div
+      </Link>
+      <Link href="/schedule/danang-mi-quang-ba-mua"
         className="absolute group cursor-pointer h-[695.79px] left-[1013.86px] right-0 top-[79.34px]"
         data-node-id="1:274"
         data-name="Link"
@@ -446,8 +447,8 @@ export default function ArchivesSection() {
             <p className="leading-[34.13px]">Read more</p>
           </div>
         </div>
-      </div>
-      <div
+      </Link>
+      <Link href="/schedule/hue-bun-bo-ba-tuyet"
         className="absolute group cursor-pointer h-[653.79px] left-0 right-[1013.87px] top-[775.13px]"
         data-node-id="1:294"
         data-name="Link"
@@ -574,8 +575,8 @@ export default function ArchivesSection() {
             <p className="leading-[34.13px]">Read more</p>
           </div>
         </div>
-      </div>
-      <div
+      </Link>
+      <Link href="/schedule/dalat-banh-can-le"
         className="absolute group cursor-pointer h-[653.79px] left-[506.93px] right-[506.93px] top-[775.13px]"
         data-node-id="1:319"
         data-name="Link"
@@ -693,8 +694,8 @@ export default function ArchivesSection() {
             <p className="leading-[34.13px]">Read more</p>
           </div>
         </div>
-      </div>
-      <div
+      </Link>
+      <Link href="/schedule/nhatrang-nem-nuong-dang-van-quyen"
         className="absolute group cursor-pointer h-[653.79px] left-[1013.86px] right-0 top-[775.13px]"
         data-node-id="1:340"
         data-name="Link"
@@ -807,8 +808,8 @@ export default function ArchivesSection() {
             <p className="leading-[34.13px]">Read more</p>
           </div>
         </div>
-      </div>
-      <div
+      </Link>
+      <Link href="/schedule/cantho-banh-cong-co-ut"
         className="absolute group cursor-pointer h-[695.79px] left-0 right-[1013.87px] top-[1428.91px]"
         data-node-id="1:364"
         data-name="Link"
@@ -926,8 +927,8 @@ export default function ArchivesSection() {
             <p className="leading-[34.13px]">Read more</p>
           </div>
         </div>
-      </div>
-      <div
+      </Link>
+      <Link href="/schedule/phuquoc-bun-quay-kien-xay"
         className="absolute group cursor-pointer h-[695.79px] left-[506.93px] right-[506.93px] top-[1428.91px]"
         data-node-id="1:387"
         data-name="Link"
@@ -1045,8 +1046,8 @@ export default function ArchivesSection() {
             <p className="leading-[34.13px]">Read more</p>
           </div>
         </div>
-      </div>
-      <div
+      </Link>
+      <Link href="/schedule/haiphong-banh-da-cua-ba-cu"
         className="absolute group cursor-pointer h-[695.79px] left-[1013.86px] right-0 top-[1428.91px]"
         data-node-id="1:412"
         data-name="Link"
@@ -1159,8 +1160,8 @@ export default function ArchivesSection() {
             <p className="leading-[34.13px]">Read more</p>
           </div>
         </div>
-      </div>
-      <div
+      </Link>
+      <Link href="/schedule/quangninh-cha-muc-thoan"
         className="absolute group cursor-pointer h-[695.79px] left-0 right-[1013.87px] top-[2124.7px]"
         data-node-id="1:436"
         data-name="Link"
@@ -1278,8 +1279,8 @@ export default function ArchivesSection() {
             <p className="leading-[34.13px]">Read more</p>
           </div>
         </div>
-      </div>
-      <div
+      </Link>
+      <Link href="/schedule/ninhbinh-de-nui-chinh-thu"
         className="absolute group cursor-pointer h-[695.79px] left-[506.93px] right-[506.93px] top-[2124.7px]"
         data-node-id="1:465"
         data-name="Link"
@@ -1397,8 +1398,8 @@ export default function ArchivesSection() {
             <p className="leading-[34.13px]">Read more</p>
           </div>
         </div>
-      </div>
-      <div
+      </Link>
+      <Link href="/schedule/hoian-cao-lau-thanh"
         className="absolute group cursor-pointer h-[695.79px] left-[1013.86px] right-0 top-[2124.7px]"
         data-node-id="1:492"
         data-name="Link"
@@ -1511,7 +1512,7 @@ export default function ArchivesSection() {
             <p className="leading-[34.13px]">Read more</p>
           </div>
         </div>
-      </div>
+      </Link>
       <div
         className="absolute border-b-[1.6px] border-black border-solid border-t-[1.6px] h-[131.65px] left-0 right-0 top-[2818.49px]"
         data-node-id="1:511"
