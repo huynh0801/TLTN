@@ -56,8 +56,8 @@ const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: "search",
-    label: "Tìm kiếm",
-    href: "#search",
+    label: "Khám phá địa điểm",
+    href: "/places",
     icon: (
       <svg
         className="size-[19px] shrink-0"

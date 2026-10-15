@@ -1,5 +1,6 @@
 "use client" /* Top-Left Authentic Calligraphy Graphic */ /* Top Header Bar with Centered Slogan Title */ /* Left spacing for top-left logo */ /* Center: Slogan Title */ /* Right spacing for sticky NavigationMenu */ /* Main Content Area */ /* Top Arch Frame Line with Embedded Pickup Indicator */ /* Black Arch Outline (Left line, top curve, top line, right curve, right line) */ /* Pickup Indicator Text resting directly on top line (breaks the line with white padding) */ /* Central Dome Stadium Capsule Photo */ /* Description Card with Raised Tab (Continuous 4-sided border, perfect rounded corners, zero overhang) */ /* The Raised Tab on top-left of the card */ /* Mask strip covering the card body's top border directly beneath the tab */ /* Seamless SVG Fillet Curve connecting tab right border to card top border */ /* Title */ /* Tag Pills in Dark Teal */ /* Slide Pagination Dots */
 import { useState, useEffect, useRef, type TouchEvent } from "react"
+import Link from "next/link"
 import {
   imgGroup,
   imgImg1592Jpg1,
@@ -10,6 +11,7 @@ import {
 
 interface MobileSlide {
   id: number
+  placeId: string
   pickupNo: string
   city: string
   title: string
@@ -21,6 +23,7 @@ interface MobileSlide {
 const MOBILE_HERO_SLIDES: MobileSlide[] = [
   {
     id: 0,
+    placeId: "hanoi-pho-bat-dan",
     pickupNo: "01",
     city: "TP. Hà Nội",
     title: "Phở Bát Đàn | Tinh hoa phở bò phố cổ trăm năm",
@@ -30,6 +33,7 @@ const MOBILE_HERO_SLIDES: MobileSlide[] = [
   },
   {
     id: 1,
+    placeId: "hcm-com-tam",
     pickupNo: "02",
     city: "TP. Hồ Chí Minh",
     title: "Cơm Tấm Ba Ghiền | Sườn nướng than hồng chuẩn vị Sài Gòn",
@@ -39,6 +43,7 @@ const MOBILE_HERO_SLIDES: MobileSlide[] = [
   },
   {
     id: 2,
+    placeId: "dalat-lau-ga-la-e",
     pickupNo: "03",
     city: "TP. Đà Lạt",
     title: "Lẩu Gà Lá É Tao Ngộ | Nồi lẩu nóng hổi giữa sương mù phố núi",
@@ -48,6 +53,7 @@ const MOBILE_HERO_SLIDES: MobileSlide[] = [
   },
   {
     id: 3,
+    placeId: "danang-banh-xeo-ba-duong",
     pickupNo: "04",
     city: "TP. Đà Nẵng",
     title: "Bánh Xèo & Nem Lụi Bà Dưỡng | Đậm đà nước chấm gan heo béo bùi",
@@ -210,11 +216,11 @@ export default function MobileHeroSection() {
 
         {}
         <div className="relative w-full -mt-[22px] z-20">
-          <div
-            className="relative w-full p-4 sm:p-5 border-[1.6px] border-[#222] rounded-bl-[16px] rounded-br-[16px] rounded-tr-[16px] shadow-sm transition-colors duration-400"
+          <Link
+            href={`/places/${currentSlide.placeId}`}
+            className="group block relative w-full p-4 sm:p-5 border-[1.6px] border-[#222] rounded-bl-[16px] rounded-br-[16px] rounded-tr-[16px] shadow-sm transition-all duration-400 cursor-pointer active:scale-[0.99]"
             style={{ backgroundColor: currentSlide.bgColor }}
           >
-            {}
             <div
               className="absolute -top-[37.6px] left-[-1.6px] h-[37.6px] px-4 flex items-center border-t-[1.6px] border-l-[1.6px] border-r-[1.6px] border-[#222] rounded-tl-[8px] rounded-tr-[8px] z-20"
               style={{ backgroundColor: currentSlide.bgColor }}
@@ -223,25 +229,21 @@ export default function MobileHeroSection() {
                 {currentSlide.city}
               </span>
 
-              {}
               <div
                 className="absolute -bottom-[2px] left-0 right-[-1px] h-[3.5px]"
                 style={{ backgroundColor: currentSlide.bgColor }}
               />
 
-              {}
               <div className="absolute bottom-0 overflow-clip right-[-9px] size-[10px] pointer-events-none">
                 <TabCornerCurve fillColor={currentSlide.bgColor} />
               </div>
             </div>
 
-            {}
-            <h2 className="font-['Noto_Sans_JP:Bold','Inter:Bold',sans-serif] font-bold text-[17px] sm:text-[18px] text-[#075d50] leading-[1.38] mb-3.5 tracking-tight">
+            <h2 className="font-['Noto_Sans_JP:Bold','Inter:Bold',sans-serif] font-bold text-[17px] sm:text-[18px] text-[#075d50] leading-[1.38] mb-3.5 tracking-tight group-hover:underline">
               {currentSlide.title}
             </h2>
 
-            {}
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 mb-3">
               {currentSlide.tags.map((tag) => (
                 <span
                   key={tag}
@@ -251,7 +253,14 @@ export default function MobileHeroSection() {
                 </span>
               ))}
             </div>
-          </div>
+
+            <div className="pt-2 border-t border-[#075d50]/20 flex items-center justify-end">
+              <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#075d50] group-hover:translate-x-1 transition-transform">
+                <span>Xem chi tiết điểm hẹn</span>
+                <span>→</span>
+              </span>
+            </div>
+          </Link>
         </div>
 
         {}

@@ -1,5 +1,6 @@
 "use client" /* Left preview teaser */ /* Slide 0: Phở Bát Đàn */ /* Slide 1: Cơm Tấm Ba Ghiền */ /* Slide 2: Lẩu Gà Lá É Tao Ngộ */ /* Slide 3: Bánh Xèo Bà Dưỡng */ /* Main central container */ /* Left Arrow Button */ /* Central main photo frame with smooth crossfade and UNIFORM hover rounding (bo tròn) */ /* Slide 0: Phở Bát Đàn */ /* Slide 1: Cơm Tấm Ba Ghiền */ /* Slide 2: Lẩu Gà Lá É Tao Ngộ */ /* Slide 3: Bánh Xèo & Nem Lụi Bà Dưỡng */ /* Right Arrow Button */ /* Pickup Indicator */ /* Pagination Dots */ /* Slide Card 0: TP. Hà Nội - Phở Bát Đàn */ /* Slide Card 1: TP. Hồ Chí Minh - Cơm Tấm Ba Ghiền */ /* Slide Card 2: TP. Đà Lạt - Lẩu Gà Lá É Tao Ngộ */ /* Slide Card 3: TP. Đà Nẵng - Bánh Xèo & Nem Lụi Bà Dưỡng */ /* Right preview teaser */ /* Slide 3: Bánh Xèo Bà Dưỡng */ /* Slide 2: Lẩu Gà Lá É Tao Ngộ */ /* Slide 1: Cơm Tấm Ba Ghiền */ /* Slide 0: Phở Bát Đàn */ /* Slide 0: Phở Bát Đàn */ /* Slide 1: Cơm Tấm Ba Ghiền */ /* Slide 2: Lẩu Gà Lá É Tao Ngộ */ /* Slide 3: Bánh Xèo & Nem Lụi Bà Dưỡng */ /* Right Arrow Button */ /* Pickup Indicator */ /* Pagination Dots */ /* Slide Card 0: TP. Hà Nội - Phở Bát Đàn */ /* Slide Card 1: TP. Hồ Chí Minh - Cơm Tấm Ba Ghiền */ /* Slide Card 2: TP. Đà Lạt - Lẩu Gà Lá É Tao Ngộ */ /* Slide Card 3: TP. Đà Nẵng - Bánh Xèo & Nem Lụi Bà Dưỡng */
 import { useState, useEffect } from "react"
+import Link from "next/link"
 
 import {
   imgGroup,
@@ -510,7 +511,8 @@ export default function HeroSection() {
         </div>
 
         {}
-        <div
+        <Link
+          href="/places/hanoi-pho-bat-dan"
           onMouseEnter={() => {
             setIsHovered(true)
 
@@ -616,10 +618,11 @@ export default function HeroSection() {
               </span>
             </div>
           </div>
-        </div>
+        </Link>
 
         {}
-        <div
+        <Link
+          href="/places/hcm-com-tam"
           onMouseEnter={() => {
             setIsHovered(true)
 
@@ -751,10 +754,11 @@ export default function HeroSection() {
               </span>
             </div>
           </div>
-        </div>
+        </Link>
 
         {}
-        <div
+        <Link
+          href="/places/dalat-lau-ga-la-e"
           onMouseEnter={() => {
             setIsHovered(true)
 
@@ -860,10 +864,11 @@ export default function HeroSection() {
               </span>
             </div>
           </div>
-        </div>
+        </Link>
 
         {}
-        <div
+        <Link
+          href="/places/danang-banh-xeo-ba-duong"
           onMouseEnter={() => {
             setIsHovered(true)
 
@@ -1008,7 +1013,7 @@ export default function HeroSection() {
               </span>
             </div>
           </div>
-        </div>
+        </Link>
 
         <div
           className="absolute bg-[#f7f6f4] inset-[-3px_-507.77px_165.2px_1509.12px] rounded-[30px]"

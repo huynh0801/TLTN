@@ -214,7 +214,7 @@ export default function ScheduleItemCard({
 
           <div className="flex items-center gap-2">
             <Link
-              href={`/schedule/${item.id}`}
+              href={`/places/${item.id}`}
               onClick={(e) => e.stopPropagation()}
               className="inline-flex items-center gap-1.5 border-2 border-black bg-neutral-100 px-3 py-1.5 text-xs font-bold text-black hover:bg-black hover:text-white shadow-[2px_2px_0px_#000000] transition-all"
             >
