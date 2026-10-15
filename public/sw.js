@@ -13,7 +13,7 @@ self.addEventListener("install", (event) => {
     caches
       .open(CACHE_NAME)
       .then((cache) => cache.addAll(PRECACHE_ASSETS))
-      .then(() => self.skipWaiting())
+      .then(() => self.skipWaiting()),
   )
 })
 
@@ -24,11 +24,11 @@ self.addEventListener("activate", (event) => {
       .then((cacheNames) =>
         Promise.all(
           cacheNames
-            .filter((name) => name !== CACHE_NAME)
-            .map((name) => caches.delete(name))
-        )
+            .filter((name) => name !== CACHE_NAME && name !== "hyun-map-tiles")
+            .map((name) => caches.delete(name)),
+        ),
       )
-      .then(() => self.clients.claim())
+      .then(() => self.clients.claim()),
   )
 })
 
@@ -44,8 +44,7 @@ self.addEventListener("fetch", (event) => {
     url.hostname.includes("tile.openstreetmap.org") ||
     (url.pathname.endsWith(".png") && url.pathname.includes("/tile/"))
   ) {
-    event.respondWith(
-      caches.open("hyun-map-tiles").then((cache) =>
+    event.respondWith(caches.open("hyun-map-tiles").then((cache) =>
         cache.match(request).then((cachedResponse) => {
           if (cachedResponse) return cachedResponse
           return fetch(request)
@@ -56,9 +55,8 @@ self.addEventListener("fetch", (event) => {
               return networkResponse
             })
             .catch(() => cachedResponse)
-        })
-      )
-    )
+        }),
+      ))
     return
   }
 
@@ -82,9 +80,9 @@ self.addEventListener("fetch", (event) => {
           if (rootCached) return rootCached
           return new Response(
             "<!DOCTYPE html><html lang='vi'><head><meta charset='utf-8'><title>Offline | HYUN</title></head><body style='font-family:sans-serif;padding:2rem;text-align:center;'><h1>Bạn đang ở chế độ ngoại tuyến</h1><p>Vui lòng kết nối mạng để tải dữ liệu mới nhất từ HYUN.</p></body></html>",
-            { headers: { "Content-Type": "text/html; charset=utf-8" } }
+            { headers: { "Content-Type": "text/html; charset=utf-8" } },
           )
-        })
+        }),
     )
     return
   }
@@ -97,21 +95,21 @@ self.addEventListener("fetch", (event) => {
       url.pathname.startsWith("/fonts/") ||
       url.pathname.startsWith("/icons/"))
   ) {
-    event.respondWith(
-      caches.match(request).then((cachedResponse) => {
+    event.respondWith(caches.match(request).then((cachedResponse) => {
         const fetchPromise = fetch(request)
           .then((networkResponse) => {
             if (networkResponse && networkResponse.status === 200) {
               const responseClone = networkResponse.clone()
-              caches.open(CACHE_NAME).then((cache) => cache.put(request, responseClone))
+              caches
+                .open(CACHE_NAME)
+                .then((cache) => cache.put(request, responseClone))
             }
             return networkResponse
           })
           .catch(() => cachedResponse)
 
         return cachedResponse || fetchPromise
-      })
-    )
+      }))
     return
   }
 })

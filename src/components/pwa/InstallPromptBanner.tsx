@@ -1,17 +1,5 @@
 "use client"
 
-// Check if already in standalone mode
-
-// Check if previously dismissed within 7 days
-
-// Detect iOS
-
-// Android / Desktop Chrome / Edge prompt
-
-// For iOS Safari: show guidance prompt after 3s on first visit
-// Ignore localStorage errors in private mode
-/* App Icon Badge */
-
 import { useState, useEffect } from "react"
 
 interface UserChoice {
@@ -102,7 +90,6 @@ export default function InstallPromptBanner() {
       className="fixed left-4 right-4 sm:left-6 sm:right-auto sm:max-w-md bottom-[max(1rem,env(safe-area-inset-bottom))] z-40 animate-fade-in border-2 border-black bg-white p-4 text-black shadow-[4px_4px_0px_#000000]"
     >
       <div className="flex items-start gap-3">
-        {}
         <div className="flex size-11 shrink-0 items-center justify-center border-2 border-black bg-black text-white font-black text-xs tracking-wider">
           HYUN
         </div>
