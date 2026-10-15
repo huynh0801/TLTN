@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import type { ScheduleItem, ScheduleStatus } from "@/types/profile"
 
 export interface ScheduleItemCardProps {
@@ -211,38 +212,49 @@ export default function ScheduleItemCard({
             </span>
           </span>
 
-          <button
-            type="button"
-            onClick={(e) => {
-              e.stopPropagation()
-              onSelect(item.id)
-            }}
-            className={`inline-flex items-center gap-2 border-2 border-black px-3.5 py-1.5 text-xs font-bold transition-all active:translate-x-0.5 active:translate-y-0.5 ${
-              isSelected
-                ? "bg-black text-white shadow-[2px_2px_0px_#000000]"
-                : "bg-white text-black hover:bg-black hover:text-white shadow-[2px_2px_0px_#000000]"
-            }`}
-          >
-            <svg
-              className="size-3.5"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
+          <div className="flex items-center gap-2">
+            <Link
+              href={`/schedule/${item.id}`}
+              onClick={(e) => e.stopPropagation()}
+              className="inline-flex items-center gap-1.5 border-2 border-black bg-neutral-100 px-3 py-1.5 text-xs font-bold text-black hover:bg-black hover:text-white shadow-[2px_2px_0px_#000000] transition-all"
             >
-              <circle cx="12" cy="12" r="10" />
-              <line x1="22" y1="12" x2="18" y2="12" />
-              <line x1="6" y1="12" x2="2" y2="12" />
-              <line x1="12" y1="6" x2="12" y2="2" />
-              <line x1="12" y1="22" x2="12" y2="18" />
-            </svg>
-            <span>
-              {isSelected ? "Đang chọn trên bản đồ" : "Xem trên bản đồ"}
-            </span>
-          </button>
+              <span>Chi tiết</span>
+              <span>→</span>
+            </Link>
+
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation()
+                onSelect(item.id)
+              }}
+              className={`inline-flex items-center gap-2 border-2 border-black px-3.5 py-1.5 text-xs font-bold transition-all active:translate-x-0.5 active:translate-y-0.5 ${
+                isSelected
+                  ? "bg-black text-white shadow-[2px_2px_0px_#000000]"
+                  : "bg-white text-black hover:bg-black hover:text-white shadow-[2px_2px_0px_#000000]"
+              }`}
+            >
+              <svg
+                className="size-3.5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <line x1="22" y1="12" x2="18" y2="12" />
+                <line x1="6" y1="12" x2="2" y2="12" />
+                <line x1="12" y1="6" x2="12" y2="2" />
+                <line x1="12" y1="22" x2="12" y2="18" />
+              </svg>
+              <span>
+                {isSelected ? "Đang chọn trên bản đồ" : "Xem trên bản đồ"}
+              </span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
