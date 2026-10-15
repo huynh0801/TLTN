@@ -1,8 +1,7 @@
 "use client"
 
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import L from "leaflet"
-import "leaflet/dist/leaflet.css"
 import type { LocationCoordinate, ScheduleItem } from "@/types/profile"
 
 export interface MapInnerProps {
@@ -21,38 +20,60 @@ export default function MapInner({
   onSelectSchedule,
 }: MapInnerProps) {
   const containerRef = useRef<HTMLDivElement>(null)
-  const mapRef = useRef<L.Map | null>(null)
+  const [map, setMap] = useState<L.Map | null>(null)
   const markersMapRef = useRef<Map<string, L.Marker>>(new Map())
   const homeMarkerRef = useRef<L.Marker | null>(null)
   const onSelectScheduleRef = useRef(onSelectSchedule)
   onSelectScheduleRef.current = onSelectSchedule
 
-  // 1. Khởi tạo bản đồ
+  // 1. Khởi tạo bản đồ an toàn và theo dõi kích thước
   useEffect(() => {
-    if (!containerRef.current || mapRef.current) return
+    const container = containerRef.current
+    if (!container) return
 
-    const map = L.map(containerRef.current, {
+    // Xóa _leaflet_id cũ nếu có do React Fast Refresh / Strict Mode
+    if ((container as unknown as { _leaflet_id?: number })._leaflet_id) {
+      delete (container as unknown as { _leaflet_id?: number })._leaflet_id
+    }
+
+    const mapInstance = L.map(container, {
       center: [homeCoordinate.lat, homeCoordinate.lng],
       zoom: 14,
       zoomControl: true,
       scrollWheelZoom: true,
     })
-    mapRef.current = map
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution:
         '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors',
       maxZoom: 19,
-    }).addTo(map)
+    }).addTo(mapInstance)
 
-    const resizeTimer = setTimeout(() => {
-      map.invalidateSize()
-    }, 250)
+    setMap(mapInstance)
+
+    // Nhiều chu kỳ invalidateSize để đảm bảo hiển thị đúng ngay cả khi chuyển trang hoặc flex/grid thay đổi
+    const t1 = setTimeout(() => mapInstance.invalidateSize(), 50)
+    const t2 = setTimeout(() => mapInstance.invalidateSize(), 200)
+    const t3 = setTimeout(() => mapInstance.invalidateSize(), 500)
+
+    // Tự động invalidateSize khi container thay đổi kích thước
+    let resizeObserver: ResizeObserver | null = null
+    if (typeof ResizeObserver !== "undefined") {
+      resizeObserver = new ResizeObserver(() => {
+        mapInstance.invalidateSize()
+      })
+      resizeObserver.observe(container)
+    }
 
     return () => {
-      clearTimeout(resizeTimer)
-      map.remove()
-      mapRef.current = null
+      clearTimeout(t1)
+      clearTimeout(t2)
+      clearTimeout(t3)
+      if (resizeObserver) {
+        resizeObserver.disconnect()
+      }
+      mapInstance.remove()
+      setMap(null)
       markersMapRef.current.clear()
       homeMarkerRef.current = null
     }
@@ -60,7 +81,6 @@ export default function MapInner({
 
   // 2. Render Marker Vị trí của bạn (Home Marker)
   useEffect(() => {
-    const map = mapRef.current
     if (!map) return
 
     if (homeMarkerRef.current) {
@@ -68,8 +88,8 @@ export default function MapInner({
     }
 
     const homeHtml = `
-      <div style="position: relative; display: flex; align-items: center; justify-content: center; width: 34px; height: 34px;">
-        <span style="position: absolute; width: 34px; height: 34px; background-color: #10B981; opacity: 0.4; animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;"></span>
+      <div style="position: relative; display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; background: transparent;">
+        <span style="position: absolute; width: 34px; height: 34px; background-color: #10B981; opacity: 0.35; animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;"></span>
         <div style="position: relative; width: 28px; height: 28px; background-color: #10B981; border: 2px solid #000000; box-shadow: 2px 2px 0px #000000; display: flex; align-items: center; justify-content: center; color: #ffffff;">
           <svg style="width: 14px; height: 14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
@@ -81,7 +101,7 @@ export default function MapInner({
 
     const homeIcon = L.divIcon({
       html: homeHtml,
-      className: "home-custom-marker",
+      className: "!bg-transparent !border-0",
       iconSize: [34, 34],
       iconAnchor: [17, 17],
       popupAnchor: [0, -17],
@@ -92,7 +112,7 @@ export default function MapInner({
     }).addTo(map)
 
     const homePopupContent = `
-      <div style="font-family: inherit; padding: 4px 6px; text-align: center;">
+      <div style="font-family: inherit; padding: 4px 6px; text-align: center; background: #ffffff; color: #000000;">
         <div style="font-size: 13px; font-weight: 800; color: #000000;">${userName}</div>
         <div style="font-size: 11px; color: #059669; font-weight: 700; margin-top: 3px; display: flex; align-items: center; justify-content: center; gap: 4px;">
           <span>📍</span><span>Vị trí của bạn (Khởi hành)</span>
@@ -101,11 +121,10 @@ export default function MapInner({
     `
     marker.bindPopup(homePopupContent)
     homeMarkerRef.current = marker
-  }, [homeCoordinate.lat, homeCoordinate.lng, userName])
+  }, [map, homeCoordinate.lat, homeCoordinate.lng, userName])
 
   // 3. Render Markers cho từng địa điểm ẩm thực
   useEffect(() => {
-    const map = mapRef.current
     if (!map) return
 
     markersMapRef.current.forEach((marker) => marker.remove())
@@ -115,7 +134,7 @@ export default function MapInner({
       const isSelected = item.id === selectedScheduleId
 
       const pinHtml = `
-        <div class="custom-pin-wrapper" style="position: relative; display: flex; flex-direction: column; align-items: center; cursor: pointer; transition: transform 0.2s ease; ${
+        <div class="custom-pin-wrapper" style="position: relative; display: flex; flex-direction: column; align-items: center; cursor: pointer; transition: transform 0.2s ease; background: transparent; ${
           isSelected ? "transform: scale(1.2); z-index: 1000;" : ""
         }">
           <div style="position: relative; width: 32px; height: 32px; background-color: ${isSelected ? '#000000' : '#ffffff'}; border: 2px solid #000000; box-shadow: 2px 2px 0px #000000; display: flex; align-items: center; justify-content: center; color: ${isSelected ? '#ffffff' : '#000000'}; font-weight: 800; font-size: 12px;">
@@ -127,7 +146,7 @@ export default function MapInner({
 
       const foodIcon = L.divIcon({
         html: pinHtml,
-        className: "food-custom-marker",
+        className: "!bg-transparent !border-0",
         iconSize: [32, 40],
         iconAnchor: [16, 38],
         popupAnchor: [0, -38],
@@ -159,11 +178,10 @@ export default function MapInner({
 
       markersMapRef.current.set(item.id, marker)
     })
-  }, [items, selectedScheduleId])
+  }, [map, items, selectedScheduleId])
 
   // 4. Fly to & mở popup khi selectedScheduleId thay đổi
   useEffect(() => {
-    const map = mapRef.current
     if (!map || !selectedScheduleId) return
 
     const targetItem = items.find((item) => item.id === selectedScheduleId)
@@ -181,10 +199,10 @@ export default function MapInner({
       }, 350)
       return () => clearTimeout(popupTimer)
     }
-  }, [selectedScheduleId, items])
+  }, [map, selectedScheduleId, items])
 
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full h-full min-h-[360px] sm:min-h-[420px] lg:min-h-[440px]" style={{ width: "100%", height: "100%" }}>
       <style>{`
         @keyframes ping {
           75%, 100% {
@@ -216,6 +234,8 @@ export default function MapInner({
         .leaflet-container {
           font-family: inherit !important;
           background-color: #f5f5f5 !important;
+          width: 100% !important;
+          height: 100% !important;
         }
         .leaflet-container a.leaflet-popup-close-button {
           color: #000000 !important;
@@ -256,7 +276,11 @@ export default function MapInner({
           font-weight: bold !important;
         }
       `}</style>
-      <div ref={containerRef} className="w-full h-full" />
+      <div
+        ref={containerRef}
+        className="w-full h-full min-h-[360px] sm:min-h-[420px] lg:min-h-[440px]"
+        style={{ width: "100%", height: "100%", minHeight: "360px" }}
+      />
     </div>
   )
 }
