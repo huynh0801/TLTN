@@ -11,34 +11,30 @@ export interface FoodCategory {
 }
 
 export const FOOD_CATEGORIES: FoodCategory[] = [
-  { id: "ramen", name: "Ramen", image: "/img/cat-ramen.png", query: "Ramen" },
-  { id: "sushi", name: "Sushi", image: "/img/cat-sushi.png", query: "Sushi" },
-  { id: "sashimi", name: "Sashimi", image: "/img/cat-sashimi.png", query: "Sashimi" },
-  { id: "tempura", name: "Tempura", image: "/img/cat-tempura.png", query: "Tempura" },
-  { id: "donburi", name: "Donburi", image: "/img/cat-donburi.png", query: "Donburi" },
-  { id: "yakiniku", name: "Yakiniku", image: "/img/cat-yakiniku.png", query: "Yakiniku" },
-  { id: "okonomiyaki", name: "Okonomiyaki", image: "/img/cat-okonomiyaki.png", query: "Okonomiyaki" },
-  { id: "soba", name: "Soba", image: "/img/cat-soba.png", query: "Soba" },
-  { id: "curry", name: "Cà ri Nhật", image: "/img/cat-curry.png", query: "Cà ri" },
-  { id: "lau", name: "Lẩu", image: "/img/cat-lau.png", query: "Lẩu" },
-  { id: "mon-viet", name: "Món Việt", image: "/img/cat-mon-viet.png", query: "Món Việt" },
-  { id: "mon-au", name: "Món Âu", image: "/img/cat-mon-au.png", query: "Món Âu" },
-  { id: "trang-mieng", name: "Tráng miệng", image: "/img/cat-trang-mieng.png", query: "Tráng miệng" },
-  { id: "do-uong", name: "Đồ uống", image: "/img/cat-do-uong.png", query: "Đồ uống" },
+  { id: "bun-pho", name: "Bún - Phở", image: "/img/bun-pho.png", query: "Bún Phở" },
+  { id: "com", name: "Cơm", image: "/img/com.png", query: "Cơm" },
+  { id: "nuong", name: "Món nướng", image: "/img/nuong.png", query: "Nướng" },
+  { id: "haisan", name: "Hải sản", image: "/img/haisan.png", query: "Hải sản" },
+  { id: "lau", name: "Lẩu", image: "/img/lau.png", query: "Lẩu" },
+  { id: "streetfood", name: "Street food", image: "/img/streetfood.png", query: "Street food" },
+  { id: "trasua", name: "Trà sữa", image: "/img/trasua.png", query: "Trà sữa" },
+  { id: "banh", name: "Bánh ngọt", image: "/img/banh.png", query: "Bánh ngọt" },
+  { id: "cafe", name: "Cà phê", image: "/img/cafe.png", query: "Cà phê" },
+  { id: "chay", name: "Đồ chay", image: "/img/chay.png", query: "Đồ chay" },
 ]
 
 export default function CategorySection() {
   return (
-    <section className="w-full bg-[#fdefdf] pt-1 pb-2 sm:pt-1.5 sm:pb-3 transition-colors">
+    <section className="w-full bg-[#fdefdf] pt-1 pb-2 sm:pt-2 sm:pb-3 transition-colors">
       <div className="mx-auto max-w-[1360px] px-3 sm:px-5 lg:px-6">
         {/* Section Header: 🌸 Danh mục món ăn image on left + "Xem tất cả →" on right */}
-        <div className="flex items-center justify-between mb-1.5 sm:mb-2">
+        <div className="flex items-center justify-between mb-2 sm:mb-2.5">
           <div className="flex items-center">
             <Image
               src="/img/danhmucmonan.png"
               alt="Danh mục món ăn"
-              width={208}
-              height={33}
+              width={276}
+              height={55}
               priority
               className="h-7 sm:h-8 w-auto object-contain mix-blend-multiply"
             />
@@ -58,20 +54,20 @@ export default function CategorySection() {
           </Link>
         </div>
 
-        {/* 14 Food Categories Row: Spans full width with snug spacing and large icons */}
-        <div className="grid grid-cols-7 lg:grid-cols-[repeat(14,minmax(0,1fr))] gap-1.5 sm:gap-2 lg:gap-1.5 xl:gap-2 items-start justify-items-center w-full">
+        {/* 10 Food Categories Row: Spans full width with snug spacing and large icons */}
+        <div className="grid grid-cols-5 lg:grid-cols-10 gap-x-2 sm:gap-x-3 lg:gap-x-2 xl:gap-x-3 gap-y-2.5 sm:gap-y-3 items-start justify-items-center w-full">
           {FOOD_CATEGORIES.map((cat) => (
             <Link
               key={cat.id}
               href={`/places?q=${encodeURIComponent(cat.query)}`}
               className="group flex flex-col items-center justify-center w-full focus:outline-none"
             >
-              <div className="relative size-14 sm:size-16 md:size-[68px] lg:size-[62px] xl:size-[68px] 2xl:size-[72px] transition-transform duration-300 ease-out group-hover:-translate-y-1">
+              <div className="relative size-16 sm:size-20 md:size-24 lg:size-[92px] xl:size-[102px] 2xl:size-[108px] transition-transform duration-300 ease-out group-hover:scale-105 group-hover:-translate-y-0.5">
                 <Image
                   src={cat.image}
                   alt={cat.name}
                   fill
-                  sizes="(max-width: 640px) 14vw, (max-width: 1024px) 14vw, 7vw"
+                  sizes="(max-width: 640px) 20vw, (max-width: 1024px) 20vw, 10vw"
                   className="object-contain"
                 />
               </div>
