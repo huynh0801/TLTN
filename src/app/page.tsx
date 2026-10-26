@@ -13,7 +13,7 @@ import ChatBox from "@/components/ChatBox"
 
 export default function HomePage() {
   return (
-    <>
+    <div className="w-full min-h-screen bg-[#fdefdf] text-[#222]">
       <MainHeader activeTab="home" />
       <NavigationMenu />
       <ChatBox />
@@ -33,10 +33,10 @@ export default function HomePage() {
       </div>
 
       {/* Mobile & Tablet View: Natural Document Scrolling for screens < 1024px */}
-      <main className="block lg:hidden w-full min-h-screen bg-white text-[#222] overflow-x-hidden">
+      <main className="block lg:hidden w-full min-h-screen bg-[#fdefdf] text-[#222] overflow-x-hidden">
         <MobileArchivesSection />
         <MobileAboutSection />
       </main>
-    </>
+    </div>
   )
 }

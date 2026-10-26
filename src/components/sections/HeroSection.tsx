@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full overflow-hidden bg-[#FAF6F0]">
+    <section className="relative w-full overflow-hidden bg-[#fdefdf]">
       {/* Desktop & Tablet Banner: Horizontal 21:9 panoramic */}
       <div className="hidden md:block relative w-full aspect-[3168/1344] overflow-hidden">
         <Image

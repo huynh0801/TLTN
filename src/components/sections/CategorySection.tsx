@@ -25,7 +25,7 @@ export const FOOD_CATEGORIES: FoodCategory[] = [
 
 export default function CategorySection() {
   return (
-    <section className="w-full bg-[#FAF6F0] pt-2 pb-6 sm:pt-3 sm:pb-8 transition-colors">
+    <section className="w-full bg-[#fdefdf] pt-2 pb-6 sm:pt-3 sm:pb-8 transition-colors">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header: danhmucmonan image on left + "Xem tất cả →" on right */}
         <div className="flex items-center justify-between mb-3 sm:mb-4">
