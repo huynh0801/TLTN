@@ -1,3 +1,4 @@
+import MainHeader from "@/components/navigation/MainHeader"
 import DesignStage from "@/components/DesignStage"
 import HeroSection from "@/components/sections/HeroSection"
 import ArchivesSection from "@/components/sections/ArchivesSection"
@@ -13,6 +14,7 @@ import ChatBox from "@/components/ChatBox"
 export default function HomePage() {
   return (
     <>
+      <MainHeader activeTab="home" />
       <NavigationMenu />
       <ChatBox />
 
