@@ -2,6 +2,7 @@ import MainHeader from "@/components/navigation/MainHeader"
 import MainFooter from "@/components/navigation/MainFooter"
 import HeroSection from "@/components/sections/HeroSection"
 import CategorySection from "@/components/sections/CategorySection"
+import FeaturedPlacesSection from "@/components/sections/FeaturedPlacesSection"
 
 import NavigationMenu from "@/components/NavigationMenu"
 import ChatBox from "@/components/ChatBox"
@@ -19,6 +20,9 @@ export default function HomePage() {
 
         {/* Food Categories: Watercolor icons and quick filters */}
         <CategorySection />
+
+        {/* Featured Places: Top recommended dining spots & couple guide */}
+        <FeaturedPlacesSection />
       </div>
 
       {/* Main Footer: Sushi logo, 3 feature badges & Torii/Fuji illustration */}
