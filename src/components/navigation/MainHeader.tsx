@@ -32,7 +32,7 @@ export default function MainHeader({ activeTab = "home" }: MainHeaderProps) {
   ]
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-[#ebd2bd] bg-[#fdefdf]/95 backdrop-blur-md transition-all">
+    <header className="sticky top-0 z-50 w-full bg-[#fdefdf]/95 backdrop-blur-md transition-all">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* 1. Left: Brand Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0 py-2">
@@ -156,7 +156,7 @@ export default function MainHeader({ activeTab = "home" }: MainHeaderProps) {
 
       {/* Mobile Drawer Dropdown */}
       {mobileMenuOpen && (
-        <div className="border-t border-[#ebd2bd] bg-[#fdefdf] px-4 py-4 lg:hidden animate-in slide-in-from-top-2 duration-200">
+        <div className="border-t border-[#ebd2bd]/50 bg-[#fdefdf] px-4 py-4 lg:hidden animate-in slide-in-from-top-2 duration-200">
           {/* Mobile Search input */}
           <form
             onSubmit={handleSearchSubmit}
