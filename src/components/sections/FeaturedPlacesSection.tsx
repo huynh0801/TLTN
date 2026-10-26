@@ -4,6 +4,11 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 
+export interface PlaceTag {
+  label: string
+  highlight?: boolean
+}
+
 export interface FeaturedPlace {
   id: string
   name: string
@@ -11,7 +16,7 @@ export interface FeaturedPlace {
   rating: number
   location: string
   badge: string
-  tags: { label: string; highlight?: boolean }[]
+  tags: PlaceTag[]
   href: string
 }
 
