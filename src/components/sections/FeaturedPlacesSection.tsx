@@ -84,15 +84,15 @@ export default function FeaturedPlacesSection() {
       <div className="mx-auto max-w-[1360px] px-3 sm:px-5 lg:px-6">
         <div className="flex flex-col lg:flex-row gap-3.5 lg:gap-4 items-stretch">
           <div className="flex-1 flex flex-col justify-between">
-            <div className="flex items-center justify-between mb-2 sm:mb-2.5">
-              <div className="flex items-center">
+            <div className="flex items-center justify-between mb-3 sm:mb-4">
+              <div className="inline-flex items-center px-3 py-1 sm:px-5 sm:py-2 rounded-xl sm:rounded-3xl bg-[#f9d5b5] shadow-xs shrink-0">
                 <Image
-                  src="/img/diadiemnoibat.jpg"
+                  src="/img/diadiemnoibat.png"
                   alt="Địa điểm nổi bật"
-                  width={260}
-                  height={64}
+                  width={884}
+                  height={135}
                   priority
-                  className="h-7 sm:h-8 w-auto object-contain mix-blend-multiply"
+                  className="h-7 sm:h-9 lg:h-11 w-auto object-contain"
                 />
               </div>
 
@@ -201,19 +201,19 @@ export default function FeaturedPlacesSection() {
             </div>
           </div>
 
-          <div className="w-full lg:w-[31.5%] xl:w-[31%] 2xl:w-[30.5%] shrink-0 flex flex-col justify-start items-center">
+          <div className="w-full max-w-[340px] sm:max-w-[380px] lg:max-w-none lg:w-[24%] xl:w-[23.5%] 2xl:w-[23%] shrink-0 flex flex-col justify-start items-center mx-auto lg:mx-0">
             <div className="group relative w-full aspect-[471/441] flex items-center justify-center">
               <Image
                 src="/img/preview.png"
                 alt="Gợi ý cho cặp đôi hôm nay"
                 fill
-                sizes="(max-width: 1024px) 100vw, 32vw"
+                sizes="(max-width: 1024px) 100vw, 24vw"
                 className="object-contain transition-transform duration-300 group-hover:scale-[1.02]"
               />
 
               <Link
                 href="/places?tag=couple"
-                className="absolute bottom-[5.5%] left-1/2 -translate-x-1/2 w-[58%] max-w-[160px] py-2 px-3.5 bg-[#F88590] hover:bg-[#F26473] active:scale-95 text-white text-xs sm:text-[13px] font-bold rounded-full text-center shadow-xs hover:shadow transition-all duration-200 flex items-center justify-center gap-1 z-10"
+                className="absolute bottom-[5.5%] left-1/2 -translate-x-1/2 w-[58%] max-w-[150px] py-1.5 sm:py-2 px-3 sm:px-3.5 bg-[#F88590] hover:bg-[#F26473] active:scale-95 text-white text-xs sm:text-[13px] font-bold rounded-full text-center shadow-xs hover:shadow transition-all duration-200 flex items-center justify-center gap-1 z-10"
               >
                 <span>Xem ngay</span>
                 <span aria-hidden="true">→</span>

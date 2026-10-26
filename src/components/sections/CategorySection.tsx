@@ -37,15 +37,16 @@ export default function CategorySection() {
     <section className="w-full bg-[#fdefdf] pt-1 pb-2 sm:pt-2 sm:pb-3 transition-colors">
       <div className="mx-auto max-w-[1360px] px-3 sm:px-5 lg:px-6">
         {}
-        <div className="flex items-center justify-between mb-2 sm:mb-2.5">
-          <div className="flex items-center">
+        {/* Section Header: 🌸 Danh mục món ăn image badge on left + "Xem tất cả →" on right */}
+        <div className="flex items-center justify-between mb-3 sm:mb-4">
+          <div className="inline-flex items-center px-3 py-1 sm:px-5 sm:py-2 rounded-xl sm:rounded-3xl bg-[#f9d5b5] shadow-xs shrink-0">
             <Image
               src="/img/danhmucmonan.png"
               alt="Danh mục món ăn"
-              width={1003}
-              height={249}
+              width={885}
+              height={133}
               priority
-              className="h-7 sm:h-8 w-auto object-contain"
+              className="h-7 sm:h-9 lg:h-11 w-auto object-contain"
             />
           </div>
 
