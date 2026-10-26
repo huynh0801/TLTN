@@ -25,18 +25,18 @@ export const FOOD_CATEGORIES: FoodCategory[] = [
 
 export default function CategorySection() {
   return (
-    <section className="w-full bg-[#FAF6F0] py-8 sm:py-12 transition-colors">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="w-full bg-[#FAF6F0] pt-3 pb-6 sm:pt-4 sm:pb-8 transition-colors">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6">
         {/* Section Header: danhmucmonan logo title on left + "Xem tất cả →" on right */}
-        <div className="flex items-center justify-between gap-4 mb-6 sm:mb-8">
+        <div className="flex items-center justify-between gap-4 mb-2 sm:mb-3">
           <div className="flex items-center">
             <Image
               src="/img/danhmucmonan.jpg"
               alt="Danh mục món ăn"
-              width={260}
-              height={64}
+              width={240}
+              height={58}
               priority
-              className="h-9 sm:h-11 w-auto object-contain mix-blend-multiply"
+              className="h-8 sm:h-9 w-auto object-contain mix-blend-multiply"
             />
           </div>
 
@@ -54,15 +54,15 @@ export default function CategorySection() {
           </Link>
         </div>
 
-        {/* 10 Food Categories Row */}
-        <div className="grid grid-cols-5 sm:grid-cols-5 lg:grid-cols-10 gap-3 sm:gap-4 lg:gap-3 items-start justify-items-center">
+        {/* 10 Food Categories Row: Tightly clustered & cozy */}
+        <div className="grid grid-cols-5 sm:grid-cols-5 lg:grid-cols-10 gap-2 sm:gap-3 items-start justify-items-center">
           {FOOD_CATEGORIES.map((cat) => (
             <Link
               key={cat.id}
               href={`/places?q=${encodeURIComponent(cat.query)}`}
-              className="group flex flex-col items-center justify-center w-full py-1 focus:outline-none"
+              className="group flex flex-col items-center justify-center w-full py-0.5 focus:outline-none"
             >
-              <div className="relative size-16 sm:size-20 lg:size-[82px] xl:size-24 transition-transform duration-300 ease-out group-hover:-translate-y-1.5">
+              <div className="relative size-14 sm:size-16 lg:size-[68px] xl:size-[74px] transition-transform duration-300 ease-out group-hover:-translate-y-1">
                 <Image
                   src={cat.image}
                   alt={cat.name}
@@ -71,7 +71,7 @@ export default function CategorySection() {
                   className="object-contain"
                 />
               </div>
-              <span className="mt-2 text-xs sm:text-sm font-semibold text-[#1E3A5F] group-hover:text-[#D34B5E] text-center transition-colors line-clamp-1">
+              <span className="mt-1 text-[11px] sm:text-xs lg:text-[13px] font-semibold text-[#1E3A5F] group-hover:text-[#D34B5E] text-center transition-colors line-clamp-1">
                 {cat.name}
               </span>
             </Link>
