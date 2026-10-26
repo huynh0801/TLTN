@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
@@ -13,6 +13,35 @@ export default function MainHeader({ activeTab = "home" }: MainHeaderProps) {
   const router = useRouter()
   const [searchQuery, setSearchQuery] = useState("")
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [profileMenuOpen, setProfileMenuOpen] = useState(false)
+  const profileMenuRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        profileMenuRef.current &&
+        !profileMenuRef.current.contains(event.target as Node)
+      ) {
+        setProfileMenuOpen(false)
+      }
+    }
+
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setProfileMenuOpen(false)
+      }
+    }
+
+    if (profileMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside)
+      document.addEventListener("keydown", handleKeyDown)
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+      document.removeEventListener("keydown", handleKeyDown)
+    }
+  }, [profileMenuOpen])
 
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -95,25 +124,151 @@ export default function MainHeader({ activeTab = "home" }: MainHeaderProps) {
             />
           </form>
 
-          {/* User Profile Avatar */}
-          <Link
-            href="/profile"
-            className="flex size-10 sm:size-11 items-center justify-center rounded-full bg-[#FCD5D5] text-[#1E3A5F] shadow-sm transition-transform duration-200 hover:scale-105 active:scale-95"
-            aria-label="Tài khoản cá nhân"
-          >
-            <svg
-              className="size-5"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              aria-hidden="true"
+          {/* Integrated Profile & Hamburger Menu Trigger */}
+          <div className="relative" ref={profileMenuRef}>
+            <button
+              type="button"
+              onClick={() => setProfileMenuOpen(!profileMenuOpen)}
+              className="group flex items-center gap-2.5 rounded-full border border-[#ebd2bd] bg-white/90 py-1 pl-3.5 pr-1 text-[#1E3A5F] shadow-xs transition-all duration-200 hover:border-[#1E3A5F]/40 hover:bg-white hover:shadow-md active:scale-95 cursor-pointer"
+              aria-label="Menu tài khoản cá nhân"
+              aria-expanded={profileMenuOpen}
             >
-              <path
-                fillRule="evenodd"
-                d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </Link>
+              {/* 3-dots Hamburger Icon */}
+              <span className="flex items-center gap-1" aria-hidden="true">
+                <span className="size-1 rounded-full bg-[#1E3A5F] transition-transform duration-200 group-hover:scale-125" />
+                <span className="size-1 rounded-full bg-[#1E3A5F] transition-transform duration-200 group-hover:scale-125" />
+                <span className="size-1 rounded-full bg-[#1E3A5F] transition-transform duration-200 group-hover:scale-125" />
+              </span>
+
+              {/* Profile Avatar Icon */}
+              <span className="flex size-8 sm:size-9 items-center justify-center rounded-full bg-[#FCD5D5] text-[#1E3A5F] shadow-inner transition-transform duration-200 group-hover:scale-105">
+                <svg
+                  className="size-4.5 sm:size-5"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </button>
+
+            {/* Dropdown Navigation Menu Card */}
+            {profileMenuOpen && (
+              <div
+                className="absolute right-0 top-full mt-2.5 w-64 animate-in fade-in zoom-in-95 duration-200 rounded-2xl bg-[#1c1c1c] p-4 text-white shadow-2xl border border-white/10 z-50"
+                role="dialog"
+                aria-label="Menu tài khoản"
+              >
+                {/* Header Info */}
+                <div className="flex items-center justify-between border-b border-white/10 pb-3 mb-2 px-1">
+                  <div className="flex items-center gap-2.5">
+                    <div className="flex size-8 items-center justify-center rounded-full bg-[#FCD5D5] text-[#1E3A5F]">
+                      <svg className="size-4" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                          fillRule="evenodd"
+                          d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-xs font-bold text-white">Tài khoản HYUN</p>
+                      <p className="text-[10px] text-white/60">Foodie Member</p>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setProfileMenuOpen(false)}
+                    className="text-white/50 hover:text-white transition-colors p-1"
+                    aria-label="Đóng menu"
+                  >
+                    <svg
+                      className="size-3.5"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <line x1="18" y1="6" x2="6" y2="18" />
+                      <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                  </button>
+                </div>
+
+                {/* Navigation Menu Items */}
+                <nav className="flex flex-col gap-1">
+                  <Link
+                    href="/profile"
+                    onClick={() => setProfileMenuOpen(false)}
+                    className="group flex items-center gap-3 rounded-xl px-3 py-2 text-sm font-medium text-white/90 hover:bg-white/10 hover:text-white transition-colors"
+                  >
+                    <svg
+                      className="size-4 text-white/70 group-hover:text-white group-hover:scale-110 transition-all shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                      <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    <span>Hồ sơ cá nhân</span>
+                  </Link>
+
+                  <Link
+                    href="/schedule"
+                    onClick={() => setProfileMenuOpen(false)}
+                    className="group flex items-center gap-3 rounded-xl px-3 py-2 text-sm font-medium text-white/90 hover:bg-white/10 hover:text-white transition-colors"
+                  >
+                    <svg
+                      className="size-4 text-white/70 group-hover:text-white group-hover:scale-110 transition-all shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                      <line x1="16" y1="2" x2="16" y2="6" />
+                      <line x1="8" y1="2" x2="8" y2="6" />
+                      <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                    <span>Lịch hẹn & Kế hoạch</span>
+                  </Link>
+
+                  <Link
+                    href="/places"
+                    onClick={() => setProfileMenuOpen(false)}
+                    className="group flex items-center gap-3 rounded-xl px-3 py-2 text-sm font-medium text-white/90 hover:bg-white/10 hover:text-white transition-colors"
+                  >
+                    <svg
+                      className="size-4 text-white/70 group-hover:text-white group-hover:scale-110 transition-all shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <circle cx="11" cy="11" r="8" />
+                      <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                    <span>Khám phá địa điểm</span>
+                  </Link>
+                </nav>
+              </div>
+            )}
+          </div>
 
           {/* Mobile Hamburger Menu Toggle */}
           <button

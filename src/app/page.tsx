@@ -4,7 +4,6 @@ import HeroSection from "@/components/sections/HeroSection"
 import CategorySection from "@/components/sections/CategorySection"
 import FeaturedPlacesSection from "@/components/sections/FeaturedPlacesSection"
 
-import NavigationMenu from "@/components/NavigationMenu"
 import ChatBox from "@/components/ChatBox"
 
 export default function HomePage() {
@@ -12,7 +11,6 @@ export default function HomePage() {
     <div className="w-full min-h-screen bg-[#fdefdf] text-[#222] flex flex-col justify-between">
       <div className="w-full">
         <MainHeader activeTab="home" />
-        <NavigationMenu />
         <ChatBox />
 
         {/* Hero Section: Fills 100% of the screen width across all viewports */}
