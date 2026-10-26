@@ -124,37 +124,27 @@ export default function MainHeader({ activeTab = "home" }: MainHeaderProps) {
             />
           </form>
 
-          {/* Integrated Profile & Hamburger Menu Trigger */}
+          {/* User Profile Avatar (Menu Trigger) */}
           <div className="relative" ref={profileMenuRef}>
             <button
               type="button"
               onClick={() => setProfileMenuOpen(!profileMenuOpen)}
-              className="group flex items-center gap-2.5 rounded-full border border-[#ebd2bd] bg-white/90 py-1 pl-3.5 pr-1 text-[#1E3A5F] shadow-xs transition-all duration-200 hover:border-[#1E3A5F]/40 hover:bg-white hover:shadow-md active:scale-95 cursor-pointer"
-              aria-label="Menu tài khoản cá nhân"
+              className="flex size-10 sm:size-11 items-center justify-center rounded-full bg-[#FCD5D5] text-[#1E3A5F] shadow-sm transition-transform duration-200 hover:scale-105 active:scale-95 cursor-pointer focus:outline-none"
+              aria-label="Tài khoản cá nhân"
               aria-expanded={profileMenuOpen}
             >
-              {/* 3-dots Hamburger Icon */}
-              <span className="flex items-center gap-1" aria-hidden="true">
-                <span className="size-1 rounded-full bg-[#1E3A5F] transition-transform duration-200 group-hover:scale-125" />
-                <span className="size-1 rounded-full bg-[#1E3A5F] transition-transform duration-200 group-hover:scale-125" />
-                <span className="size-1 rounded-full bg-[#1E3A5F] transition-transform duration-200 group-hover:scale-125" />
-              </span>
-
-              {/* Profile Avatar Icon */}
-              <span className="flex size-8 sm:size-9 items-center justify-center rounded-full bg-[#FCD5D5] text-[#1E3A5F] shadow-inner transition-transform duration-200 group-hover:scale-105">
-                <svg
-                  className="size-4.5 sm:size-5"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </span>
+              <svg
+                className="size-5"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
+                  clipRule="evenodd"
+                />
+              </svg>
             </button>
 
             {/* Dropdown Navigation Menu Card */}
