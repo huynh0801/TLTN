@@ -201,13 +201,13 @@ export default function FeaturedPlacesSection() {
             </div>
           </div>
 
-          <div className="w-full max-w-[340px] sm:max-w-[380px] lg:max-w-none lg:w-[24%] xl:w-[23.5%] 2xl:w-[23%] shrink-0 flex flex-col justify-start items-center mx-auto lg:mx-0">
-            <div className="group relative w-full aspect-[471/441] flex items-center justify-center">
+          <div className="w-full max-w-[320px] sm:max-w-[350px] lg:max-w-none lg:w-[26%] xl:w-[25.5%] 2xl:w-[25%] shrink-0 flex flex-col justify-start items-center mx-auto lg:mx-0">
+            <div className="group relative w-full aspect-[380/441] flex items-center justify-center">
               <Image
                 src="/img/preview.png"
                 alt="Gợi ý cho cặp đôi hôm nay"
                 fill
-                sizes="(max-width: 1024px) 100vw, 24vw"
+                sizes="(max-width: 1024px) 100vw, 26vw"
                 className="object-contain transition-transform duration-300 group-hover:scale-[1.02]"
               />
 
