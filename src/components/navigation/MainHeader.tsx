@@ -32,7 +32,7 @@ export default function MainHeader({ activeTab = "home" }: MainHeaderProps) {
   ]
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-[#F0EAE1] bg-[#FAF6F0]/95 backdrop-blur-md transition-all">
+    <header className="sticky top-0 z-50 w-full border-b border-[#ebd2bd] bg-[#fdefdf]/95 backdrop-blur-md transition-all">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* 1. Left: Brand Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0 py-2">
@@ -71,7 +71,7 @@ export default function MainHeader({ activeTab = "home" }: MainHeaderProps) {
           {/* Search Pill */}
           <form
             onSubmit={handleSearchSubmit}
-            className="hidden sm:flex items-center gap-2 rounded-full border border-[#E8DEC9] bg-white/80 px-4 py-2 transition-all duration-200 focus-within:border-[#1E3A5F] focus-within:bg-white focus-within:shadow-sm w-52 md:w-64 xl:w-72"
+            className="hidden sm:flex items-center gap-2 rounded-full border border-[#ebd2bd] bg-white/80 px-4 py-2 transition-all duration-200 focus-within:border-[#1E3A5F] focus-within:bg-white focus-within:shadow-sm w-52 md:w-64 xl:w-72"
           >
             <svg
               className="size-4 shrink-0 text-[#1E3A5F]"
@@ -119,7 +119,7 @@ export default function MainHeader({ activeTab = "home" }: MainHeaderProps) {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="flex size-10 items-center justify-center rounded-full border border-[#E8DEC9] bg-white text-[#1E3A5F] lg:hidden"
+            className="flex size-10 items-center justify-center rounded-full border border-[#ebd2bd] bg-white text-[#1E3A5F] lg:hidden"
             aria-label="Mở menu điều hướng"
           >
             {mobileMenuOpen ? (
@@ -156,11 +156,11 @@ export default function MainHeader({ activeTab = "home" }: MainHeaderProps) {
 
       {/* Mobile Drawer Dropdown */}
       {mobileMenuOpen && (
-        <div className="border-t border-[#F0EAE1] bg-[#FAF6F0] px-4 py-4 lg:hidden animate-in slide-in-from-top-2 duration-200">
+        <div className="border-t border-[#ebd2bd] bg-[#fdefdf] px-4 py-4 lg:hidden animate-in slide-in-from-top-2 duration-200">
           {/* Mobile Search input */}
           <form
             onSubmit={handleSearchSubmit}
-            className="mb-4 flex items-center gap-2 rounded-full border border-[#E8DEC9] bg-white px-4 py-2.5 sm:hidden"
+            className="mb-4 flex items-center gap-2 rounded-full border border-[#ebd2bd] bg-white px-4 py-2.5 sm:hidden"
           >
             <svg
               className="size-4 shrink-0 text-[#1E3A5F]"

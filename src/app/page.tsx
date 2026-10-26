@@ -1,10 +1,9 @@
 import MainHeader from "@/components/navigation/MainHeader"
-import DesignStage from "@/components/DesignStage"
 import HeroSection from "@/components/sections/HeroSection"
+import DesignStage from "@/components/DesignStage"
 import ArchivesSection from "@/components/sections/ArchivesSection"
 import AboutSection from "@/components/sections/AboutSection"
 
-import MobileHeroSection from "@/components/mobile/MobileHeroSection"
 import MobileArchivesSection from "@/components/mobile/MobileArchivesSection"
 import MobileAboutSection from "@/components/mobile/MobileAboutSection"
 
@@ -18,10 +17,12 @@ export default function HomePage() {
       <NavigationMenu />
       <ChatBox />
 
+      {/* Hero Section: Fills 100% of the screen width across all viewports */}
+      <HeroSection />
+
       {/* Desktop View: Preserved Figma Canvas with DesignStage for lg and wider screens (>= 1024px) */}
       <div className="hidden lg:block">
         <DesignStage>
-          <HeroSection />
           <ArchivesSection />
           <AboutSection />
         </DesignStage>
@@ -29,7 +30,6 @@ export default function HomePage() {
 
       {/* Mobile & Tablet View: Natural Document Scrolling for screens < 1024px */}
       <main className="block lg:hidden w-full min-h-screen bg-white text-[#222] overflow-x-hidden">
-        <MobileHeroSection />
         <MobileArchivesSection />
         <MobileAboutSection />
       </main>
