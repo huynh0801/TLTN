@@ -89,10 +89,11 @@ export default function FeaturedPlacesSection() {
   return (
     <section className="w-full bg-[#fdefdf] pt-1 pb-6 sm:pt-2 sm:pb-8 transition-colors">
       <div className="mx-auto max-w-[1360px] px-3 sm:px-5 lg:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-3.5 sm:gap-4 items-stretch">
-          {/* Left 4 columns: Header + 4 Cards */}
-          <div className="lg:col-span-4 flex flex-col justify-between">
-            {/* Header: diadiemnoibat on left + "Xem tất cả →" on right (above Card 4) */}
+        {/* Main Section Content: Left (Header + 4 Cards) + Right (Couple Promo Banner) */}
+        <div className="flex flex-col lg:flex-row gap-3.5 lg:gap-4 items-stretch">
+          {/* Left Block: Header ("Địa điểm nổi bật" + "Xem tất cả →") + 4 Featured Cards Grid */}
+          <div className="flex-1 flex flex-col justify-between">
+            {/* Header: diadiemnoibat on left + "Xem tất cả →" on right */}
             <div className="flex items-center justify-between mb-2 sm:mb-2.5">
               <div className="flex items-center">
                 <Image
@@ -119,7 +120,7 @@ export default function FeaturedPlacesSection() {
               </Link>
             </div>
 
-            {/* 4 Featured Cards Grid */}
+            {/* 4 Featured Places Cards Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-3.5 items-stretch flex-1">
               {FEATURED_PLACES.map((place) => {
                 const isFaved = favoriteIds[place.id]
@@ -218,15 +219,15 @@ export default function FeaturedPlacesSection() {
             </div>
           </div>
 
-          {/* Right 1 column: Card 5 (Couple Suggestion Promo Card) spans full height from top to bottom */}
-          <div className="lg:col-span-1 group relative flex flex-col justify-center items-center h-full">
-            <div className="relative w-full h-full min-h-[260px] sm:min-h-[290px] flex items-center justify-center">
+          {/* Right Block: Gợi ý cho cặp đôi hôm nay (Promo Card - Image only, spans height of Header + 4 Cards) */}
+          <div className="w-full lg:w-[22%] xl:w-[21.5%] shrink-0 flex flex-col justify-center items-center">
+            <div className="group relative w-full h-full min-h-[250px] sm:min-h-[280px] lg:min-h-[290px] flex items-center justify-center">
               {/* Illustration artwork */}
               <Image
                 src="/img/preview.png"
                 alt="Gợi ý cho cặp đôi hôm nay"
                 fill
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 33vw, 20vw"
+                sizes="(max-width: 1024px) 100vw, 22vw"
                 className="object-contain transition-transform duration-300 group-hover:scale-[1.02]"
               />
 
