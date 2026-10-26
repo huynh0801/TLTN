@@ -25,16 +25,16 @@ export const FOOD_CATEGORIES: FoodCategory[] = [
 
 export default function CategorySection() {
   return (
-    <section className="w-full bg-[#FAF6F0] pt-3 pb-6 sm:pt-4 sm:pb-8 transition-colors">
-      <div className="mx-auto max-w-5xl px-4 sm:px-6">
-        {/* Section Header: danhmucmonan logo title on left + "Xem tất cả →" on right */}
-        <div className="flex items-center justify-between gap-4 mb-2 sm:mb-3">
+    <section className="w-full bg-[#FAF6F0] pt-2 pb-6 sm:pt-3 sm:pb-8 transition-colors">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Section Header: danhmucmonan image on left + "Xem tất cả →" on right */}
+        <div className="flex items-center justify-between mb-3 sm:mb-4">
           <div className="flex items-center">
             <Image
               src="/img/danhmucmonan.jpg"
               alt="Danh mục món ăn"
-              width={240}
-              height={58}
+              width={260}
+              height={64}
               priority
               className="h-8 sm:h-9 w-auto object-contain mix-blend-multiply"
             />
@@ -42,7 +42,7 @@ export default function CategorySection() {
 
           <Link
             href="/places"
-            className="group inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#1E3A5F] hover:text-[#D34B5E] transition-colors shrink-0"
+            className="group inline-flex items-center gap-1 text-xs sm:text-sm font-medium text-[#1E3A5F] hover:text-[#D34B5E] transition-colors shrink-0"
           >
             <span>Xem tất cả</span>
             <span
@@ -54,24 +54,24 @@ export default function CategorySection() {
           </Link>
         </div>
 
-        {/* 10 Food Categories Row: Tightly clustered & cozy */}
-        <div className="grid grid-cols-5 sm:grid-cols-5 lg:grid-cols-10 gap-2 sm:gap-3 items-start justify-items-center">
+        {/* 10 Food Categories Row: Spans full width aligned with header */}
+        <div className="grid grid-cols-5 sm:grid-cols-5 lg:grid-cols-10 gap-x-2 sm:gap-x-4 lg:gap-x-2 gap-y-3 sm:gap-y-4 items-start justify-items-center">
           {FOOD_CATEGORIES.map((cat) => (
             <Link
               key={cat.id}
               href={`/places?q=${encodeURIComponent(cat.query)}`}
-              className="group flex flex-col items-center justify-center w-full py-0.5 focus:outline-none"
+              className="group flex flex-col items-center justify-center w-full focus:outline-none"
             >
-              <div className="relative size-14 sm:size-16 lg:size-[68px] xl:size-[74px] transition-transform duration-300 ease-out group-hover:-translate-y-1">
+              <div className="relative size-16 sm:size-20 lg:size-[78px] xl:size-[84px] transition-transform duration-300 ease-out group-hover:-translate-y-1">
                 <Image
                   src={cat.image}
                   alt={cat.name}
                   fill
-                  sizes="(max-width: 640px) 20vw, 10vw"
+                  sizes="(max-width: 640px) 20vw, (max-width: 1024px) 20vw, 10vw"
                   className="object-contain"
                 />
               </div>
-              <span className="mt-1 text-[11px] sm:text-xs lg:text-[13px] font-semibold text-[#1E3A5F] group-hover:text-[#D34B5E] text-center transition-colors line-clamp-1">
+              <span className="mt-1.5 text-xs sm:text-[13px] font-semibold text-[#1E3A5F] group-hover:text-[#D34B5E] text-center transition-colors line-clamp-1">
                 {cat.name}
               </span>
             </Link>
