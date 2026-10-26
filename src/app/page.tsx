@@ -1,5 +1,6 @@
 import MainHeader from "@/components/navigation/MainHeader"
 import HeroSection from "@/components/sections/HeroSection"
+import CategorySection from "@/components/sections/CategorySection"
 import DesignStage from "@/components/DesignStage"
 import ArchivesSection from "@/components/sections/ArchivesSection"
 import AboutSection from "@/components/sections/AboutSection"
@@ -19,6 +20,9 @@ export default function HomePage() {
 
       {/* Hero Section: Fills 100% of the screen width across all viewports */}
       <HeroSection />
+
+      {/* Food Categories: Watercolor icons and quick filters */}
+      <CategorySection />
 
       {/* Desktop View: Preserved Figma Canvas with DesignStage for lg and wider screens (>= 1024px) */}
       <div className="hidden lg:block">
