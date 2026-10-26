@@ -89,31 +89,34 @@ export default function FeaturedPlacesSection() {
   return (
     <section className="w-full bg-[#fdefdf] pt-1 pb-6 sm:pt-2 sm:pb-8 transition-colors">
       <div className="mx-auto max-w-[1360px] px-3 sm:px-5 lg:px-6">
-        {/* Section Header: diadiemnoibat image on left + "Xem tất cả →" on right */}
-        <div className="flex items-center justify-between mb-2 sm:mb-2.5">
-          <div className="flex items-center">
-            <Image
-              src="/img/diadiemnoibat.jpg"
-              alt="Địa điểm nổi bật"
-              width={260}
-              height={64}
-              priority
-              className="h-7 sm:h-8 w-auto object-contain mix-blend-multiply"
-            />
-          </div>
+        {/* Section Header: diadiemnoibat on left + "Xem tất cả →" above card 4 (to the left of card 5) */}
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-3 sm:gap-3.5 mb-2 sm:mb-2.5 items-center">
+          <div className="lg:col-span-4 flex items-center justify-between">
+            <div className="flex items-center">
+              <Image
+                src="/img/diadiemnoibat.jpg"
+                alt="Địa điểm nổi bật"
+                width={260}
+                height={64}
+                priority
+                className="h-7 sm:h-8 w-auto object-contain mix-blend-multiply"
+              />
+            </div>
 
-          <Link
-            href="/places"
-            className="group inline-flex items-center gap-1 text-xs sm:text-sm font-medium text-[#1E3A5F] hover:text-[#D34B5E] transition-colors shrink-0"
-          >
-            <span>Xem tất cả</span>
-            <span
-              className="transition-transform duration-200 group-hover:translate-x-1"
-              aria-hidden="true"
+            <Link
+              href="/places"
+              className="group inline-flex items-center gap-1 text-xs sm:text-sm font-medium text-[#1E3A5F] hover:text-[#D34B5E] transition-colors shrink-0"
             >
-              →
-            </span>
-          </Link>
+              <span>Xem tất cả</span>
+              <span
+                className="transition-transform duration-200 group-hover:translate-x-1"
+                aria-hidden="true"
+              >
+                →
+              </span>
+            </Link>
+          </div>
+          <div className="hidden lg:block lg:col-span-1" aria-hidden="true" />
         </div>
 
         {/* 5-Card Layout: 4 Featured Places + 1 Couple Suggestion Promo Card */}
