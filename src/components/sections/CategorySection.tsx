@@ -1,5 +1,4 @@
-"use client"
-
+"use client" /* Section Header: 🌸 Danh mục món ăn image on left + "Xem tất cả →" on right */ /* 10 Food Categories Row: Spans full width with snug spacing and large icons */
 import Image from "next/image"
 import Link from "next/link"
 
@@ -11,12 +10,22 @@ export interface FoodCategory {
 }
 
 export const FOOD_CATEGORIES: FoodCategory[] = [
-  { id: "bun-pho", name: "Bún - Phở", image: "/img/bun-pho.png", query: "Bún Phở" },
+  {
+    id: "bun-pho",
+    name: "Bún - Phở",
+    image: "/img/bun-pho.png",
+    query: "Bún Phở",
+  },
   { id: "com", name: "Cơm", image: "/img/com.png", query: "Cơm" },
   { id: "nuong", name: "Món nướng", image: "/img/nuong.png", query: "Nướng" },
   { id: "haisan", name: "Hải sản", image: "/img/haisan.png", query: "Hải sản" },
   { id: "lau", name: "Lẩu", image: "/img/lau.png", query: "Lẩu" },
-  { id: "streetfood", name: "Street food", image: "/img/streetfood.png", query: "Street food" },
+  {
+    id: "streetfood",
+    name: "Street food",
+    image: "/img/streetfood.png",
+    query: "Street food",
+  },
   { id: "trasua", name: "Trà sữa", image: "/img/trasua.png", query: "Trà sữa" },
   { id: "banh", name: "Bánh ngọt", image: "/img/banh.png", query: "Bánh ngọt" },
   { id: "cafe", name: "Cà phê", image: "/img/cafe.png", query: "Cà phê" },
@@ -27,16 +36,16 @@ export default function CategorySection() {
   return (
     <section className="w-full bg-[#fdefdf] pt-1 pb-2 sm:pt-2 sm:pb-3 transition-colors">
       <div className="mx-auto max-w-[1360px] px-3 sm:px-5 lg:px-6">
-        {/* Section Header: 🌸 Danh mục món ăn image on left + "Xem tất cả →" on right */}
+        {}
         <div className="flex items-center justify-between mb-2 sm:mb-2.5">
           <div className="flex items-center">
             <Image
               src="/img/danhmucmonan.png"
               alt="Danh mục món ăn"
-              width={276}
-              height={55}
+              width={1003}
+              height={249}
               priority
-              className="h-7 sm:h-8 w-auto object-contain mix-blend-multiply"
+              className="h-7 sm:h-8 w-auto object-contain"
             />
           </div>
 
@@ -54,7 +63,7 @@ export default function CategorySection() {
           </Link>
         </div>
 
-        {/* 10 Food Categories Row: Spans full width with snug spacing and large icons */}
+        {}
         <div className="grid grid-cols-5 lg:grid-cols-10 gap-x-2 sm:gap-x-3 lg:gap-x-2 xl:gap-x-3 gap-y-2.5 sm:gap-y-3 items-start justify-items-center w-full">
           {FOOD_CATEGORIES.map((cat) => (
             <Link
