@@ -23,11 +23,7 @@ export const FEATURED_PLACES: FeaturedPlace[] = [
     rating: 4.8,
     location: "Quận 1, TP. Hồ Chí Minh",
     badge: "Dành cho cặp đôi",
-    tags: [
-      { label: "Café" },
-      { label: "Âu" },
-      { label: "View đẹp" },
-    ],
+    tags: [{ label: "Café" }, { label: "Âu" }, { label: "View đẹp" }],
     href: "/places?q=Luna%20Cafe",
   },
   {
@@ -37,11 +33,7 @@ export const FEATURED_PLACES: FeaturedPlace[] = [
     rating: 4.7,
     location: "Quận 3, TP. Hồ Chí Minh",
     badge: "Nhà hàng Nhật",
-    tags: [
-      { label: "Sushi" },
-      { label: "Ramen" },
-      { label: "Yakiniku" },
-    ],
+    tags: [{ label: "Sushi" }, { label: "Ramen" }, { label: "Yakiniku" }],
     href: "/places?q=Sakura",
   },
   {
@@ -65,11 +57,7 @@ export const FEATURED_PLACES: FeaturedPlace[] = [
     rating: 4.6,
     location: "Thủ Đức, TP. Hồ Chí Minh",
     badge: "View đẹp",
-    tags: [
-      { label: "Việt Nam" },
-      { label: "Âu" },
-      { label: "Hải sản" },
-    ],
+    tags: [{ label: "Việt Nam" }, { label: "Âu" }, { label: "Hải sản" }],
     href: "/places?q=Riverside%20Garden",
   },
 ]
@@ -89,11 +77,8 @@ export default function FeaturedPlacesSection() {
   return (
     <section className="w-full bg-[#fdefdf] pt-1 pb-6 sm:pt-2 sm:pb-8 transition-colors">
       <div className="mx-auto max-w-[1360px] px-3 sm:px-5 lg:px-6">
-        {/* Main Section Content: Left (Header + 4 Cards) + Right (Couple Promo Banner) */}
         <div className="flex flex-col lg:flex-row gap-3.5 lg:gap-4 items-stretch">
-          {/* Left Block: Header ("Địa điểm nổi bật" + "Xem tất cả →") + 4 Featured Cards Grid */}
           <div className="flex-1 flex flex-col justify-between">
-            {/* Header: diadiemnoibat on left + "Xem tất cả →" on right */}
             <div className="flex items-center justify-between mb-2 sm:mb-2.5">
               <div className="flex items-center">
                 <Image
@@ -120,7 +105,6 @@ export default function FeaturedPlacesSection() {
               </Link>
             </div>
 
-            {/* 4 Featured Places Cards Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-3.5 items-stretch flex-1">
               {FEATURED_PLACES.map((place) => {
                 const isFaved = favoriteIds[place.id]
@@ -129,12 +113,10 @@ export default function FeaturedPlacesSection() {
                     key={place.id}
                     className="group relative bg-white rounded-2xl overflow-hidden border border-[#f0e4d7]/70 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-md transition-all duration-300 flex flex-col justify-between"
                   >
-                    {/* Clickable Card Link */}
                     <Link
                       href={place.href}
                       className="flex flex-col h-full justify-between focus:outline-none"
                     >
-                      {/* Top Image Box */}
                       <div className="relative w-full aspect-[16/10] overflow-hidden bg-[#faf5f0]">
                         <Image
                           src={place.image}
@@ -144,7 +126,6 @@ export default function FeaturedPlacesSection() {
                           className="object-cover transition-transform duration-300 group-hover:scale-105"
                         />
 
-                        {/* Interactive Heart Button overlay on top right */}
                         <button
                           type="button"
                           aria-label={`Yêu thích ${place.name}`}
@@ -164,10 +145,8 @@ export default function FeaturedPlacesSection() {
                         </button>
                       </div>
 
-                      {/* Card Content */}
                       <div className="p-3 flex flex-col justify-between flex-1">
                         <div>
-                          {/* Name & Rating */}
                           <div className="flex items-center justify-between gap-1">
                             <h3 className="font-bold text-[#1E3A5F] text-[13px] sm:text-sm truncate group-hover:text-[#D34B5E] transition-colors">
                               {place.name}
@@ -178,7 +157,6 @@ export default function FeaturedPlacesSection() {
                             </div>
                           </div>
 
-                          {/* Location with Pin */}
                           <div className="flex items-center gap-1 text-[11px] text-[#64748B] mt-1">
                             <svg
                               className="size-3 text-[#4A607A] shrink-0"
@@ -196,7 +174,6 @@ export default function FeaturedPlacesSection() {
                           </div>
                         </div>
 
-                        {/* Tag Pills */}
                         <div className="flex items-center gap-1.5 mt-2.5 flex-wrap">
                           {place.tags.map((tag) => (
                             <span
@@ -219,22 +196,19 @@ export default function FeaturedPlacesSection() {
             </div>
           </div>
 
-          {/* Right Block: Gợi ý cho cặp đôi hôm nay (Promo Card - Image only, spans height of Header + 4 Cards) */}
-          <div className="w-full lg:w-[22%] xl:w-[21.5%] shrink-0 flex flex-col justify-center items-center">
-            <div className="group relative w-full h-full min-h-[250px] sm:min-h-[280px] lg:min-h-[290px] flex items-center justify-center">
-              {/* Illustration artwork */}
+          <div className="w-full lg:w-[31.5%] xl:w-[31%] 2xl:w-[30.5%] shrink-0 flex flex-col justify-start items-center">
+            <div className="group relative w-full aspect-[471/441] flex items-center justify-center">
               <Image
                 src="/img/preview.png"
                 alt="Gợi ý cho cặp đôi hôm nay"
                 fill
-                sizes="(max-width: 1024px) 100vw, 22vw"
+                sizes="(max-width: 1024px) 100vw, 32vw"
                 className="object-contain transition-transform duration-300 group-hover:scale-[1.02]"
               />
 
-              {/* Centered CTA Pill Button placed INSIDE the image */}
               <Link
                 href="/places?tag=couple"
-                className="absolute bottom-[6%] left-1/2 -translate-x-1/2 w-[58%] max-w-[150px] py-1.5 px-3 bg-[#F88590] hover:bg-[#F26473] active:scale-95 text-white text-xs sm:text-[13px] font-bold rounded-full text-center shadow-xs hover:shadow transition-all duration-200 flex items-center justify-center gap-1 z-10"
+                className="absolute bottom-[5.5%] left-1/2 -translate-x-1/2 w-[58%] max-w-[160px] py-2 px-3.5 bg-[#F88590] hover:bg-[#F26473] active:scale-95 text-white text-xs sm:text-[13px] font-bold rounded-full text-center shadow-xs hover:shadow transition-all duration-200 flex items-center justify-center gap-1 z-10"
               >
                 <span>Xem ngay</span>
                 <span aria-hidden="true">→</span>
