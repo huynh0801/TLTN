@@ -213,30 +213,26 @@ export default function FeaturedPlacesSection() {
             )
           })}
 
-          {/* Card 5: Gợi ý cho cặp đôi hôm nay (Promo Card) */}
-          <div className="group relative bg-[#FFF2F4] rounded-2xl overflow-hidden border border-[#FADCE2] shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-md transition-all duration-300 flex flex-col justify-between">
-            <div className="relative w-full h-full min-h-[220px] flex flex-col justify-between">
+          {/* Card 5: Gợi ý cho cặp đôi hôm nay (Promo Card - Image only without outer card/border) */}
+          <div className="group relative flex flex-col justify-center items-center h-full">
+            <div className="relative w-full h-full min-h-[220px] aspect-square flex items-center justify-center">
               {/* Illustration artwork */}
-              <div className="relative w-full aspect-square overflow-hidden">
-                <Image
-                  src="/img/preview.png"
-                  alt="Gợi ý cho cặp đôi hôm nay"
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 33vw, 20vw"
-                  className="object-contain transition-transform duration-300 group-hover:scale-102"
-                />
-              </div>
+              <Image
+                src="/img/preview.png"
+                alt="Gợi ý cho cặp đôi hôm nay"
+                fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 33vw, 20vw"
+                className="object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+              />
 
-              {/* Centered CTA Pill Button at the bottom */}
-              <div className="relative z-10 px-3 pb-3 pt-1 flex justify-center">
-                <Link
-                  href="/places?tag=couple"
-                  className="w-full py-1.5 px-3 bg-[#F88590] hover:bg-[#F26473] active:scale-95 text-white text-xs sm:text-[13px] font-bold rounded-full text-center shadow-xs hover:shadow transition-all duration-200 flex items-center justify-center gap-1"
-                >
-                  <span>Xem ngay</span>
-                  <span aria-hidden="true">→</span>
-                </Link>
-              </div>
+              {/* Centered CTA Pill Button placed INSIDE the image */}
+              <Link
+                href="/places?tag=couple"
+                className="absolute bottom-[6%] left-1/2 -translate-x-1/2 w-[58%] max-w-[150px] py-1.5 px-3 bg-[#F88590] hover:bg-[#F26473] active:scale-95 text-white text-xs sm:text-[13px] font-bold rounded-full text-center shadow-xs hover:shadow transition-all duration-200 flex items-center justify-center gap-1 z-10"
+              >
+                <span>Xem ngay</span>
+                <span aria-hidden="true">→</span>
+              </Link>
             </div>
           </div>
         </div>
